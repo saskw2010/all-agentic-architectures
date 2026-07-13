@@ -1,0 +1,20 @@
+    (()=>{
+      const doc=document.documentElement;
+      const progress=document.getElementById('progress');
+      const words=['RULES','KNOWLEDGE','PROBABILITY','LEARNING','LANGUAGE','ACTION','AGENTS'];
+      const word=document.getElementById('rotatingWord');
+      let wordIndex=0,score=0,paused=false;
+      const updateProgress=()=>{const h=doc.scrollHeight-innerHeight;progress.style.width=(h>0?(scrollY/h)*100:0)+'%'};
+      addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+      const interval=setInterval(()=>{if(paused)return;wordIndex=(wordIndex+1)%words.length;word.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'none'}],{duration:380});word.textContent=words[wordIndex]},1500);
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible')}}),{threshold:.16});
+      document.querySelectorAll('.reveal,.prompt,.stack-row').forEach(el=>observer.observe(el));
+      const sections=[...document.querySelectorAll('[data-section]')];
+      const nav=[...document.querySelectorAll('.chapter-nav a')];
+      const sectionObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){nav.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))}}),{rootMargin:'-42% 0px -45% 0px'});sections.forEach(s=>sectionObserver.observe(s));
+      document.querySelectorAll('.cause[data-prob]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.cause').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.getElementById('probability').textContent=`فرضية أولية: ${btn.textContent} يفسر ${btn.dataset.prob}% من الحالة. يلزم تدخل أو دليل سببي قبل القرار.`}));
+      document.querySelectorAll('[data-reward]').forEach(btn=>btn.addEventListener('click',()=>{score+=Number(btn.dataset.reward);document.getElementById('rewardScore').textContent=score}));
+      const motion=document.getElementById('motionToggle');
+      motion.addEventListener('click',()=>{paused=!paused;document.body.classList.toggle('motion-paused',paused);motion.textContent=paused?'Resume motion':'Pause motion';motion.setAttribute('aria-pressed',String(paused));document.querySelectorAll('*').forEach(el=>{if(paused)el.getAnimations().forEach(a=>a.pause());else el.getAnimations().forEach(a=>a.play())})});
+      addEventListener('beforeunload',()=>clearInterval(interval));
+    })();
