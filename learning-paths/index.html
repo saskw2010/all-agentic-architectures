@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sky365 Learning Universe — educational paths distilled from our research, product history, architecture work, and strategic discussions.">
+  <meta name="theme-color" content="#06101d">
+  <title>Sky365 Learning Universe</title>
+  <link rel="stylesheet" href="assets/learning.css">
+</head>
+<body>
+  <a class="skip" href="#main">تجاوز إلى المحتوى</a>
+  <header class="topbar">
+    <a class="brand" href="../"><span class="mark">L</span><span><strong>Learning Universe</strong><small>SKY365 · RESEARCH · STORIES</small></span></a>
+    <nav><a href="#paths">المسارات</a><a href="#news">News Radar</a><a href="#system">نظام الإنتاج</a></nav>
+    <div class="actions"><a href="../">Portal</a><a href="../academy/">Academy</a><a href="../strategy/">Strategy</a><button id="themeToggle" type="button">◐</button></div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div>
+        <div class="kicker"><span>LIVING CURRICULUM</span><b>HISTORY → PATHS → PRODUCTS</b></div>
+        <h1>كل فكرة قوية<br><span>تتحول إلى مسار.</span></h1>
+        <p>فهرس حي يجمع ما بنيناه وتناقشنا فيه: من داخل الـLLM ورحلة الـQuery، إلى Sky365 Agentic وSkyverse والروبوتات وMLOps وأدوات البرمجة والوكلاء وصناعة القصص والفيديو.</p>
+        <div class="hero-actions"><a class="btn primary" href="#paths">استكشف 16 مسارًا</a><a class="btn secondary" href="#news">آخر الإشارات والأخبار</a></div>
+        <div class="stats"><div><strong>16</strong><span>Learning paths</span></div><div><strong>4</strong><span>Audience schools</span></div><div><strong>6</strong><span>Output formats</span></div><div><strong>1</strong><span>Shared knowledge system</span></div></div>
+      </div>
+      <div class="universe" aria-label="Learning universe map"><div class="ring r1"></div><div class="ring r2"></div><div class="core"><small>NORTH STAR</small><strong>Learn<br>Build<br>Publish</strong><span>Evidence over noise</span></div><span class="chip c1">LLM</span><span class="chip c2">Agents</span><span class="chip c3">Sky365</span><span class="chip c4">Robotics</span><span class="chip c5">Stories</span><span class="chip c6">Research</span></div>
+    </section>
+
+    <section class="truth"><strong>قاعدة الفهرس:</strong> لا يتحول أي موضوع إلى كورس لمجرد أنه ترند. يجب أن يضيف تفسيرًا، قرارًا معماريًا، تجربة عملية، أو أصلًا معرفيًا يمكن إعادة استخدامه.</section>
+
+    <section id="paths" class="shell block">
+      <div class="heading"><div><p class="eyebrow">LEARNING PATH INDEX</p><h2>المسارات المستخرجة من تاريخنا</h2></div><p>ابحث وصفِّ حسب المجال أو الحالة. افتح أي كارت لرؤية الوحدات والمخرجات ومصدر الفكرة وخطوة البناء التالية.</p></div>
+      <div class="toolbar">
+        <label><span>بحث</span><input id="pathSearch" type="search" placeholder="LLM، Kubeflow، YouTube، Skyverse..."></label>
+        <label><span>المجال</span><select id="domainFilter"><option value="all">كل المجالات</option><option value="core">Core AI</option><option value="enterprise">Enterprise</option><option value="builder">Builder</option><option value="infra">Infrastructure</option><option value="physical">Physical AI</option><option value="media">Media & Stories</option></select></label>
+        <label><span>الحالة</span><select id="statusFilter"><option value="all">كل الحالات</option><option value="live">Live</option><option value="build">Build Next</option><option value="research">Research</option><option value="recover">Context Recovery</option></select></label>
+        <div class="count"><strong id="visibleCount">16</strong><span>مسار ظاهر</span></div>
+      </div>
+      <div id="pathGrid" class="path-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="news" class="news shell block">
+      <div class="heading"><div><p class="eyebrow">TOP SIGNALS · 13 JUL 2026</p><h2>News & Research Radar</h2></div><p>هذه ليست نشرة أخبار عامة؛ كل إشارة هنا مرتبطة بمسار تعليمي أو قرار منتج، وتدخل لاحقًا في Source Registry لكل كارت.</p></div>
+      <div class="news-grid">
+        <article><span>AGENTIC WORK</span><h3>انتقال الاستخدام من Chat إلى تنفيذ أعمال طويلة ومعقدة</h3><p>بحث حديث عن Codex يوثق نمو الاستخدام الوكيلي، تعدد الوكلاء، واستخدام Skills في المؤسسات.</p><a href="https://arxiv.org/abs/2606.26959" target="_blank" rel="noreferrer">البحث ↗</a></article>
+        <article><span>ENTERPRISE AGENTS</span><h3>الوكلاء أصبحوا محور المنافسة المؤسسية</h3><p>Google وOpenAI وAnthropic يدفعون نحو بيئات عمل تنفذ مهامًا عبر الأدوات والملفات والتطبيقات.</p><a href="https://www.reuters.com/business/google-puts-ai-agents-heart-its-enterprise-money-making-push-2026-04-22/" target="_blank" rel="noreferrer">Reuters ↗</a></article>
+        <article><span>AI WORKSPACE</span><h3>الواجهة تتحول من مساعد إلى مساحة عمل Agentic</h3><p>إطلاقات 2026 تؤكد أن الاتجاه القادم هو Goal → Plan → Tools → Deliverable، لا مجرد سؤال وجواب.</p><a href="https://www.reuters.com/business/openai-launches-chatgpt-work-2026-07-09/" target="_blank" rel="noreferrer">Reuters ↗</a></article>
+        <article><span>OPEN REASONING</span><h3>Hermes 4 كمسار لتعلم النماذج المفتوحة والاستدلال الهجين</h3><p>التقرير التقني يربط جمع البيانات والتدريب والتقييم بنماذج reasoning مفتوحة قابلة للتجربة محليًا.</p><a href="https://arxiv.org/abs/2508.18255" target="_blank" rel="noreferrer">Technical report ↗</a></article>
+      </div>
+    </section>
+
+    <section id="system" class="shell block">
+      <div class="heading"><div><p class="eyebrow">CONTENT PRODUCTION SYSTEM</p><h2>ماذا سنبني داخل كل كارت؟</h2></div><p>المسار لا يكتمل بصفحة شرح. كل مسار يجب أن يخرج كحزمة معرفية قابلة للتعلم والنشر والتطبيق.</p></div>
+      <div class="production">
+        <article><b>01</b><strong>Master Story</strong><span>لماذا بدأ الموضوع، المشكلة، التحول، وما الذي تعلمناه.</span></article>
+        <article><b>02</b><strong>Interactive HTML</strong><span>منهج قابل للبحث والتصفح وحفظ التقدم.</span></article>
+        <article><b>03</b><strong>Visual System</strong><span>Infographic + SVG + Timeline + Architecture Map.</span></article>
+        <article><b>04</b><strong>Video Package</strong><span>YouTube script + storyboard + short clips + thumbnail concept.</span></article>
+        <article><b>05</b><strong>Builder Lab</strong><span>كود أو تجربة أو workflow أو prototype قابل للتشغيل.</span></article>
+        <article><b>06</b><strong>Source Registry</strong><span>Official docs، papers، repos، news، وقرار Adopt / Watch / Reject.</span></article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="pathDialog"><div class="dialog-head"><button id="closeDialog" type="button">×</button></div><div id="dialogBody"></div></dialog>
+  <footer class="shell"><div><strong>Sky365 Learning Universe</strong><p>One history. Many paths. Reusable knowledge.</p></div><a href="../">Project Portal ↑</a></footer>
+  <script src="assets/learning.js"></script>
+</body>
+</html>
