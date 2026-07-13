@@ -8,6 +8,7 @@ on:
       - "portal/**"
       - "academy/**"
       - "learning-paths/**"
+      - "agentic-design-studio/**"
       - "README.md"
       - "AUTHORS.md"
       - ".github/workflows/academy-pages.yml"
@@ -41,7 +42,7 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf _site
-          mkdir -p _site/academy _site/strategy _site/learning-paths
+          mkdir -p _site/academy _site/strategy _site/learning-paths _site/agentic-design-studio
 
           # Main portal at repository root.
           cp -R portal/. _site/
@@ -55,16 +56,21 @@ jobs:
           # Learning Universe as an independent subapplication.
           cp -R learning-paths/. _site/learning-paths/
 
+          # Agentic Design Studio as an independent subapplication.
+          cp -R agentic-design-studio/. _site/agentic-design-studio/
+
           # Cross-application navigation in deployed output.
-          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="repo-link" href="../">Portal ↗</a><a class="repo-link" href="../learning-paths/">Learning Paths ↗</a><a class="repo-link" href="../strategy/">Strategy ↗</a>|' _site/academy/index.html
+          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="repo-link" href="../">Portal ↗</a><a class="repo-link" href="../learning-paths/">Learning Paths ↗</a><a class="repo-link" href="../strategy/">Strategy ↗</a><a class="repo-link" href="../agentic-design-studio/">Design Studio ↗</a>|' _site/academy/index.html
           sed -i 's|https://saskw2010.github.io/all-agentic-architectures/|https://saskw2010.github.io/all-agentic-architectures/academy/|g' _site/academy/index.html
           sed -i 's|href="../">Academy ↗|href="../academy/">Academy ↗|g' _site/strategy/index.html
-          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="academy-link" href="../">Portal ↗</a><a class="academy-link" href="../learning-paths/">Learning Paths ↗</a>|' _site/strategy/index.html
-          sed -i 's|<a href="../">Agentic Systems Academy ↗</a>|<a href="../academy/">Agentic Systems Academy ↗</a><a href="../learning-paths/">Learning Universe ↗</a><a href="../">Project Portal ↗</a>|' _site/strategy/index.html
+          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="academy-link" href="../">Portal ↗</a><a class="academy-link" href="../learning-paths/">Learning Paths ↗</a><a class="academy-link" href="../agentic-design-studio/">Design Studio ↗</a>|' _site/strategy/index.html
+          sed -i 's|<a href="../">Agentic Systems Academy ↗</a>|<a href="../academy/">Agentic Systems Academy ↗</a><a href="../learning-paths/">Learning Universe ↗</a><a href="../agentic-design-studio/">Agentic Design Studio ↗</a><a href="../">Project Portal ↗</a>|' _site/strategy/index.html
 
           # Authorship metadata and visible attribution for our Sky365 layer.
-          for page in _site/index.html _site/academy/index.html _site/strategy/index.html _site/learning-paths/index.html; do
-            sed -i 's|<meta name="description"|<meta name="author" content="Mostafa Elnagar · WytSky / Sky365">\n  <meta name="description"|' "$page"
+          for page in _site/index.html _site/academy/index.html _site/strategy/index.html _site/learning-paths/index.html _site/agentic-design-studio/index.html; do
+            if ! grep -q '<meta name="author"' "$page"; then
+              sed -i 's|<meta name="description"|<meta name="author" content="Mostafa Elnagar · WytSky / Sky365">\n  <meta name="description"|' "$page"
+            fi
           done
 
           sed -i 's|One entrance. Independent applications. Shared direction.|Created by Mostafa Elnagar · WytSky / Sky365 · One entrance. Independent applications. Shared direction.|' _site/index.html
