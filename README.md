@@ -188,8 +188,8 @@ This includes the portal, academy extensions, visual systems, learning paths, st
 
 The original **Agentic Architectures** Python library, its 35 architecture implementations, notebooks, tests and original technical documentation were created by **Fareed Khan** and are distributed under the MIT License.
 
-- Upstream repository: https://github.com/FareedKhan-dev/all-agentic-architectures
-- Upstream documentation: https://fareedkhan-dev.github.io/all-agentic-architectures/
+- Upstream repository: https://github.com/saskw2010/all-agentic-architectures
+- Upstream documentation: https://saskw2010.github.io/all-agentic-architectures/
 
 We preserve this attribution and do not claim authorship of the upstream library.
 
