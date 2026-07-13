@@ -13,7 +13,7 @@ Only the latest minor release of `agentic-architectures` receives security updat
 
 **Please do NOT open a public GitHub issue for security vulnerabilities.**
 
-Instead, email **fareedhassankhan12@gmail.com** with:
+Instead, email **saskw2010@gmail.com** with:
 
 - A clear description of the vulnerability
 - Steps to reproduce (proof-of-concept code is ideal)
