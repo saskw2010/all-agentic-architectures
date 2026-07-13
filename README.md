@@ -1,67 +1,158 @@
 <div align="center">
 
-<br>
+# Sky365 Agentic Knowledge Platform
 
-# Agentic Architectures
+### Agentic Systems Academy · Learning Universe · Strategy & Research · Sky365 Architecture
 
-### Thirty-five production-grade agentic AI patterns. End to end.
+**Created and maintained by Mostafa Elnagar**  
+CEO & CTO · AI Architect · **WytSky Clouding Solutions / Sky365**
 
-A library *and* a living textbook — real LLM outputs, provider-agnostic,
-deterministic-picker discipline throughout, and a comparative benchmark
-leaderboard that ranks every architecture against every relevant task.
-
-<br>
-
-[![CI](https://img.shields.io/github/actions/workflow/status/FareedKhan-dev/all-agentic-architectures/ci.yml?branch=main&label=CI&logo=githubactions&logoColor=white&style=for-the-badge&color=0a0a0a)](https://github.com/FareedKhan-dev/all-agentic-architectures/actions/workflows/ci.yml)
-[![Docs](https://img.shields.io/github/actions/workflow/status/FareedKhan-dev/all-agentic-architectures/docs.yml?branch=main&label=DOCS&logo=materialformkdocs&logoColor=white&style=for-the-badge&color=6366f1)](https://fareedkhan-dev.github.io/all-agentic-architectures/)
-[![PyPI](https://img.shields.io/pypi/v/agentic-architectures?style=for-the-badge&logo=pypi&logoColor=white&label=PyPI&color=a855f7)](https://pypi.org/project/agentic-architectures/)
-[![License](https://img.shields.io/badge/license-MIT-ec4899?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
-
-<br>
-
-<a href="docs/getting-started/quickstart.md">
-  <img alt="Quickstart" src="https://img.shields.io/badge/Quickstart-→-0a0a0a?style=for-the-badge&labelColor=0a0a0a" />
-</a>
-<a href="docs/index.md">
-  <img alt="Documentation" src="https://img.shields.io/badge/Documentation-→-262626?style=for-the-badge&labelColor=262626" />
-</a>
-<a href="docs/architectures/index.md">
-  <img alt="Architectures" src="https://img.shields.io/badge/Architectures-→-404040?style=for-the-badge&labelColor=404040" />
-</a>
-<a href="docs/benchmarks.md">
-  <img alt="Benchmarks" src="https://img.shields.io/badge/Benchmarks-→-525252?style=for-the-badge&labelColor=525252" />
-</a>
-<a href="https://codespaces.new/FareedKhan-dev/all-agentic-architectures">
-  <img alt="Open in Codespaces" src="https://img.shields.io/badge/Open_in_Codespaces-→-737373?style=for-the-badge&labelColor=737373" />
-</a>
-
-<br><br>
-
-<table>
-<tr>
-<td align="center" width="140"><h2><kbd>&nbsp; 35 &nbsp;</kbd></h2><sub>ARCHITECTURES</sub></td>
-<td align="center" width="140"><h2><kbd>&nbsp; 283 &nbsp;</kbd></h2><sub>PASSING TESTS</sub></td>
-<td align="center" width="140"><h2><kbd>&nbsp; 17 &nbsp;</kbd></h2><sub>BENCHMARK TASKS</sub></td>
-<td align="center" width="140"><h2><kbd>&nbsp; 9 &nbsp;</kbd></h2><sub>LLM PROVIDERS</sub></td>
-<td align="center" width="140"><h2><kbd>&nbsp; 0 &nbsp;</kbd></h2><sub>MOCKED RUNS</sub></td>
-</tr>
-</table>
-
-<br>
+[![Portal](https://img.shields.io/badge/MAIN_PORTAL-OPEN-38e7d2?style=for-the-badge)](https://saskw2010.github.io/all-agentic-architectures/)
+[![Academy](https://img.shields.io/badge/AGENTIC_ACADEMY-OPEN-5d8cff?style=for-the-badge)](https://saskw2010.github.io/all-agentic-architectures/academy/)
+[![Learning Paths](https://img.shields.io/badge/LEARNING_PATHS-16_PATHS-a97cff?style=for-the-badge)](https://saskw2010.github.io/all-agentic-architectures/learning-paths/)
+[![Strategy](https://img.shields.io/badge/STRATEGY_INDEX-OPEN-ffbd5b?style=for-the-badge)](https://saskw2010.github.io/all-agentic-architectures/strategy/)
+[![License](https://img.shields.io/badge/license-MIT-ec4899?style=for-the-badge)](LICENSE)
 
 </div>
 
 ---
 
-## Overview
+## ما هو هذا المستودع؟
 
-A single Python library that packages every major agentic AI pattern from the literature as a runnable `Architecture` class with a uniform contract. Each pattern ships with a fully executed Jupyter notebook whose theory is written *against* the captured run — not synthetic examples. The library is multi-provider (Nebius, OpenAI, Anthropic, Groq, Ollama, Together, Fireworks, Mistral, Google) and built on top of LangGraph state machines.
+هذا المستودع يجمع طبقتين واضحتين:
 
-The central technical discipline of the repository is the **deterministic-picker pattern** — every LLM-as-Scorer surface has the LLM commit to categorical features (booleans, enums) and lets Python compose the deciding signal. This is the universal escape from the LLM-as-Scorer flat-band pathology, applied in 13 of 35 architectures; 9 more are architecturally immune by design.
+1. **الأساس التقني المفتوح المصدر**: مكتبة تضم 35 نمطًا من معماريات Agentic AI مع notebooks واختبارات ووثائق تقنية.
+2. **امتداد Sky365 الخاص بنا**: بوابة تعليمية واستراتيجية وبصرية تربط المفاهيم العامة بخبرتنا العملية في بناء **Sky365 Agentic ERP**.
+
+هدف امتدادنا ليس إعادة تسمية المشروع الأصلي، بل بناء منظومة معرفية مستقلة فوقه تشمل:
+
+- Agentic Systems Academy
+- Interactive Infographics and Motion Systems
+- Learning Universe with 16 educational paths
+- Strategy & Research Index
+- Sky365 case studies and architecture maps
+- Research-to-product decision system
 
 ---
 
-## Quickstart
+## روابط ومسارات مشروعنا
+
+| التطبيق | الرابط المباشر | الحالة |
+|---|---|---|
+| **Sky365 Agentic Portal** | https://saskw2010.github.io/all-agentic-architectures/ | Live |
+| **Agentic Systems Academy** | https://saskw2010.github.io/all-agentic-architectures/academy/ | Live |
+| **Learning Universe** | https://saskw2010.github.io/all-agentic-architectures/learning-paths/ | Live |
+| **Strategy & Research Index** | https://saskw2010.github.io/all-agentic-architectures/strategy/ | Live |
+| **Research Library** | `/research/` | Planned |
+| **Sky365 Architecture Lab** | `/sky365/` | Planned |
+
+### Public route map
+
+```text
+https://saskw2010.github.io/all-agentic-architectures/
+├── academy/
+├── learning-paths/
+├── strategy/
+├── research/        # planned
+└── sky365/          # planned
+```
+
+---
+
+## Sky365 Learning & Strategy Layer
+
+### 1. Agentic Systems Academy
+
+منهج بصري عربي أولًا يشرح:
+
+- Foundations and agent operating loops
+- Design patterns, planning and reflection
+- Memory, context engineering and RAG
+- Tools, MCP and multi-agent systems
+- Security, governance and approval gates
+- Observability, evaluation and production
+- Sky365 Shared Action Core and Flight Recorder
+
+### 2. Learning Universe
+
+فهرس حي يحتوي على 16 مسارًا تعليميًا، منها:
+
+- Inside the LLM — From Query to Answer
+- Sky365 Agent Journey
+- Skyverse Evolution Story
+- RAG, Memory & Semantic Systems
+- Multi-Agent, MCP & Interoperability
+- AI Coding Harness & Skills
+- Local AI & Inference
+- MLOps, Kubeflow and AI Infrastructure
+- Robotics & Physical AI
+- Visual Storytelling, Lottie and YouTube Studio
+
+### 3. Strategy & Research Index
+
+خريطة تربط الأبحاث بالقرارات والتنفيذ، وتشمل:
+
+- Product architecture
+- Semantic Dictionary and Policy Corpus
+- Execution safety and DraftOnly defaults
+- Agent Observatory and evidence
+- Supplier Approval reference workflow
+- Adopt / Watch / Reject research decisions
+- 90-day execution roadmap
+
+---
+
+## Sky365 engineering principles
+
+- **Check first, then implement only what is missing or broken.**
+- **Shared Action Core before adding more entry points.**
+- **DraftOnly and approval gates for sensitive ERP operations.**
+- **Evidence by design: traces, policy basis, inputs and results.**
+- **One deep reference workflow before broad multi-agent expansion.**
+- **Research must end in a decision, experiment, component or measurable outcome.**
+
+---
+
+## Repository structure
+
+```text
+all-agentic-architectures/
+├── portal/                 # Main Sky365 portal
+├── academy/                # Visual Agentic Systems Academy
+│   └── strategy/           # Strategy application source
+├── learning-paths/         # 16-path Learning Universe
+├── agentic_architectures/  # Upstream Python architecture library
+├── notebooks/              # Runnable architecture notebooks
+├── docs/                   # Upstream technical documentation
+└── .github/workflows/      # CI and GitHub Pages deployment
+```
+
+---
+
+## Run the Sky365 applications locally
+
+```bash
+git clone https://github.com/saskw2010/all-agentic-architectures.git
+cd all-agentic-architectures
+
+python -m http.server 8080 --directory portal
+python -m http.server 8081 --directory academy
+python -m http.server 8082 --directory learning-paths
+```
+
+Then open:
+
+```text
+http://localhost:8080
+http://localhost:8081
+http://localhost:8082
+```
+
+---
+
+## Python architecture library
+
+The underlying Python package keeps the original uniform interface across the 35 architectures:
 
 ```bash
 pip install "agentic-architectures[nebius,faiss,tavily]"
@@ -71,366 +162,62 @@ pip install "agentic-architectures[nebius,faiss,tavily]"
 from agentic_architectures import get_llm
 from agentic_architectures.architectures import Reflection
 
-arch = Reflection(llm=get_llm(), max_iterations=2, target_score=8)
-result = arch.run("Write a haiku about a glacier.")
-
+architecture = Reflection(llm=get_llm(), max_iterations=2, target_score=8)
+result = architecture.run("Write a haiku about a glacier.")
 print(result.output)
-print("score:", result.metadata["final_score"], "/ 10")
 ```
 
-Same `.run(task)` interface across all 35 architectures. Same `ArchitectureResult` return shape. Swap the class, swap the pattern — your downstream code does not change.
-
-<details>
-<summary><b>Set up a virtualenv from a fresh clone</b></summary>
-
-<br>
-
-```bash
-git clone https://github.com/FareedKhan-dev/all-agentic-architectures
-cd all-agentic-architectures
-
-python -m venv .venv
-.venv\Scripts\activate              # Windows
-source .venv/bin/activate           # macOS / Linux
-
-pip install -e ".[dev,test,docs,nebius,faiss,tavily,networkx]"
-cp .env.example .env                # then fill in NEBIUS_API_KEY etc.
-
-pytest -q                           # 283 tests pass in ~30s
-```
-
-</details>
+Technical architecture documentation remains available in `docs/`. The original upstream documentation is linked below.
 
 ---
 
-## Architecture families
+## Authorship and attribution
 
-<table>
-<tr>
-<td width="33%" valign="top">
+### Sky365 extension
 
-#### [Reasoning & Reflection](docs/architectures/index.md#reasoning--reflection)
-Self-critique loops that drive answer quality up through iteration.
-<br><br>
-<sub><a href="notebooks/01_reflection.ipynb">Reflection</a> · <a href="notebooks/18_reflexion.ipynb">Reflexion</a> · <a href="notebooks/20_chain_of_verification.ipynb">Chain-of-Verification</a> · <a href="notebooks/19_self_discover.ipynb">Self-Discover</a> · <a href="notebooks/32_constitutional_ai.ipynb">Constitutional AI</a></sub>
+The following work in this fork is created and maintained by:
 
-</td>
-<td width="33%" valign="top">
+**Mostafa Elnagar**  
+CEO & CTO · AI Architect  
+**WytSky Clouding Solutions / Sky365**  
+Email: `info@wytsky.com`
 
-#### [Sampling & Search](docs/architectures/index.md#sampling--search)
-Sample many paths or grow a tree with rewards.
-<br><br>
-<sub><a href="notebooks/21_self_consistency.ipynb">Self-Consistency</a> · <a href="notebooks/09_tree_of_thoughts.ipynb">Tree of Thoughts</a> · <a href="notebooks/22_lats.ipynb">LATS</a> · <a href="notebooks/10_mental_loop.ipynb">Mental Loop</a> · <a href="notebooks/13_ensemble.ipynb">Ensemble</a></sub>
+This includes the portal, academy extensions, visual systems, learning paths, strategic index, Sky365 case studies, and the research-to-product structure.
 
-</td>
-<td width="33%" valign="top">
+### Original open-source foundation
 
-#### [Retrieval (RAG)](docs/architectures/index.md#retrieval-rag)
-Ground every claim — five retrieval shapes.
-<br><br>
-<sub><a href="notebooks/23_agentic_rag.ipynb">Agentic RAG</a> · <a href="notebooks/24_corrective_rag.ipynb">Corrective RAG</a> · <a href="notebooks/25_self_rag.ipynb">Self-RAG</a> · <a href="notebooks/26_adaptive_rag.ipynb">Adaptive RAG</a> · <a href="notebooks/27_graph_rag.ipynb">GraphRAG</a></sub>
+The original **Agentic Architectures** Python library, its 35 architecture implementations, notebooks, tests and original technical documentation were created by **Fareed Khan** and are distributed under the MIT License.
 
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
+- Upstream repository: https://github.com/FareedKhan-dev/all-agentic-architectures
+- Upstream documentation: https://fareedkhan-dev.github.io/all-agentic-architectures/
 
-#### [Memory](docs/architectures/index.md#memory)
-Learn across calls — pick the storage shape.
-<br><br>
-<sub><a href="notebooks/08_episodic_semantic_memory.ipynb">Episodic + Semantic</a> · <a href="notebooks/12_graph_memory.ipynb">Graph Memory</a> · <a href="notebooks/31_memgpt.ipynb">MemGPT</a> · <a href="notebooks/29_voyager.ipynb">Voyager</a> · <a href="notebooks/35_agent_workflow_memory.ipynb">Agent Workflow Memory</a></sub>
-
-</td>
-<td width="33%" valign="top">
-
-#### [Tools & Actions](docs/architectures/index.md#tools--actions)
-From one search tool to a real Chromium browser.
-<br><br>
-<sub><a href="notebooks/02_tool_use.ipynb">Tool Use</a> · <a href="notebooks/03_react.ipynb">ReAct</a> · <a href="notebooks/04_planning.ipynb">Planning</a> · <a href="notebooks/06_pev.ipynb">PEV</a> · <a href="notebooks/33_swe_agent.ipynb">SWE-Agent</a> · <a href="notebooks/34_computer_use.ipynb">BrowserAgent</a></sub>
-
-</td>
-<td width="33%" valign="top">
-
-#### [Multi-Agent](docs/architectures/index.md#multi-agent)
-Specialists, debate, multi-perspective research.
-<br><br>
-<sub><a href="notebooks/05_multi_agent.ipynb">Multi-Agent</a> · <a href="notebooks/07_blackboard.ipynb">Blackboard</a> · <a href="notebooks/28_debate.ipynb">Debate</a> · <a href="notebooks/30_storm.ipynb">STORM</a> · <a href="notebooks/11_meta_controller.ipynb">Meta-Controller</a></sub>
-
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-
-#### [Safety & Routing](docs/architectures/index.md#safety--routing)
-Categorical actions through deterministic Python gates.
-<br><br>
-<sub><a href="notebooks/14_dry_run.ipynb">Dry-Run</a> · <a href="notebooks/17_reflexive_metacognitive.ipynb">Reflexive Metacognitive</a> · <a href="notebooks/34_computer_use.ipynb">Computer Use</a></sub>
-
-</td>
-<td width="33%" valign="top">
-
-#### [Specialty](docs/architectures/index.md#specialty)
-Patterns with a unique shape.
-<br><br>
-<sub><a href="notebooks/15_rlhf_self_improvement.ipynb">RLHF Self-Improvement</a> · <a href="notebooks/16_cellular_automata.ipynb">Cellular Automata</a></sub>
-
-</td>
-<td width="33%" valign="top">
-
-#### [Cross-cutting](docs/architectures/index.md#cross-cutting)
-Patterns that appear across families.
-<br><br>
-<sub><a href="docs/tutorials/deterministic-picker.md">Deterministic-picker</a> · <a href="docs/tutorials/memory.md">Memory variants</a></sub>
-
-</td>
-</tr>
-</table>
-
----
-
-## The 35 architectures
-
-<details open>
-<summary><b>Reasoning &amp; Reflection</b></summary>
-
-| Architecture | Pattern | Reference |
-|---|---|---|
-| **Reflection** | Generate → critique → refine | Madaan 2023 |
-| **Reflexion** | Verbal reflections in episodic memory | Shinn 2023 |
-| **Chain-of-Verification (CoVe)** | Verify each baseline claim independently | Dhuliawala 2023 |
-| **Self-Discover** | SELECT → ADAPT → IMPLEMENT → SOLVE | Zhou 2024 |
-| **Constitutional AI** | Per-rule pass/fail → revise | Bai 2022 |
-
-</details>
-
-<details>
-<summary><b>Sampling &amp; Search</b></summary>
-
-| Architecture | Pattern | Reference |
-|---|---|---|
-| **Self-Consistency** | Sample N paths, majority-vote | Wang 2022 |
-| **Tree of Thoughts** | Beam search over thoughts | Yao 2023 |
-| **LATS** | MCTS tree with reward backup | Zhou 2024 |
-| **Mental Loop** | Simulate → score (deterministic-picker) | this repo |
-| **Ensemble** | N voters, weighted aggregation | this repo |
-
-</details>
-
-<details>
-<summary><b>Retrieval (RAG)</b></summary>
-
-| Architecture | Pattern | Reference |
-|---|---|---|
-| **Agentic RAG** | Agent decides when & what to retrieve | LangGraph reference |
-| **Corrective RAG (CRAG)** | Grade docs, fall back to web | Yan 2024 |
-| **Self-RAG** | Per-doc reflection tokens | Asai 2024 |
-| **Adaptive RAG** | Pre-route by query complexity | Jeong 2024 |
-| **GraphRAG** | KG + community summaries | Microsoft 2024 |
-
-</details>
-
-<details>
-<summary><b>Memory</b></summary>
-
-| Architecture | Stored unit | Reference |
-|---|---|---|
-| **Episodic + Semantic** | Conversation turns + triples | Park 2023 |
-| **Graph Memory** | (subject, predicate, object) triples | this repo |
-| **MemGPT** | OS-style context + archival tiers | Packer 2023 |
-| **Voyager** | Reusable Python skills (real subprocess) | Wang 2023 |
-| **Agent Workflow Memory** | High-level workflow recipes | Wang 2024 |
-
-</details>
-
-<details>
-<summary><b>Tools &amp; Actions</b></summary>
-
-| Architecture | Pattern | Reference |
-|---|---|---|
-| **Tool Use** | Agent with one tool | LangChain reference |
-| **ReAct** | Thought → Action → Observation | Yao 2022 |
-| **Planning** | Decompose → execute → replan | Wei 2022 |
-| **Plan-Execute-Verify (PEV)** | Post-execution verification per step | this repo |
-| **SWE-Agent** | Sandboxed file-system agent | Yang 2024 |
-| **BrowserAgent** | **Real Playwright** + safety gate | Anthropic Computer-Use 2024 |
-
-</details>
-
-<details>
-<summary><b>Multi-Agent</b></summary>
-
-| Architecture | Pattern | Reference |
-|---|---|---|
-| **Multi-Agent** | Supervisor + specialists | LangGraph reference |
-| **Blackboard** | Shared workspace + agents | classical AI |
-| **Debate** | N agents × K rounds | Du 2023 |
-| **STORM** | Multi-perspective research → article | Shao 2024 |
-| **Meta-Controller** | Router over architectures | this repo |
-
-</details>
-
-<details>
-<summary><b>Safety, Routing &amp; Specialty</b></summary>
-
-| Architecture | Pattern | Reference |
-|---|---|---|
-| **Dry-Run** | Propose → simulate → approval gate | this repo |
-| **Reflexive Metacognitive** | Self-aware capability routing | this repo |
-| **RLHF Self-Improvement** | Multi-dim deterministic scoring + archive | this repo |
-| **Cellular Automata** | LLM rules over a grid | this repo |
-
-</details>
-
----
-
-## Provider compatibility
-
-<table>
-<tr><th>Provider</th><th>Install extra</th><th>Notes</th></tr>
-<tr><td><b>Nebius</b> &nbsp;<sub><i>(default)</i></sub></td><td><code>[nebius]</code></td><td>Llama-3.3-70B + Qwen3-Thinking; cheapest for the included demos</td></tr>
-<tr><td>OpenAI</td><td><code>[openai]</code></td><td>All architectures work; highest quality for reasoning patterns</td></tr>
-<tr><td>Anthropic</td><td><code>[anthropic]</code></td><td>Strong on long context; required for production Computer-Use</td></tr>
-<tr><td>Groq</td><td><code>[groq]</code></td><td>Fast inference; great for high-volume Self-Consistency</td></tr>
-<tr><td>Ollama &nbsp;<sub><i>(local)</i></sub></td><td><code>[ollama]</code></td><td>No API key; tool calling depends on the model</td></tr>
-<tr><td>Together</td><td><code>[together]</code></td><td>Wide model catalogue</td></tr>
-<tr><td>Fireworks</td><td><code>[fireworks]</code></td><td>Function-calling first-class</td></tr>
-<tr><td>Mistral</td><td><code>[mistral]</code></td><td>EU-hosted option</td></tr>
-<tr><td>Google</td><td><code>[google]</code></td><td>Gemini 2.x via Generative AI API</td></tr>
-</table>
-
-Switch via `LLM_PROVIDER` + the corresponding key in `.env`. No code changes.
-
----
-
-## Benchmarks
-
-A 17-task suite runs every architecture and scores results. Most recent run, real Nebius Llama-3.3-70B, ~25 min, ~$1.50 in tokens:
-
-<table>
-<tr>
-<th width="180">Outcome</th>
-<th>Architectures</th>
-</tr>
-<tr>
-<td><b>Strong</b> &nbsp;<sub>2/2 or 3/3</sub></td>
-<td><sub><code>Reflection</code> &nbsp;<code>SelfConsistency</code> &nbsp;<code>SelfDiscover</code> &nbsp;<code>BrowserAgent</code></sub></td>
-</tr>
-<tr>
-<td><b>Perfect on attempted</b> &nbsp;<sub>1/1</sub></td>
-<td><sub>21 more — see leaderboard</sub></td>
-</tr>
-<tr>
-<td><b>Pattern-fit failures</b></td>
-<td><sub>LATS on arithmetic (wrong shape) · Debate + Ensemble on Sally trick (group-think) · Reflexion + AWM on raw-fact recall (wrong memory shape)</sub></td>
-</tr>
-<tr>
-<td><b>Overall</b></td>
-<td><b>33 / 42 correct</b> &nbsp;<sub>78%</sub></td>
-</tr>
-</table>
-
-<sub><b>Full leaderboard</b> with per-task answer excerpts: <a href="docs/benchmarks.md">docs/benchmarks.md</a></sub>
-
----
-
-## Learning paths
-
-Four curated reading orders, depending on what you're trying to do.
-
-<table>
-<tr><th width="180">Path</th><th>For</th><th>Order</th></tr>
-<tr>
-<td><b>Beginner</b></td>
-<td>Mental model</td>
-<td><sub>Reflection → Tool Use → ReAct → Planning → Self-Consistency</sub></td>
-</tr>
-<tr>
-<td><b>RAG-focused</b></td>
-<td>Production retrieval</td>
-<td><sub>Agentic RAG → CRAG → Self-RAG → Adaptive RAG → GraphRAG</sub></td>
-</tr>
-<tr>
-<td><b>Multi-agent</b></td>
-<td>Coordination</td>
-<td><sub>Multi-Agent → Blackboard → Debate → STORM → Meta-Controller</sub></td>
-</tr>
-<tr>
-<td><b>Safety</b></td>
-<td>Guardrails</td>
-<td><sub>Dry-Run → Constitutional AI → Reflexive Metacognitive → BrowserAgent (safety gate)</sub></td>
-</tr>
-</table>
-
----
-
-## Star history
-
-<div align="center">
-
-<a href="https://www.star-history.com/#FareedKhan-dev/all-agentic-architectures&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=FareedKhan-dev/all-agentic-architectures&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=FareedKhan-dev/all-agentic-architectures&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=FareedKhan-dev/all-agentic-architectures&type=Date" width="720" />
-  </picture>
-</a>
-
-</div>
-
----
-
-## Tested
-
-```
-pytest -q
-283 passed, 37 skipped (env-gated integration), 1 warning in ~30s
-```
-
-<table>
-<tr><th width="280">Suite</th><th>Coverage</th></tr>
-<tr><td><b>Registry sweep</b></td><td>All 35 architectures (metadata + instantiate + build)</td></tr>
-<tr><td><b>Pure-Python helpers</b></td><td>Haiku checker, composite scorers, subprocess executor, safety gate, sandbox path</td></tr>
-<tr><td><b>Notebook integrity</b></td><td>All 35 notebooks executed, no error outputs, §9 commentary tailored from real captured runs</td></tr>
-<tr><td><b>Integration</b> &nbsp;<sub><i>(env-gated)</i></sub></td><td>One real-LLM happy-path per architecture, gated via <code>RUN_INTEGRATION=1</code></td></tr>
-</table>
-
----
-
-## Documentation
-
-| | |
-|---|---|
-| [**Full docs site**](https://fareedkhan-dev.github.io/all-agentic-architectures/) | Dark-mode site with embedded notebooks &nbsp;<sub><i>(live after first deploy)</i></sub> |
-| [Quickstart](docs/getting-started/quickstart.md) | One-command install, 8-line example |
-| [Switching providers](docs/getting-started/providers.md) | Capability matrix; one env var to swap |
-| [Add your own architecture](docs/tutorials/adding-your-own.md) | 5-step contributor recipe |
-| [Deterministic-picker pattern](docs/tutorials/deterministic-picker.md) | The central technical pattern, explained once |
-| [Memory variants](docs/tutorials/memory.md) | Comparison of all 7 memory shapes |
-| [API reference](https://fareedkhan-dev.github.io/all-agentic-architectures/reference/) | mkdocstrings auto-gen from docstrings &nbsp;<sub><i>(live after first deploy)</i></sub> |
-| [Benchmarks](docs/benchmarks.md) | Full per-task leaderboard with answer excerpts |
-
----
-
-## Contributing
-
-Contributions welcome. Two paths:
-
-1. **Add a new architecture** — follow the [5-step recipe](docs/tutorials/adding-your-own.md). The PR template includes a deterministic-picker checklist.
-2. **Improve an existing one** — bug fix, prompt tuning, performance, scoring rubric. Open an issue first to discuss scope.
-
-See [**CONTRIBUTING.md**](CONTRIBUTING.md) for the dev setup, code style, and commit-message convention (Conventional Commits — `release-please` auto-generates the CHANGELOG).
+We preserve this attribution and do not claim authorship of the upstream library.
 
 ---
 
 ## Citation
 
+### Cite the Sky365 knowledge extension
+
+```bibtex
+@misc{elnagar2026sky365agentic,
+  title        = {Sky365 Agentic Knowledge Platform: Academy, Learning Universe and Strategy Index},
+  author       = {Elnagar, Mostafa},
+  year         = {2026},
+  howpublished = {\url{https://github.com/saskw2010/all-agentic-architectures}},
+  note         = {WytSky Clouding Solutions / Sky365 visual and strategic knowledge extension}
+}
+```
+
+### Cite the original architecture library
+
 ```bibtex
 @misc{khan2026agentic,
-  title         = {Agentic Architectures: A Library of 35 Production-Grade Agentic AI Patterns},
-  author        = {Khan, Fareed},
-  year          = {2026},
-  howpublished  = {\url{https://github.com/FareedKhan-dev/all-agentic-architectures}},
-  note          = {MIT licensed Python library and runnable textbook}
+  title        = {Agentic Architectures: A Library of 35 Production-Grade Agentic AI Patterns},
+  author       = {Khan, Fareed},
+  year         = {2026},
+  howpublished = {\url{https://github.com/FareedKhan-dev/all-agentic-architectures}},
+  note         = {MIT licensed Python library and runnable textbook}
 }
 ```
 
@@ -438,30 +225,18 @@ See [**CONTRIBUTING.md**](CONTRIBUTING.md) for the dev setup, code style, and co
 
 ## License
 
-[MIT](LICENSE) — © 2026 Fareed Khan.
+The repository remains under the [MIT License](LICENSE).
 
-<br>
+- Upstream library copyright remains with its original author.
+- New Sky365 documentation, portal structure and visual knowledge extensions are attributed to **Mostafa Elnagar / WytSky / Sky365**.
 
 <div align="center">
 
-<sub>
-Built on <a href="https://langchain-ai.github.io/langgraph/">LangGraph</a>
-&nbsp;·&nbsp;
-Docs powered by <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
-&nbsp;·&nbsp;
-Default LLM via <a href="https://nebius.com/">Nebius</a>
-</sub>
+**Mostafa Elnagar · WytSky Clouding Solutions · Sky365**
 
-<br><br>
-
-<sub>
-<a href="https://github.com/FareedKhan-dev/all-agentic-architectures/stargazers">★ Star</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/FareedKhan-dev/all-agentic-architectures/fork">Fork</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/FareedKhan-dev/all-agentic-architectures/issues/new/choose">Open an issue</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/FareedKhan-dev/all-agentic-architectures/discussions">Discuss</a>
-</sub>
+[Main Portal](https://saskw2010.github.io/all-agentic-architectures/) ·
+[Academy](https://saskw2010.github.io/all-agentic-architectures/academy/) ·
+[Learning Paths](https://saskw2010.github.io/all-agentic-architectures/learning-paths/) ·
+[Strategy](https://saskw2010.github.io/all-agentic-architectures/strategy/)
 
 </div>
