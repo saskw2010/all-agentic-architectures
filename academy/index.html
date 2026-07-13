@@ -3,27 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Agentic Systems Academy — an interactive visual knowledge base for AI agents, enterprise architecture, and Sky365 Agentic.">
-  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Agentic Systems Academy — a visual knowledge base for agent design patterns, enterprise architecture, and Sky365 Agentic.">
+  <meta name="theme-color" content="#06101d">
+  <meta property="og:title" content="Agentic Systems Academy">
+  <meta property="og:description" content="20 visual lessons, animated architecture maps, and the Sky365 Agentic case study.">
   <title>Agentic Systems Academy — Visual Knowledge Base</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
 
-  <header class="topbar" aria-label="التنقل الرئيسي">
+  <header class="topbar">
     <a class="brand" href="#home" aria-label="Agentic Systems Academy">
-      <span class="brand-mark" aria-hidden="true">A</span>
+      <span class="brand-mark" aria-hidden="true"><i></i><b>A</b></span>
       <span><strong>Agentic Systems</strong><small>Academy × Sky365</small></span>
     </a>
-    <nav class="nav-links">
+
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="#atlas">Visual Atlas</a>
       <a href="#universe">الخريطة</a>
       <a href="#series">الإنفوجرافات</a>
-      <a href="#roadmap">المسار</a>
+      <a href="#motion">Motion Lab</a>
       <a href="#sky365">Sky365</a>
     </nav>
+
     <div class="top-actions">
-      <button id="langToggle" class="icon-button" type="button" aria-label="تبديل اللغة">AR</button>
+      <a class="repo-link" href="https://github.com/saskw2010/all-agentic-architectures" target="_blank" rel="noreferrer">GitHub ↗</a>
       <button id="themeToggle" class="icon-button" type="button" aria-label="تبديل المظهر">◐</button>
     </div>
   </header>
@@ -31,46 +36,85 @@
   <main id="main">
     <section id="home" class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow">VISUAL KNOWLEDGE BASE · إصدار 1.0</p>
-        <h1>من الفكرة إلى منصة<br><span>Agentic Enterprise</span></h1>
-        <p class="hero-lead">منهج بصري يجمع أنماط الوكلاء، الذاكرة، التخطيط، RAG، الحوكمة، المراقبة، والإنتاج — ثم يربطها بخبرتنا العملية في بناء <strong>Sky365 Agentic</strong>.</p>
+        <div class="hero-kicker"><span>VISUAL KNOWLEDGE BASE</span><b>V2 · 2026</b></div>
+        <h1>افهم المنظومة.<br><span>شاهد تدفقها.</span><br>ثم ابنِها.</h1>
+        <p class="hero-lead">
+          منهج بصري يجمع <strong>Agent Patterns</strong> وMemory وMCP وRAG والحوكمة والمراقبة والإنتاج،
+          ثم يربط كل ذلك بخبرتنا العملية في بناء <strong>Sky365 Agentic</strong>.
+        </p>
         <div class="hero-actions">
-          <a class="button primary" href="#universe">استكشف الخريطة</a>
-          <a class="button secondary" href="#series">ابدأ السلسلة</a>
+          <a class="button primary" href="#atlas">ابدأ الجولة البصرية</a>
+          <a class="button secondary" href="#series">استكشف 20 إنفوجرافًا</a>
         </div>
         <div class="hero-meta" aria-label="إحصاءات المشروع">
-          <div><strong>20</strong><span>Infographics</span></div>
-          <div><strong>15</strong><span>Chapters</span></div>
-          <div><strong>180+</strong><span>Topics</span></div>
+          <div><strong>20</strong><span>Visual Lessons</span></div>
+          <div><strong>4</strong><span>Architecture Posters</span></div>
+          <div><strong>2</strong><span>Motion Formats</span></div>
           <div><strong>1</strong><span>Enterprise Case</span></div>
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="رسم يوضح نواة النظام الوكيلي">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="core-pulse">
-          <small>CORE</small>
-          <strong>Agentic<br>Systems</strong>
-          <span>Think · Act · Learn</span>
+      <div class="hero-stage">
+        <div class="stage-frame">
+          <div id="heroLottie" class="lottie-canvas" aria-label="رسم Lottie متحرك لنواة Agentic Systems">
+            <img id="heroFallbackGif" alt="Animated Agentic Systems flow">
+          </div>
+          <div class="stage-label">
+            <span class="live-dot"></span>
+            <strong>Agentic Core</strong>
+            <small>Goal → Context → Policy → Action → Evidence</small>
+          </div>
         </div>
-        <span class="satellite s1">Memory</span>
-        <span class="satellite s2">Tools</span>
-        <span class="satellite s3">Policy</span>
-        <span class="satellite s4">RAG</span>
-        <span class="satellite s5">Evals</span>
-        <span class="satellite s6">Sky365</span>
+        <span class="floating-chip chip-a">Memory</span>
+        <span class="floating-chip chip-b">Tools</span>
+        <span class="floating-chip chip-c">Policy</span>
+        <span class="floating-chip chip-d">RAG</span>
       </div>
     </section>
 
-    <section class="ticker" aria-label="محاور المنهج">
-      <div>FOUNDATIONS · PATTERNS · PLANNING · MEMORY · MCP · RAG · MULTI-AGENT · SECURITY · OBSERVABILITY · EVALUATION · PRODUCTION · ENTERPRISE · SKY365</div>
+    <section class="signal-strip" aria-label="المشروع في سطر واحد">
+      <div>
+        <span>RESEARCH</span><i>→</i><span>ARCHITECTURE</span><i>→</i><span>INFOGRAPHICS</span><i>→</i>
+        <span>MOTION</span><i>→</i><span>SKY365 IMPLEMENTATION</span>
+      </div>
+    </section>
+
+    <section id="atlas" class="section-shell section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">VISUAL ATLAS</p>
+          <h2>ليست بطاقات نصية.<br><span>هذه خرائط معمارية فعلية.</span></h2>
+        </div>
+        <p>لوحات SVG قابلة للتكبير والطباعة، وبعضها متحرك داخليًا. تبدأ بالصورة الكبرى ثم تنزل إلى دورة الوكيل وأنماط التصميم وFlight Recorder.</p>
+      </div>
+
+      <div class="atlas-grid">
+        <article class="atlas-card atlas-wide">
+          <div class="atlas-media"><img src="assets/infographics/00-system-universe.svg" alt="Agentic Systems Universe infographic"></div>
+          <div class="atlas-copy"><span>INFOGRAPHIC 00</span><h3>Agentic Systems Universe</h3><p>تسعة عوالم حول النواة التشغيلية، مع تدفق متحرك يوضح الاعتماد المتبادل.</p><a href="assets/infographics/00-system-universe.svg" target="_blank">افتح بالحجم الكامل ↗</a></div>
+        </article>
+
+        <article class="atlas-card">
+          <div class="atlas-media"><img src="assets/infographics/01-agent-loop.svg" alt="AI Agent Operating Loop infographic"></div>
+          <div class="atlas-copy"><span>INFOGRAPHIC 01</span><h3>Agent Operating Loop</h3><p>Goal، Context، Reasoning، Tool، Action، Feedback — تحت Policy Gate دائم.</p><a href="assets/infographics/01-agent-loop.svg" target="_blank">افتح بالحجم الكامل ↗</a></div>
+        </article>
+
+        <article class="atlas-card">
+          <div class="atlas-media"><img src="assets/infographics/02-patterns-atlas.svg" alt="Agent Design Patterns Atlas infographic"></div>
+          <div class="atlas-copy"><span>INFOGRAPHIC 04</span><h3>Design Patterns Atlas</h3><p>اختيار النمط بناءً على failure mode، لا بناءً على شهرة المصطلح.</p><a href="assets/infographics/02-patterns-atlas.svg" target="_blank">افتح بالحجم الكامل ↗</a></div>
+        </article>
+
+        <article class="atlas-card atlas-wide">
+          <div class="atlas-media"><img src="assets/infographics/20-sky365-flight-recorder.svg" alt="Sky365 Agentic Flight Recorder infographic"></div>
+          <div class="atlas-copy"><span>SKY365 CASE STUDY</span><h3>Flight Recorder</h3><p>Raw → Context → Intent → Entity → Policy → Risk → Route → Plan → Draft → Validate → Approve → Action → Final.</p><a href="assets/infographics/20-sky365-flight-recorder.svg" target="_blank">افتح بالحجم الكامل ↗</a></div>
+        </article>
+      </div>
     </section>
 
     <section id="universe" class="section-shell section-block">
       <div class="section-heading">
-        <div><p class="eyebrow">INFOGRAPHIC 00</p><h2>Visual Project Map</h2></div>
-        <p>الصورة الكبيرة أولًا: تسعة عوالم مترابطة تشكل المنظومة الوكيلة المؤسسية.</p>
+        <div><p class="eyebrow">INTERACTIVE MAP</p><h2>Visual Project Map</h2></div>
+        <p>اضغط على أي عالم لرؤية دروسه وتدفقه المعماري. الخريطة ليست فهرسًا فقط؛ هي طريقة لفهم ترابط المنظومة.</p>
       </div>
       <div id="universeMap" class="universe-map" role="group" aria-label="خريطة المشروع التفاعلية"></div>
       <div id="universeDetail" class="universe-detail" aria-live="polite"></div>
@@ -78,13 +122,13 @@
 
     <section id="series" class="section-shell section-block">
       <div class="section-heading">
-        <div><p class="eyebrow">THE SERIES</p><h2>سلسلة الإنفوجراف</h2></div>
-        <p>كل إنفوجراف مستقل، لكن المجموعة كاملة تبني عقلية Architect لا مجرد معرفة سطحية بالأدوات.</p>
+        <div><p class="eyebrow">THE 20-PART SERIES</p><h2>سلسلة الإنفوجراف</h2></div>
+        <p>كل درس يولّد Poster SVG حقيقيًا داخل المتصفح ويمكن تنزيله. المحتوى يشرح الفكرة، الخطأ الشائع، وعدسة Sky365.</p>
       </div>
 
       <div class="series-toolbar">
         <label class="search-box">
-          <span>بحث</span>
+          <span>بحث داخل السلسلة</span>
           <input id="seriesSearch" type="search" placeholder="Pattern، Memory، Sky365..." autocomplete="off">
         </label>
         <label class="filter-box">
@@ -103,10 +147,35 @@
       <div id="seriesGrid" class="series-grid" aria-live="polite"></div>
     </section>
 
+    <section id="motion" class="motion-section section-shell section-block">
+      <div class="section-heading">
+        <div><p class="eyebrow">MOTION LAB</p><h2>Lottie + GIF + Animated SVG</h2></div>
+        <p>الحركة هنا ليست زينة. هي توضح انتقال السياق والطاقة والقرار بين أجزاء النظام.</p>
+      </div>
+
+      <div class="motion-grid">
+        <article class="motion-card">
+          <div class="motion-badge">LOTTIE JSON</div>
+          <div id="motionLottie" class="motion-lottie">
+            <span class="loading-label">Loading Lottie…</span>
+          </div>
+          <h3>Agentic Core Orbit</h3>
+          <p>Vector animation خفيف وقابل للتكبير، يستخدم ملف Lottie محليًا داخل المشروع.</p>
+        </article>
+
+        <article class="motion-card">
+          <div class="motion-badge">ANIMATED GIF</div>
+          <img id="motionGif" class="motion-gif" alt="Animated GIF showing data flow between agentic system nodes">
+          <h3>Data Flow Pulse</h3>
+          <p>GIF فعلي يوضح انتقال الأحداث بين Memory وTools وPolicy وRAG وEvals وSky365.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="roadmap" class="section-shell section-block">
       <div class="section-heading">
-        <div><p class="eyebrow">LEARNING ROADMAP</p><h2>من التأسيس إلى الإنتاج</h2></div>
-        <p>المسار لا يبدأ بأداة أو Framework؛ يبدأ بتحديد المشكلة، المخاطر، ومستوى الاستقلالية المناسب.</p>
+        <div><p class="eyebrow">LEARNING ROADMAP</p><h2>من الفهم إلى الإنتاج</h2></div>
+        <p>المنهج لا يبدأ بـFramework. يبدأ بالمشكلة والقيود ومستوى الاستقلالية، وينتهي بمنصة يمكن تشغيلها ومراجعتها.</p>
       </div>
       <div class="roadmap">
         <article><span>01</span><h3>Understand</h3><p>الهدف، السياق، الحدود، ومتى لا نحتاج Agent.</p></article>
@@ -122,36 +191,60 @@
       <div class="sky-copy">
         <p class="eyebrow">REAL-WORLD CASE STUDY</p>
         <h2>Sky365 Agentic</h2>
-        <p>التميّز الحقيقي للمشروع ليس إعادة شرح ReAct أو RAG؛ بل توثيق كيف تتحول المبادئ إلى Action Core، سياسات، مسارات موافقة، ومراقبة قابلة للتدقيق داخل ERP.</p>
+        <p>قيمتنا ليست إعادة سرد ReAct وRAG، بل توثيق كيف تتحول المبادئ إلى Action Core وسياسات ومسارات موافقة ومراقبة قابلة للتدقيق داخل ERP.</p>
         <ul>
           <li>Shared Action Core لجميع نقاط الدخول</li>
-          <li>Flight Recorder: Raw → Final</li>
+          <li>Flight Recorder من Raw إلى Final</li>
           <li>Deterministic Fallback وDraftOnly Safety</li>
           <li>Semantic Dictionary وPolicy Corpus</li>
           <li>Supplier Approval Workflow E2E</li>
         </ul>
-        <button id="openSkyInfographic" class="button primary" type="button">افتح إنفوجراف Sky365</button>
+        <div class="sky-actions">
+          <button id="openSkyInfographic" class="button primary" type="button">افتح Poster Sky365</button>
+          <a class="button secondary" href="assets/infographics/20-sky365-flight-recorder.svg" target="_blank">Flight Recorder SVG ↗</a>
+        </div>
       </div>
       <div class="sky-stack" aria-label="طبقات Sky365 Agentic">
-        <div><span>Experience</span><strong>Mascot · Workbench · Studio</strong></div>
-        <div><span>Orchestration</span><strong>Intent · Route · Plan · Workflow</strong></div>
-        <div><span>Control</span><strong>Policy · Risk · Approval · Validation</strong></div>
-        <div><span>Action</span><strong>Shared Action Core · Tools · ERP</strong></div>
-        <div><span>Evidence</span><strong>Traces · Observatory · Replay · Evals</strong></div>
+        <div><span>EXPERIENCE</span><strong>Mascot · Workbench · Studio</strong></div>
+        <div><span>ORCHESTRATION</span><strong>Intent · Route · Plan · Workflow</strong></div>
+        <div><span>CONTROL</span><strong>Policy · Risk · Approval · Validation</strong></div>
+        <div><span>ACTION</span><strong>Shared Action Core · Tools · ERP</strong></div>
+        <div><span>EVIDENCE</span><strong>Traces · Observatory · Replay · Evals</strong></div>
+      </div>
+    </section>
+
+    <section class="origin section-shell">
+      <div>
+        <p class="eyebrow">ORIGIN & DIFFERENTIATION</p>
+        <h2>نحترم الأصل، ونبني طبقتنا الخاصة.</h2>
+      </div>
+      <p>
+        المستودع الأصلي يقدّم مكتبة تقنية ممتازة تضم 35 Architecture ووثائق MkDocs.
+        أكاديميتنا تضيف طبقة عربية بصرية، Motion Design، وCase Study مؤسسي من Sky365.
+      </p>
+      <div class="origin-links">
+        <a href="https://fareedkhan-dev.github.io/all-agentic-architectures/" target="_blank" rel="noreferrer">الموقع الأصلي ↗</a>
+        <a href="https://saskw2010.github.io/all-agentic-architectures/" target="_blank" rel="noreferrer">رابط أكاديميتنا ↗</a>
       </div>
     </section>
   </main>
 
   <footer class="footer section-shell">
-    <div><strong>Agentic Systems Academy</strong><p>Built from research, engineering practice, and the Sky365 Agentic journey.</p></div>
+    <div><strong>Agentic Systems Academy</strong><p>Research × Architecture × Visual Systems × Sky365 Practice</p></div>
     <div class="footer-links"><a href="https://github.com/saskw2010/all-agentic-architectures">GitHub</a><a href="#home">Back to top ↑</a></div>
   </footer>
 
   <dialog id="infographicDialog" class="infographic-dialog">
-    <button id="closeDialog" class="dialog-close" type="button" aria-label="إغلاق">×</button>
+    <div class="dialog-toolbar">
+      <button id="downloadPoster" class="button secondary" type="button">تنزيل SVG</button>
+      <button id="printPoster" class="button secondary" type="button">طباعة / PDF</button>
+      <button id="closeDialog" class="dialog-close" type="button" aria-label="إغلاق">×</button>
+    </div>
     <div id="dialogContent"></div>
   </dialog>
 
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+  <script src="assets/gif-data.js"></script>
   <script src="data/series.js"></script>
   <script src="assets/app.js"></script>
 </body>
