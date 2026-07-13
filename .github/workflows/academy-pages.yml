@@ -7,6 +7,7 @@ on:
     paths:
       - "portal/**"
       - "academy/**"
+      - "learning-paths/**"
       - ".github/workflows/academy-pages.yml"
   workflow_dispatch:
 
@@ -38,7 +39,7 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf _site
-          mkdir -p _site/academy _site/strategy
+          mkdir -p _site/academy _site/strategy _site/learning-paths
 
           # Main portal at repository root.
           cp -R portal/. _site/
@@ -49,12 +50,15 @@ jobs:
           # Strategy as an independent subapplication.
           cp -R academy/strategy/. _site/strategy/
 
-          # Correct cross-application navigation in the deployed output.
-          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="repo-link" href="../">Portal ↗</a><a class="repo-link" href="../strategy/">Strategy ↗</a>|' _site/academy/index.html
+          # Learning Universe as an independent subapplication.
+          cp -R learning-paths/. _site/learning-paths/
+
+          # Cross-application navigation in deployed output.
+          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="repo-link" href="../">Portal ↗</a><a class="repo-link" href="../learning-paths/">Learning Paths ↗</a><a class="repo-link" href="../strategy/">Strategy ↗</a>|' _site/academy/index.html
           sed -i 's|https://saskw2010.github.io/all-agentic-architectures/|https://saskw2010.github.io/all-agentic-architectures/academy/|g' _site/academy/index.html
           sed -i 's|href="../">Academy ↗|href="../academy/">Academy ↗|g' _site/strategy/index.html
-          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="academy-link" href="../">Portal ↗</a>|' _site/strategy/index.html
-          sed -i 's|<a href="../">Agentic Systems Academy ↗</a>|<a href="../academy/">Agentic Systems Academy ↗</a><a href="../">Project Portal ↗</a>|' _site/strategy/index.html
+          sed -i 's|<div class="top-actions">|<div class="top-actions"><a class="academy-link" href="../">Portal ↗</a><a class="academy-link" href="../learning-paths/">Learning Paths ↗</a>|' _site/strategy/index.html
+          sed -i 's|<a href="../">Agentic Systems Academy ↗</a>|<a href="../academy/">Agentic Systems Academy ↗</a><a href="../learning-paths/">Learning Universe ↗</a><a href="../">Project Portal ↗</a>|' _site/strategy/index.html
 
           touch _site/.nojekyll
 
