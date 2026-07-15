@@ -1,0 +1,10 @@
+{
+  "generated_utc":"2026-07-15T21:09:57Z",
+  "status":"candidate_classification_only",
+  "families":[
+    {"family":"BlazorShop","new_member":"BlazorShopmosso20210831h","evidence":["name lineage","private Blazor repository","12132 KB"],"decision":"compare commits, trees, manifests and branches; do not infer canonical from date suffix"},
+    {"family":"Landpag2withoutlogin","members":["Landpag2withoutlogin","Landpag2withoutlogin1","Landpag2withoutlogin20230501"],"evidence":["shared base name","sizes 55831, 0 and 55784 KB","different default branches"],"decision":"branch/history comparison required; zero-size member cannot be treated as disposable"},
+    {"family":"CPDEventPlanner","new_members":["CPDEventplanner20221101","CPDEventPlanner20221120"],"known_related":["CPDEventPlanner20230212"],"evidence":["shared product name","date/version suffixes"],"decision":"inventory all family branches and compare manifests before canonical recommendation"},
+    {"family":"AppointmentPlanner","members":["blazor-showcase-appointment-planner"],"possible_related":["blazor-wasm-appointment-planner"],"decision":"candidate relation only; compare upstream history and project structure"}
+  ]
+}
