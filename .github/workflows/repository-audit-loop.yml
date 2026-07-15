@@ -1,0 +1,47 @@
+name: Repository Audit Loop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-audit-loop
+  cancel-in-progress: false
+
+jobs:
+  advance-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout audit branch
+        uses: actions/checkout@v4
+        with:
+          ref: repository-intelligence-hub-v2
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run next repository batch
+        env:
+          REPOSITORY_AUDIT_OWNER: saskw2010
+          REPO_AUDIT_TOKEN: ${{ secrets.REPO_AUDIT_TOKEN }}
+        run: python repository-intelligence/scripts/run_next_batch.py
+
+      - name: Commit loop state and generated reports
+        run: |
+          git config user.name "repository-audit-loop"
+          git config user.email "repository-audit-loop@users.noreply.github.com"
+          git add repository-intelligence/state repository-intelligence/data repository-intelligence/reports
+          if git diff --cached --quiet; then
+            echo "No audit changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: advance repository audit loop"
+          git push origin HEAD:repository-intelligence-hub-v2
