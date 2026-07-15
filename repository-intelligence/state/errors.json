@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "retry_policy": {
+    "max_attempts_per_repository": 3,
+    "retry_on": ["rate_limit", "temporary_api_error", "missing_manifest"],
+    "do_not_retry_on": ["repository_not_found", "permission_denied"],
+    "after_max_attempts": "record_for_manual_review_and_continue"
+  }
+}
