@@ -1,13 +1,15 @@
 {
   "generated_utc":"2026-07-15T23:00:00Z",
-  "status":"candidate_classification_only",
+  "status":"candidate_classification_only_with_owner_corrections",
   "families":[
     {"family":"BlazorShop","new_members":["BlazorShop20210830vhome"],"known_related":["BlazorShop-master","BlazorShop20210928","BlazorShopmosso20210831h"],"decision":"compare commits, trees, manifests and branches; vhome/date suffixes do not establish canonical status"},
     {"family":"CPDEventPlanner","new_members":["CPDEventplanner20230214","CPDEventPlanner20221123","CPDEventPlanner20221108"],"known_related":["CPDEventPlanner20230212","CPDEventplanner20221101","CPDEventPlanner20221120","CPDEventPlanner20221129","CPDEventplanner20230209v1"],"decision":"treat as a large dated version family; compare histories and domain manifests before canonical recommendation"},
     {"family":"Net5Wasm","new_members":["Net5Wasm20210812","Net5Wasm20210729V1"],"known_related":["Net5Wasm21-08-10v1","Net5Wasm20210805v1"],"decision":"perform branch-aware commit/tree comparison; public/private visibility differences do not determine lineage"},
     {"family":"CPDHelpDesk","new_members":["CPDHelpDesk2021-1028v2"],"known_related":["CPDHelpDesk20211025"],"decision":"compare commits, manifests and data schema; v2/date naming is evidence of lineage only, not canonical status"},
-    {"family":"WindowsServiceMessaging","new_members":["CMGSWindowsServiceSendEmailVwithapikey"],"known_related":["WindowsService_SendSms"],"decision":"same operational umbrella but different channels; classify as sibling products unless code/history proves version lineage"},
-    {"family":"Sky365BusinessApps","new_members":["Sky365Offers"],"known_related":["sky365API","Sky8n"],"decision":"product umbrella relation only; preserve independent canonical repositories until API and domain dependencies are mapped"},
+    {"family":"WindowsServiceMessaging","new_members":["CMGSWindowsServiceSendEmailVwithapikey"],"known_related":["WindowsService_SendSms"],"decision":"same operational umbrella but different channels; classify as sibling products unless code/history proves version lineage","operator_action":"disable the repeatedly failing email-service job outside this read-only audit; preserve repository for diagnosis and secret review"},
+    {"family":"Sky365BusinessApps","new_members":["Sky365Offers"],"known_related":["sky365API","Sky8n"],"decision":"Sky365Offers is a highest-priority strategic application and must remain independently preserved; map API/domain dependencies before any consolidation"},
+    {"family":"ERPPlatform","members":["BackEndNet5"],"related_frontend":"Angular ERP frontend repository not yet conclusively identified in inventory","decision":"owner-confirmed ERP backend required for feature recovery; retain and prioritize dependency/API/schema mapping; do not archive or misclassify as a generic sample"},
+    {"family":"MCPReferenceAndServers","members":["awesome-mcp-servers"],"decision":"hold for dedicated upstream, license, permissions, command-execution and credential-handling review before adoption"},
     {"family":"BlazorCrudSamples","new_members":["blazorservercrudwithrestapi"],"decision":"candidate sample family; inspect project references and upstream provenance before grouping"}
   ]
 }
