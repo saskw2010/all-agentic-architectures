@@ -1,0 +1,34 @@
+{
+  "goal": "Audit all repositories owned by saskw2010, classify duplicate/version families, inventory branches, produce HTML reports, and stop only when the audit definition of done is satisfied.",
+  "status": "running",
+  "owner": "saskw2010",
+  "batch_size": 20,
+  "current_phase": "repository_inventory",
+  "current_batch": 1,
+  "processed": [
+    "all-agentic-architectures",
+    "agentic-context-engine",
+    "agentscope",
+    "agents",
+    "AutoAgent"
+  ],
+  "pending": [],
+  "failed": [],
+  "last_run_utc": null,
+  "definition_of_done": {
+    "all_repositories_scanned": false,
+    "all_priority_manifests_scanned": false,
+    "duplicate_families_classified": false,
+    "branches_scanned": false,
+    "big_picture_generated": false,
+    "migration_manifest_generated": false,
+    "no_pending_items": false
+  },
+  "safety": {
+    "allow_delete": false,
+    "allow_archive": false,
+    "allow_rename": false,
+    "allow_merge": false,
+    "allow_force_push": false
+  }
+}
