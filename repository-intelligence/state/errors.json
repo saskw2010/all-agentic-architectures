@@ -1,8 +1,17 @@
 {
+  "last_updated_utc": "2026-07-15T17:08:00Z",
   "errors": [],
+  "warnings": [
+    {
+      "repository": "mermaid",
+      "type": "truncated_connector_payload",
+      "status": "retry_next_batch",
+      "detail": "Exact size and default branch were not visible in the paginated response and require a direct metadata fetch."
+    }
+  ],
   "retry_policy": {
     "max_attempts_per_repository": 3,
-    "retry_on": ["rate_limit", "temporary_api_error", "missing_manifest"],
+    "retry_on": ["rate_limit", "temporary_api_error", "missing_manifest", "truncated_connector_payload"],
     "do_not_retry_on": ["repository_not_found", "permission_denied"],
     "after_max_attempts": "record_for_manual_review_and_continue"
   }
