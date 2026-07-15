@@ -1,0 +1,35 @@
+{
+  "batch": 7,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-15T21:09:57Z",
+  "policy": "read-only metadata audit; no repository mutation",
+  "repositories": [
+    {"name":"Elnagar-Family-Strategy-Hub","visibility":"private","default_branch":"main","size_kb":5,"classification":"strategy/documentation hub","risk":"private family data review required"},
+    {"name":"BlazorShopmosso20210831h","visibility":"private","default_branch":"master","size_kb":12132,"classification":"BlazorShop version-family candidate","risk":"canonical status unproven"},
+    {"name":"sashtmlfinancecsharp","visibility":"private","default_branch":"master","size_kb":18192,"classification":"SAS/finance application","risk":"private business-data review required"},
+    {"name":"GoogleMapsApp","visibility":"private","default_branch":"master","size_kb":219,"classification":"mapping sample/application","risk":"API-key scan required"},
+    {"name":"roadmapsh","visibility":"public","default_branch":"main","size_kb":4,"classification":"roadmap/reference","risk":"low metadata risk"},
+    {"name":"authentication20210916","visibility":"private","default_branch":"master","size_kb":57661,"classification":"authentication/security application","risk":"high: secrets, identity data and connection strings"},
+    {"name":"BlazorEcommerce","visibility":"private","default_branch":"master","size_kb":254,"classification":"e-commerce sample/version candidate","risk":"family relationship unproven"},
+    {"name":"CPDEventplanner20221101","visibility":"private","default_branch":"master","size_kb":380,"classification":"CPD Event Planner family","risk":"canonical status unproven"},
+    {"name":"trial20220630","visibility":"private","default_branch":"master","size_kb":9115,"classification":"trial/experimental application","risk":"purpose requires manifest scan"},
+    {"name":"blazor-showcase-appointment-planner","visibility":"private","default_branch":"master","size_kb":128636,"classification":"appointment-planner family","risk":"large repository; generated/binary content review"},
+    {"name":"MauiApp120220628","visibility":"private","default_branch":"master","size_kb":287,"classification":".NET MAUI application","risk":"version-family status unproven"},
+    {"name":"Landpag2withoutlogin","visibility":"public","default_branch":"master","size_kb":55831,"classification":"landing-page family","risk":"compare against dated and empty variants"},
+    {"name":"Landpag2withoutlogin1","visibility":"private","default_branch":"main","size_kb":0,"classification":"landing-page family / zero-size candidate","risk":"branch and history inspection required; not disposable by size alone"},
+    {"name":"intellagent","visibility":"public","default_branch":"main","size_kb":14984,"classification":"agentic AI project","risk":"fork/upstream relationship review"},
+    {"name":"105-1001SASERP811V37Dev","visibility":"public","default_branch":"main","size_kb":29497,"classification":"SAS ERP/versioned development repository","risk":"possible exposed configuration/business logic"},
+    {"name":"rag-from-scratch","visibility":"public","default_branch":"main","size_kb":996,"classification":"RAG learning/reference","risk":"fork/reference classification needed"},
+    {"name":"ecommerce_mcp","visibility":"public","default_branch":"master","size_kb":333,"classification":"e-commerce MCP project","risk":"credentials/tool permissions review"},
+    {"name":"ForumNeturgentveryurgent","visibility":"private","default_branch":"master","size_kb":294,"classification":"forum application","risk":"urgent naming is not maintenance evidence"},
+    {"name":"SimplCommerce","visibility":"private","default_branch":"master","size_kb":16280,"classification":"commerce platform/fork candidate","risk":"upstream license and divergence review"},
+    {"name":"CPDEventPlanner20221120","visibility":"private","default_branch":"master","size_kb":1301,"classification":"CPD Event Planner family","risk":"canonical status unproven"}
+  ],
+  "material_findings": [
+    "authentication20210916 requires security-sensitive migration review before any consolidation.",
+    "Landpag2withoutlogin1 reports size 0; branch inventory is mandatory before any recommendation.",
+    "BlazorShopmosso20210831h expands the known BlazorShop duplicate/version family.",
+    "CPDEventplanner20221101 and CPDEventPlanner20221120 expand a multi-version CPD family.",
+    "blazor-showcase-appointment-planner is large enough to require generated/binary-content review."
+  ]
+}
