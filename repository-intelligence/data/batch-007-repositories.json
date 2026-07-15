@@ -1,7 +1,7 @@
 {
   "batch": 7,
   "phase": "repository_inventory",
-  "generated_utc": "2026-07-15T21:09:57Z",
+  "generated_utc": "2026-07-16T00:00:00+03:00",
   "policy": "read-only metadata audit; no repository mutation",
   "repositories": [
     {"name":"Elnagar-Family-Strategy-Hub","visibility":"private","default_branch":"main","size_kb":5,"classification":"strategy/documentation hub","risk":"private family data review required"},
@@ -13,8 +13,8 @@
     {"name":"BlazorEcommerce","visibility":"private","default_branch":"master","size_kb":254,"classification":"e-commerce sample/version candidate","risk":"family relationship unproven"},
     {"name":"CPDEventplanner20221101","visibility":"private","default_branch":"master","size_kb":380,"classification":"CPD Event Planner family","risk":"canonical status unproven"},
     {"name":"trial20220630","visibility":"private","default_branch":"master","size_kb":9115,"classification":"trial/experimental application","risk":"purpose requires manifest scan"},
-    {"name":"blazor-showcase-appointment-planner","visibility":"private","default_branch":"master","size_kb":128636,"classification":"appointment-planner family","risk":"large repository; generated/binary content review"},
-    {"name":"MauiApp120220628","visibility":"private","default_branch":"master","size_kb":287,"classification":".NET MAUI application","risk":"version-family status unproven"},
+    {"name":"blazor-showcase-appointment-planner","visibility":"private","default_branch":"master","size_kb":128636,"classification":"Appointment Planning Product Family / Appointment Planner Web subfamily","risk":"large repository; generated/binary content review; canonical planner status unproven"},
+    {"name":"MauiApp120220628","visibility":"private","default_branch":"master","size_kb":287,"classification":"Appointment Planning Product Family candidate / Appointment Mobile Application subfamily","risk":"appointment-domain relationship and API linkage unproven; must remain separate from planner version family"},
     {"name":"Landpag2withoutlogin","visibility":"public","default_branch":"master","size_kb":55831,"classification":"landing-page family","risk":"compare against dated and empty variants"},
     {"name":"Landpag2withoutlogin1","visibility":"private","default_branch":"main","size_kb":0,"classification":"landing-page family / zero-size candidate","risk":"branch and history inspection required; not disposable by size alone"},
     {"name":"intellagent","visibility":"public","default_branch":"main","size_kb":14984,"classification":"agentic AI project","risk":"fork/upstream relationship review"},
@@ -30,6 +30,7 @@
     "Landpag2withoutlogin1 reports size 0; branch inventory is mandatory before any recommendation.",
     "BlazorShopmosso20210831h expands the known BlazorShop duplicate/version family.",
     "CPDEventplanner20221101 and CPDEventPlanner20221120 expand a multi-version CPD family.",
-    "blazor-showcase-appointment-planner is large enough to require generated/binary-content review."
+    "blazor-showcase-appointment-planner is large enough to require generated/binary-content review.",
+    "Appointment Planner Web and Appointment Mobile Application are separate architectural subfamilies under a possible shared product umbrella; they must not be treated as duplicates or direct versions of each other."
   ]
 }
