@@ -1,0 +1,34 @@
+{
+  "batch": 3,
+  "phase": "repository_inventory",
+  "completed_utc": "2026-07-15T17:08:00Z",
+  "policy": "read_only",
+  "repositories": [
+    {"name":"system-prompts-and-models-of-ai-tools","visibility":"public","size_kb":859,"default_branch":"main","classification":"AI prompt/model reference collection","recommendation":"STUDY / LICENSE AND ORIGIN CHECK","risk":"May contain copied proprietary prompts or fast-aging model artifacts; verify provenance before reuse."},
+    {"name":"LMCache","visibility":"public","size_kb":47284,"default_branch":"dev","classification":"LLM inference/cache infrastructure fork","recommendation":"BENCHMARK / INTEGRATION CANDIDATE","risk":"Default branch is dev, not main; upstream divergence and production readiness must be verified."},
+    {"name":"Memento","visibility":"public","size_kb":3529,"default_branch":"main","classification":"AI memory/context project","recommendation":"STUDY / MEMORY LAYER CANDIDATE","risk":"Potential overlap with agentic-context-engine; compare storage model, lifecycle, and unique commits."},
+    {"name":"Scrapling","visibility":"public","size_kb":6890,"default_branch":"main","classification":"Web scraping/data acquisition framework","recommendation":"BENCHMARK / TOOLING CANDIDATE","risk":"External-origin and anti-bot functionality require license, compliance, and maintenance review."},
+    {"name":"saskw2010","visibility":"public","size_kb":31382,"default_branch":"main","classification":"GitHub profile repository","recommendation":"PROTECT / PROFILE ASSET","risk":"Large profile repo may contain generated or duplicated assets; keep separate from product repositories."},
+    {"name":"BlazorApp1001","visibility":"public","size_kb":2176,"default_branch":"master","classification":"Legacy Blazor experiment/application","recommendation":"CLASSIFY IN BLAZOR FAMILY","risk":"Purpose and uniqueness unclear; compare against other 2021 Blazor repositories before consolidation."},
+    {"name":"CPDEventPlanner20230212","visibility":"private","size_kb":12111,"default_branch":"master","classification":"Private CPD/event planning application","recommendation":"PROTECT / DEEP SCAN","risk":"Private business code; migration requires secret, dependency, data, and deployment review."},
+    {"name":"n8n-mcp","visibility":"public","size_kb":48077,"default_branch":"main","classification":"n8n to MCP integration","recommendation":"HIGH-PRIORITY INTEGRATION STUDY","risk":"Strategically relevant but likely external-origin; inspect unique commits, credentials handling, and MCP security boundaries."},
+    {"name":"sd-webui-forge-classic","visibility":"public","size_kb":53470,"default_branch":"classic","classification":"Stable Diffusion WebUI Forge branch/fork","recommendation":"REFERENCE / LOCAL AI TOOLING","risk":"Nonstandard default branch and large external codebase; do not treat as owned core without origin comparison."},
+    {"name":"postiz-app","visibility":"public","size_kb":38316,"default_branch":"main","classification":"Social publishing/automation platform","recommendation":"BENCHMARK / CONNECTOR CANDIDATE","risk":"Possible overlap with Skyverse social orchestration; license and integration surface need review."},
+    {"name":"browser","visibility":"public","size_kb":11163,"default_branch":"main","classification":"Browser automation/agent tooling","recommendation":"STUDY / AGENT TOOL CANDIDATE","risk":"Broad name hides origin and purpose; inspect README, permissions model, and sandboxing before adoption."},
+    {"name":"CleanArchitecturenet6","visibility":"public","size_kb":238,"default_branch":"main","classification":".NET 6 clean architecture sample","recommendation":"REFERENCE / POSSIBLE ARCHIVE CANDIDATE AFTER DIFF","risk":"Small size does not prove low value; inspect commits and relation to production templates."},
+    {"name":"claude-code-prompts","visibility":"public","size_kb":382,"default_branch":"master","classification":"Claude Code prompt collection","recommendation":"STUDY / PROMPT ASSET CATALOG","risk":"Prompt collections age quickly and may have licensing/provenance issues; avoid merging blindly."},
+    {"name":"open-design","visibility":"public","size_kb":103093,"default_branch":"main","classification":"Large design/UI asset or framework repository","recommendation":"DEEP SCAN REQUIRED","risk":"Large footprint and unclear ownership; inspect binaries, licenses, generated assets, and overlap with design studio."},
+    {"name":"mermaid","visibility":"public","size_kb":null,"default_branch":"unknown_from_truncated_payload","classification":"Diagramming library fork/reference","recommendation":"REFERENCE / ORIGIN CHECK","risk":"Metadata payload was truncated; exact size/default branch must be revalidated before final classification."}
+  ],
+  "summary": {
+    "processed_in_batch": 15,
+    "failures": 0,
+    "material_risks": [
+      "LMCache uses dev as default branch and sd-webui-forge-classic uses classic; branch assumptions remain unsafe.",
+      "CPDEventPlanner20230212 is private and must remain protected pending secret/data/deployment review.",
+      "n8n-mcp is strategically relevant but requires MCP credential and trust-boundary analysis.",
+      "open-design is large and unclear in origin; binary/license duplication risk is material.",
+      "mermaid metadata was truncated and remains partially unresolved."
+    ]
+  }
+}
