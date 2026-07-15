@@ -1,12 +1,17 @@
 {
   "status": "in_progress",
-  "last_updated_utc": "2026-07-15T16:05:00Z",
+  "last_updated_utc": "2026-07-15T17:08:00Z",
   "families": [
-    {"family":"Net5Wasm","members":["Net5Wasm21-08-10v1"],"expected_siblings":"additional Net5Wasm* repositories from account inventory","decision":"protect all members until commit/tree diff identifies canonical lineage"},
-    {"family":"HelpDesk/CPDHelpDesk","members":["HelpDesk2021-09-30","CPDHelpDesk20211025"],"evidence":"name/date lineage; one member is zero-size","decision":"do not infer supersession from date; inspect contents and commit ancestry"},
-    {"family":"Blazor experiments","members":["BlazorUsersRolesamazing","blazor-progressive-uploadnet5","maui-blazor-hybrid"],"evidence":"shared UI/runtime technology but distinct functional goals","decision":"related technology cluster, not yet proven duplicates"},
-    {"family":"AI platform/reference forks","members":["anything-llm","awesome-llm-apps","agents","agentscope","AutoAgent"],"evidence":"overlapping AI/agent domain with probable external origins","decision":"compare origin, license and unique commits before migration"},
-    {"family":"Profile tooling","members":["github-readme-stats","saskw2010"],"evidence":"GitHub profile presentation relationship","decision":"keep separate unless profile repository embeds a redundant copy"}
+    {"family":"Net5Wasm","members":["Net5Wasm21-08-10v1","Net5Wasm20210805v1"],"evidence":"date/version naming and same .NET WASM lineage","decision":"protect both until commit/tree diff identifies canonical lineage and unique work"},
+    {"family":"HelpDesk/CPD","members":["HelpDesk2021-09-30","CPDHelpDesk20211025","CPDEventPlanner20230212"],"evidence":"shared CPD/helpdesk/event domain; one member is zero-size and one is private","decision":"do not infer supersession from date; inspect business modules, contents and ancestry"},
+    {"family":"Blazor experiments","members":["BlazorUsersRolesamazing","blazor-progressive-uploadnet5","maui-blazor-hybrid","BlazorApp1001","CleanArchitecturenet6","BlazorTasks"],"evidence":"shared .NET/Blazor technology with mixed sample and application purposes","decision":"technology cluster only; split into templates, experiments and business apps before duplicate decisions"},
+    {"family":"AI platform/reference forks","members":["anything-llm","awesome-llm-apps","agents","agentscope","AutoAgent","500-AI-Agents-Projects","agency-agents"],"evidence":"overlapping AI/agent domain with probable external origins","decision":"compare origin, license and unique commits before migration"},
+    {"family":"Agent memory/context","members":["agentic-context-engine","Memento"],"evidence":"both address persistent agent memory/context but may use different abstractions","decision":"compare data model, learning loop, retrieval lifecycle and integration value; not yet duplicates"},
+    {"family":"Prompt and agent instruction assets","members":["system-prompts-and-models-of-ai-tools","claude-code-prompts","claude-code-local"],"evidence":"prompt/model/tooling instruction overlap","decision":"catalog provenance, licenses and update cadence; merge only normalized original material"},
+    {"family":"MCP and automation integrations","members":["n8n-mcp","browser","postiz-app"],"evidence":"tool execution and workflow/social automation relationship","decision":"treat as integration candidates, not duplicates; evaluate trust boundaries and connector reuse"},
+    {"family":"Local AI runtime and inference","members":["LMCache","sd-webui-forge-classic","vllm","Antigravity-Manager"],"evidence":"local inference/runtime/cache/management layer relationship","decision":"benchmark architecture and operational fit; preserve upstream boundaries"},
+    {"family":"Profile tooling","members":["github-readme-stats","saskw2010","sitepoint-github-profile"],"evidence":"GitHub profile presentation relationship","decision":"keep separate unless profile repository embeds redundant generated copies"},
+    {"family":"Design and visualization","members":["open-design","mermaid"],"evidence":"design/visual communication overlap but materially different roles","decision":"keep separate; inspect whether open-design vendors or embeds Mermaid assets"}
   ],
-  "warning": "Name similarity is only a discovery signal. Canonical-version decisions require branch, commit ancestry, manifest and unique-file comparison."
+  "warning": "Name similarity and domain overlap are discovery signals only. Canonical-version decisions require branch, commit ancestry, manifest, license, upstream and unique-file comparison."
 }
