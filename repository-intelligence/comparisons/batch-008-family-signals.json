@@ -1,0 +1,11 @@
+{
+  "generated_utc":"2026-07-15T22:00:00Z",
+  "status":"candidate_classification_only",
+  "families":[
+    {"family":"CPDEventPlanner","new_members":["CPDEventPlanner20221129","CPDEventplanner20230209v1"],"known_related":["CPDEventplanner20221101","CPDEventPlanner20221120","CPDEventPlanner20230212"],"evidence":["shared product name","date/version suffixes","different repository sizes","nonstandard default branch on 20230209v1"],"decision":"inventory every branch and compare commit ancestry, trees and manifests before canonical recommendation"},
+    {"family":"Appointment Planning Product Family","relationship_type":"product_umbrella_not_duplicate_family","subfamily":"Appointment Planner Web","new_member":"blazor-wasm-appointment-planner","known_related":["blazor-showcase-appointment-planner"],"evidence":["shared appointment-planner naming","both private Blazor repositories","sizes 330645 KB and 128636 KB"],"decision":"treat as version-relative candidates only; compare ancestry, project manifests, generated assets and domain/API structure; mobile remains a separate subfamily"},
+    {"family":"FileUploadBlazor","new_member":"FileUploadBlazor","known_related":["FileUploadSample","blazor-progressive-uploadnet5"],"evidence":["shared file-upload domain","Blazor naming"],"decision":"compare framework versions, manifests and implementation before duplicate/version classification"},
+    {"family":"Task and Planning Applications","new_member":"TASKMANAGER20210823","possible_related":["BlazorTasks","PlannerAppimportant"],"evidence":["task/planner domain naming only"],"decision":"weak semantic candidate; do not merge family classifications without code and schema evidence"},
+    {"family":"CPD Product Umbrella","candidate_member":"cpdland","possible_related":["CPDEventPlanner family","CPDHelpDesk family"],"evidence":["CPD naming only","very large private repository"],"decision":"product-umbrella relation is unproven; inspect manifests and domain models before assigning a subfamily"}
+  ]
+}
