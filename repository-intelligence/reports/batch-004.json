@@ -1,0 +1,28 @@
+{
+  "batch": 4,
+  "phase": "repository_inventory",
+  "completed_utc": "2026-07-15T18:01:00Z",
+  "repositories": [
+    {"name":"claude-code-local","visibility":"public","default_branch":"main","size_kb":256,"classification":"prompt/tooling asset","risk":"license and provenance review before consolidation"},
+    {"name":"loop-engineering","visibility":"public","default_branch":"main","size_kb":1728,"classification":"agentic engineering reference","risk":"distinguish original work from upstream/reference content"},
+    {"name":"WindowsService_SendSms","visibility":"private","default_branch":"master","size_kb":30345,"classification":"business application/service","risk":"private repository; inspect credentials, endpoints and deployment artifacts before migration"},
+    {"name":"defenix-website","visibility":"public","default_branch":"main","size_kb":98818,"classification":"product website","risk":"large repository; separate generated assets from source and verify deployment secrets"},
+    {"name":"mossotestgo","visibility":"public","default_branch":"master","size_kb":2623,"classification":"legacy/test application","risk":"possible family relationship with mossotest; compare trees and history"},
+    {"name":"agency-agents","visibility":"public","default_branch":"main","size_kb":526,"classification":"AI agent reference","risk":"likely external-origin content; preserve upstream attribution"},
+    {"name":"vllm","visibility":"public","default_branch":"main","size_kb":218192,"classification":"local AI runtime/upstream fork","risk":"very large external-origin repository; unique-commit and license analysis required"},
+    {"name":"pythonMachineLearning","visibility":"public","default_branch":"main","size_kb":0,"classification":"empty or placeholder repository","risk":"do not delete; inspect branches and commit history first"},
+    {"name":"BillionMail","visibility":"public","default_branch":"dev","size_kb":29058,"classification":"mail platform/upstream fork","risk":"nonstandard default branch and likely external origin"},
+    {"name":"Net5Wasm20210805v1","visibility":"public","default_branch":"master","size_kb":51982,"classification":"version-family member","risk":"compare against Net5Wasm21-08-10v1 before canonical selection"},
+    {"name":"500-AI-Agents-Projects","visibility":"public","default_branch":"main","size_kb":1697,"classification":"AI reference catalog","risk":"catalog/reference content; check update cadence and provenance"},
+    {"name":"BlazorTasks","visibility":"private","default_branch":"master","size_kb":229,"classification":"Blazor business/sample app","risk":"private; inspect domain uniqueness before family consolidation"},
+    {"name":"PlannerAppimportant","visibility":"public","default_branch":"master","size_kb":591,"classification":"planner application","risk":"candidate relation to task/planner family; compare business modules"},
+    {"name":"sitepoint-github-profile","visibility":"public","default_branch":"main","size_kb":5,"classification":"profile/presentation asset","risk":"minimal size; likely reference/profile utility"},
+    {"name":"ROMA","visibility":"public","default_branch":"main","size_kb":81204,"classification":"large application repository","risk":"requires manifest and branch inspection before product-family placement"}
+  ],
+  "summary": {"processed_this_batch":15,"errors":0,"warnings":3},
+  "warnings": [
+    "pythonMachineLearning reports zero size; no destructive conclusion is permitted until branch/history inspection.",
+    "BillionMail uses dev as default branch; automation must not assume main/master.",
+    "WindowsService_SendSms and BlazorTasks are private and require secret/configuration review before any migration."
+  ]
+}
