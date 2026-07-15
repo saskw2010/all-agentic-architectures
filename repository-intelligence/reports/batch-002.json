@@ -1,0 +1,27 @@
+{
+  "batch": 2,
+  "phase": "repository_inventory",
+  "completed_at_utc": "2026-07-15T16:05:00Z",
+  "repositories": [
+    {"name":"HelpDesk2021-09-30","visibility":"public","default_branch":"master","size_kb":69234,"classification":"legacy helpdesk application snapshot","family":"HelpDesk/CPDHelpDesk","recommendation":"PROTECT UNTIL FAMILY DIFF"},
+    {"name":"BlazorUsersRolesamazing","visibility":"public","default_branch":"master","size_kb":1758,"classification":"Blazor identity/roles experiment","family":"Blazor identity experiments","recommendation":"COMPARE / CONSOLIDATE LATER"},
+    {"name":"CPDHelpDesk20211025","visibility":"public","default_branch":"main","size_kb":0,"classification":"empty repository placeholder","family":"HelpDesk/CPDHelpDesk","recommendation":"MANUAL REVIEW; DO NOT DELETE"},
+    {"name":"RestaurantPOSweb20211004","visibility":"public","default_branch":"master","size_kb":7371,"classification":"legacy restaurant POS web snapshot","family":"RestaurantPOS","recommendation":"PROTECT UNTIL FAMILY DIFF"},
+    {"name":"blazor-progressive-uploadnet5","visibility":"public","default_branch":"main","size_kb":220,"classification":"small .NET 5 Blazor upload experiment","family":"Blazor .NET 5 experiments","recommendation":"REFERENCE / CONSOLIDATION CANDIDATE"},
+    {"name":"github-readme-stats","visibility":"public","default_branch":"master","size_kb":1911,"classification":"external-origin profile statistics utility","family":"profile tooling","recommendation":"VERIFY FORK CUSTOMIZATION"},
+    {"name":"Antigravity-Manager","visibility":"public","default_branch":"main","size_kb":58660,"classification":"AI/developer tooling manager","family":"AI tooling","recommendation":"DEEP SCAN REQUIRED"},
+    {"name":"anything-llm","visibility":"public","default_branch":"master","size_kb":49971,"classification":"external-origin local/private LLM platform","family":"local AI platforms","recommendation":"BENCHMARK / VERIFY CUSTOM COMMITS"},
+    {"name":"RTranslator","visibility":"public","default_branch":"v2.00","size_kb":46766,"classification":"real-time translation application","family":"translation and voice","recommendation":"DEEP SCAN; NONSTANDARD DEFAULT BRANCH"},
+    {"name":"freecut","visibility":"public","default_branch":"main","size_kb":569,"classification":"video editing utility","family":"media production","recommendation":"STUDY FOR SKY365 MEDIA TRACK"},
+    {"name":"Net5Wasm21-08-10v1","visibility":"public","default_branch":"master","size_kb":56444,"classification":"dated .NET 5 WASM application snapshot","family":"Net5Wasm","recommendation":"PROTECT UNTIL VERSION-FAMILY DIFF"},
+    {"name":"maui-blazor-hybrid","visibility":"public","default_branch":"master","size_kb":290,"classification":"MAUI Blazor hybrid experiment","family":"Blazor cross-platform","recommendation":"REFERENCE"},
+    {"name":"awesome-llm-apps","visibility":"public","default_branch":"main","size_kb":192356,"classification":"large external AI application collection","family":"AI examples/collections","recommendation":"VERIFY ORIGIN, LICENSE, UNIQUE COMMITS"}
+  ],
+  "material_findings": [
+    "CPDHelpDesk20211025 is zero-size; emptiness is evidence for review, not authorization to delete.",
+    "RTranslator uses v2.00 as its default branch, so branch assumptions based on main/master are unsafe.",
+    "Net5Wasm21-08-10v1 is confirmed as a dated version-family member and must be diffed against sibling snapshots.",
+    "awesome-llm-apps is the largest repository in this batch and is likely external-origin; migration value depends on unique local commits and licensing."
+  ],
+  "limitations": "GitHub search result payload was truncated. The audit persisted all repositories whose metadata was fully exposed and queued the next discoverable page; total-account completion remains false."
+}
