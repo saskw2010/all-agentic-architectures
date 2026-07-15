@@ -1,0 +1,12 @@
+{
+  "status": "in_progress",
+  "last_updated_utc": "2026-07-15T16:05:00Z",
+  "families": [
+    {"family":"Net5Wasm","members":["Net5Wasm21-08-10v1"],"expected_siblings":"additional Net5Wasm* repositories from account inventory","decision":"protect all members until commit/tree diff identifies canonical lineage"},
+    {"family":"HelpDesk/CPDHelpDesk","members":["HelpDesk2021-09-30","CPDHelpDesk20211025"],"evidence":"name/date lineage; one member is zero-size","decision":"do not infer supersession from date; inspect contents and commit ancestry"},
+    {"family":"Blazor experiments","members":["BlazorUsersRolesamazing","blazor-progressive-uploadnet5","maui-blazor-hybrid"],"evidence":"shared UI/runtime technology but distinct functional goals","decision":"related technology cluster, not yet proven duplicates"},
+    {"family":"AI platform/reference forks","members":["anything-llm","awesome-llm-apps","agents","agentscope","AutoAgent"],"evidence":"overlapping AI/agent domain with probable external origins","decision":"compare origin, license and unique commits before migration"},
+    {"family":"Profile tooling","members":["github-readme-stats","saskw2010"],"evidence":"GitHub profile presentation relationship","decision":"keep separate unless profile repository embeds a redundant copy"}
+  ],
+  "warning": "Name similarity is only a discovery signal. Canonical-version decisions require branch, commit ancestry, manifest and unique-file comparison."
+}
