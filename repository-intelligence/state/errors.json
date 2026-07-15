@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-15T21:09:57Z",
+  "last_updated_utc": "2026-07-15T22:00:00Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -17,7 +17,13 @@
     {"repository":"authentication20210916","type":"private_security_repository_risk","status":"manual_security_review_required","detail":"Authentication repository: inspect secrets, identity data, connection strings, signing keys and deployment configuration before migration or consolidation."},
     {"repository":"Landpag2withoutlogin1","type":"zero_size_repository","status":"branch_history_review_required","detail":"Size 0 is not proof of an empty repository. Inspect every branch and commit history before classification."},
     {"repository":"blazor-showcase-appointment-planner","type":"large_private_repository","status":"manual_large_repo_review_required","detail":"Metadata reports 128636 KB. Review binaries, generated assets and history before migration."},
-    {"repository":"GoogleMapsApp","type":"mapping_api_secret_risk","status":"content_scan_required","detail":"Inspect configuration and history for API keys or location-service credentials; never publish sensitive values."}
+    {"repository":"GoogleMapsApp","type":"mapping_api_secret_risk","status":"content_scan_required","detail":"Inspect configuration and history for API keys or location-service credentials; never publish sensitive values."},
+    {"repository":"blazor-wasm-appointment-planner","type":"very_large_private_repository","status":"manual_large_repo_and_security_review_required","detail":"Metadata reports 330645 KB. Inspect generated assets, binaries, history, credentials and appointment-domain data before canonical or migration decisions."},
+    {"repository":"cpdland","type":"very_large_private_repository","status":"manual_large_repo_and_security_review_required","detail":"Metadata reports 410703 KB. Inspect binaries, generated assets, credentials, deployment configuration and CPD business data before family consolidation."},
+    {"repository":"lean-ctx","type":"very_large_public_repository","status":"upstream_vendor_and_license_review_required","detail":"Metadata reports 427605 KB. Determine fork/upstream status, vendored content, datasets/models and license obligations."},
+    {"repository":"ZainAgenda.Next.blazor","type":"large_private_repository","status":"manual_large_repo_and_security_review_required","detail":"Metadata reports 161285 KB. Review generated assets, binaries, service endpoints, credentials and scheduling data."},
+    {"repository":"CPDEventplanner20230209v1","type":"nonstandard_default_branch","status":"recorded","detail":"Default branch is 20230209; branch inventory must follow repository metadata and inspect all refs."},
+    {"repository":"awesome-Face_Recognition","type":"biometric_privacy_risk","status":"policy_and_license_review_required","detail":"Face-recognition material may involve biometric datasets, privacy restrictions and model/dataset licenses. Do not infer deployability from public visibility."}
   ],
   "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
