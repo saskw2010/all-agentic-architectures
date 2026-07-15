@@ -1,0 +1,23 @@
+{
+  "batch": 6,
+  "audited_at_utc": "2026-07-15T20:04:16Z",
+  "policy": "read-only metadata audit; no delete/archive/rename/merge/force-push",
+  "repositories": [
+    {"name":"AppAlshababWeb","visibility":"private","size_kb":27226,"default_branch":"master","classification":"business-web-application","risk":"private_content_review"},
+    {"name":"fireplexity","visibility":"private","size_kb":251,"default_branch":"main","classification":"ai-search-prototype","risk":"private_content_review"},
+    {"name":"n8n-workflows","visibility":"public","size_kb":45248,"default_branch":"main","classification":"automation-workflow-library","risk":"credential_reference_review"},
+    {"name":"unsloth","visibility":"public","size_kb":53339,"default_branch":"main","classification":"upstream-ai-fork","risk":"upstream-divergence_review"},
+    {"name":"sky365API","visibility":"private","size_kb":692,"default_branch":"main","classification":"sky365-api","risk":"material_security_review"},
+    {"name":"BlazorShop20210928","visibility":"private","size_kb":8161,"default_branch":"master","classification":"blazor-shop-version","risk":"family_compare_required"},
+    {"name":"FileUploadSample","visibility":"public","size_kb":3,"default_branch":"master","classification":"sample-prototype","risk":"none_detected_metadata_only"},
+    {"name":"SAShtml","visibility":"private","size_kb":15063,"default_branch":"master","classification":"static-web-or-business-ui","risk":"private_content_review"},
+    {"name":"Landpag2withoutlogin20230501","visibility":"private","size_kb":55784,"default_branch":"mostafa20230501","classification":"dated-landing-page-version","risk":"nonstandard_default_branch"},
+    {"name":"YouthAppsmain","visibility":"private","size_kb":598607,"default_branch":"master","classification":"large-business-application","risk":"material_large_repo_and_private_data_review"},
+    {"name":"stable-diffusion-webui","visibility":"public","size_kb":36552,"default_branch":"master","classification":"upstream-ai-fork","risk":"upstream-divergence_review"},
+    {"name":"Sky8n","visibility":"public","size_kb":0,"default_branch":"main","classification":"empty-or-history-only-automation-repository","risk":"branch_history_review_required"},
+    {"name":"weaviate-claude-skills","visibility":"public","size_kb":45,"default_branch":"main","classification":"agent-skills-library","risk":"none_detected_metadata_only"},
+    {"name":"open-agent-builder","visibility":"public","size_kb":1104,"default_branch":"main","classification":"agent-builder","risk":"upstream_or_product_relationship_review"},
+    {"name":"hyperframes","visibility":"public","size_kb":167742,"default_branch":"main","classification":"ai-orchestration-framework","risk":"large_upstream_or_fork_review"}
+  ],
+  "summary": {"count":15,"private":7,"public":8,"material_risks":["sky365API","YouthAppsmain"],"family_candidates":["BlazorShop20210928","n8n-workflows","Sky8n","open-agent-builder","hyperframes"]}
+}
