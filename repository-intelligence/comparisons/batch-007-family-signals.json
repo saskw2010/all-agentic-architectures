@@ -1,10 +1,30 @@
 {
-  "generated_utc":"2026-07-15T21:09:57Z",
+  "generated_utc":"2026-07-16T00:00:00+03:00",
   "status":"candidate_classification_only",
   "families":[
     {"family":"BlazorShop","new_member":"BlazorShopmosso20210831h","evidence":["name lineage","private Blazor repository","12132 KB"],"decision":"compare commits, trees, manifests and branches; do not infer canonical from date suffix"},
     {"family":"Landpag2withoutlogin","members":["Landpag2withoutlogin","Landpag2withoutlogin1","Landpag2withoutlogin20230501"],"evidence":["shared base name","sizes 55831, 0 and 55784 KB","different default branches"],"decision":"branch/history comparison required; zero-size member cannot be treated as disposable"},
     {"family":"CPDEventPlanner","new_members":["CPDEventplanner20221101","CPDEventPlanner20221120"],"known_related":["CPDEventPlanner20230212"],"evidence":["shared product name","date/version suffixes"],"decision":"inventory all family branches and compare manifests before canonical recommendation"},
-    {"family":"AppointmentPlanner","members":["blazor-showcase-appointment-planner"],"possible_related":["blazor-wasm-appointment-planner"],"decision":"candidate relation only; compare upstream history and project structure"}
+    {
+      "family":"Appointment Planning Product Family",
+      "relationship_type":"product_umbrella_not_duplicate_family",
+      "subfamilies":[
+        {
+          "subfamily":"Appointment Planner Web",
+          "members":["blazor-showcase-appointment-planner"],
+          "possible_version_relatives":["blazor-wasm-appointment-planner"],
+          "classification":"planner/web application",
+          "decision":"compare upstream history, project structure, manifests and branches before declaring version lineage or canonical repository"
+        },
+        {
+          "subfamily":"Appointment Mobile Application",
+          "candidate_members":["MauiApp120220628"],
+          "classification":"mobile client application",
+          "decision":"keep separate from planner repositories; verify domain/API references and manifests before confirming it belongs to the appointment product family"
+        }
+      ],
+      "boundary_rule":"Planner repositories and mobile application repositories are separate architectural subfamilies. Shared appointment-domain purpose may place them under one product umbrella, but does not make them duplicates or versions of each other.",
+      "migration_rule":"Produce separate canonical recommendations and migration entries for Planner Web and Mobile Application. Preserve integration contracts between them as explicit dependencies."
+    }
   ]
 }
