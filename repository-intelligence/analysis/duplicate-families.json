@@ -1,17 +1,26 @@
 {
   "status": "in_progress",
-  "last_updated_utc": "2026-07-15T17:08:00Z",
+  "last_updated_utc": "2026-07-15T18:01:00Z",
   "families": [
-    {"family":"Net5Wasm","members":["Net5Wasm21-08-10v1","Net5Wasm20210805v1"],"evidence":"date/version naming and same .NET WASM lineage","decision":"protect both until commit/tree diff identifies canonical lineage and unique work"},
+    {"family":"Net5Wasm","members":["Net5Wasm21-08-10v1","Net5Wasm20210805v1"],"evidence":"date/version naming and same .NET WASM lineage","decision":"create a dedicated product-family repository only after commit/tree comparison; preserve each source as an import branch, then select a canonical baseline"},
     {"family":"HelpDesk/CPD","members":["HelpDesk2021-09-30","CPDHelpDesk20211025","CPDEventPlanner20230212"],"evidence":"shared CPD/helpdesk/event domain; one member is zero-size and one is private","decision":"do not infer supersession from date; inspect business modules, contents and ancestry"},
-    {"family":"Blazor experiments","members":["BlazorUsersRolesamazing","blazor-progressive-uploadnet5","maui-blazor-hybrid","BlazorApp1001","CleanArchitecturenet6","BlazorTasks"],"evidence":"shared .NET/Blazor technology with mixed sample and application purposes","decision":"technology cluster only; split into templates, experiments and business apps before duplicate decisions"},
+    {"family":"Blazor experiments and apps","members":["BlazorUsersRolesamazing","blazor-progressive-uploadnet5","maui-blazor-hybrid","BlazorApp1001","CleanArchitecturenet6","BlazorTasks","PlannerAppimportant"],"evidence":"shared .NET/Blazor technology with mixed sample and application purposes","decision":"technology cluster only; split into templates, experiments and business/product families before any branch import"},
     {"family":"AI platform/reference forks","members":["anything-llm","awesome-llm-apps","agents","agentscope","AutoAgent","500-AI-Agents-Projects","agency-agents"],"evidence":"overlapping AI/agent domain with probable external origins","decision":"compare origin, license and unique commits before migration"},
     {"family":"Agent memory/context","members":["agentic-context-engine","Memento"],"evidence":"both address persistent agent memory/context but may use different abstractions","decision":"compare data model, learning loop, retrieval lifecycle and integration value; not yet duplicates"},
-    {"family":"Prompt and agent instruction assets","members":["system-prompts-and-models-of-ai-tools","claude-code-prompts","claude-code-local"],"evidence":"prompt/model/tooling instruction overlap","decision":"catalog provenance, licenses and update cadence; merge only normalized original material"},
-    {"family":"MCP and automation integrations","members":["n8n-mcp","browser","postiz-app"],"evidence":"tool execution and workflow/social automation relationship","decision":"treat as integration candidates, not duplicates; evaluate trust boundaries and connector reuse"},
-    {"family":"Local AI runtime and inference","members":["LMCache","sd-webui-forge-classic","vllm","Antigravity-Manager"],"evidence":"local inference/runtime/cache/management layer relationship","decision":"benchmark architecture and operational fit; preserve upstream boundaries"},
-    {"family":"Profile tooling","members":["github-readme-stats","saskw2010","sitepoint-github-profile"],"evidence":"GitHub profile presentation relationship","decision":"keep separate unless profile repository embeds redundant generated copies"},
-    {"family":"Design and visualization","members":["open-design","mermaid"],"evidence":"design/visual communication overlap but materially different roles","decision":"keep separate; inspect whether open-design vendors or embeds Mermaid assets"}
+    {"family":"Prompt and agent instruction assets","members":["system-prompts-and-models-of-ai-tools","claude-code-prompts","claude-code-local","loop-engineering"],"evidence":"prompt/model/tooling and agent-loop instruction overlap","decision":"catalog provenance, licenses and update cadence; consolidate only original or license-compatible normalized material"},
+    {"family":"MCP and automation integrations","members":["n8n-mcp","browser","postiz-app","BillionMail"],"evidence":"tool execution, workflow, social and communication automation relationship","decision":"integration domain, not duplicate family; evaluate trust boundaries, credential handling and connector reuse"},
+    {"family":"Local AI runtime and inference","members":["LMCache","sd-webui-forge-classic","vllm","Antigravity-Manager"],"evidence":"local inference/runtime/cache/management layer relationship","decision":"preserve upstream boundaries; compare unique commits and operational fit rather than merge source trees"},
+    {"family":"Profile tooling","members":["github-readme-stats","saskw2010","sitepoint-github-profile"],"evidence":"GitHub profile presentation relationship","decision":"keep separate unless the profile repository embeds redundant generated copies"},
+    {"family":"Design and visualization","members":["open-design","mermaid"],"evidence":"design/visual communication overlap but materially different roles","decision":"keep separate; inspect whether open-design vendors or embeds Mermaid assets"},
+    {"family":"Mosso test lineage","members":["mossotestgo","mossotest"],"evidence":"strong naming relationship and similar legacy/test context","decision":"compare file trees, manifests and histories in the next batch before designating a product family"},
+    {"family":"Task and planner applications","members":["BlazorTasks","PlannerAppimportant"],"evidence":"task/planner business-domain overlap","decision":"possible product family; inspect features and data models before creating a dedicated family repository"}
   ],
-  "warning": "Name similarity and domain overlap are discovery signals only. Canonical-version decisions require branch, commit ancestry, manifest, license, upstream and unique-file comparison."
+  "consolidation_policy": {
+    "unit":"one repository per proven product family, not per name similarity",
+    "branch_pattern":"import/<source-repository>/<source-default-branch>",
+    "working_branch":"consolidation/<family-slug>",
+    "canonical_branch":"main only after validation",
+    "required_manifest":"MIGRATION-MANIFEST.md records source repository, source branch, source commit, imported branch, unique files, merge decisions and validation status"
+  },
+  "warning":"Name similarity and domain overlap are discovery signals only. Canonical-version decisions require branch, commit ancestry, manifest, license, upstream and unique-file comparison."
 }
