@@ -1,18 +1,17 @@
 {
-  "last_updated_utc": "2026-07-15T17:08:00Z",
+  "last_updated_utc": "2026-07-15T18:01:00Z",
   "errors": [],
   "warnings": [
-    {
-      "repository": "mermaid",
-      "type": "truncated_connector_payload",
-      "status": "retry_next_batch",
-      "detail": "Exact size and default branch were not visible in the paginated response and require a direct metadata fetch."
-    }
+    {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
+    {"repository":"pythonMachineLearning","type":"zero_size_repository","status":"branch_history_review_required","detail":"Repository metadata reports size 0. No deletion/archive inference is permitted."},
+    {"repository":"BillionMail","type":"nonstandard_default_branch","status":"recorded","detail":"Default branch is dev; branch inventory must use repository metadata rather than main/master assumptions."},
+    {"repository":"WindowsService_SendSms","type":"private_repository_migration_risk","status":"manual_security_review_required","detail":"Inspect credentials, endpoints, deployment artifacts and sensitive configuration before migration."},
+    {"repository":"BlazorTasks","type":"private_repository_migration_risk","status":"manual_security_review_required","detail":"Inspect secrets, business data and unique domain logic before any family consolidation."}
   ],
   "retry_policy": {
     "max_attempts_per_repository": 3,
-    "retry_on": ["rate_limit", "temporary_api_error", "missing_manifest", "truncated_connector_payload"],
-    "do_not_retry_on": ["repository_not_found", "permission_denied"],
+    "retry_on": ["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],
+    "do_not_retry_on": ["repository_not_found","permission_denied"],
     "after_max_attempts": "record_for_manual_review_and_continue"
   }
 }
