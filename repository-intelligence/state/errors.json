@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-15T19:07:46Z",
+  "last_updated_utc": "2026-07-15T20:04:16Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -8,12 +8,12 @@
     {"repository":"WindowsService_SendSms","type":"private_repository_migration_risk","status":"manual_security_review_required","detail":"Inspect credentials, endpoints, deployment artifacts and sensitive configuration before migration."},
     {"repository":"BlazorTasks","type":"private_repository_migration_risk","status":"manual_security_review_required","detail":"Inspect secrets, business data and unique domain logic before any family consolidation."},
     {"repository":"CustomSecurityWAW","type":"private_security_repository_risk","status":"manual_security_review_required","detail":"Security/authentication repository. Inspect secrets, credentials, endpoints, user data and deployment configuration before any migration or consolidation; do not expose sensitive values in reports."},
-    {"repository":"Angularportfolio,ReactappProtofolio","type":"equal_size_not_identity","status":"recorded","detail":"Both report size 315 KB, but size equality is not evidence of duplicate content. Commit and tree comparison is required."}
+    {"repository":"Angularportfolio,ReactappProtofolio","type":"equal_size_not_identity","status":"recorded","detail":"Size equality is not evidence of duplicate content. Commit and tree comparison is required."},
+    {"repository":"sky365API","type":"private_api_security_risk","status":"manual_security_review_required","detail":"Review secrets, authentication configuration, connection strings, endpoints, deployment files and private business logic before migration."},
+    {"repository":"YouthAppsmain","type":"large_private_repository","status":"manual_large_repo_and_security_review_required","detail":"Metadata reports 598607 KB. Inspect large/generated files, binaries, history, credentials and business data before any migration decision."},
+    {"repository":"Sky8n","type":"zero_size_repository","status":"branch_history_review_required","detail":"Size 0 does not establish that the repository is empty or disposable; inspect all branches and history."},
+    {"repository":"Landpag2withoutlogin20230501","type":"nonstandard_default_branch","status":"recorded","detail":"Default branch is mostafa20230501; branch inventory must not assume main/master."},
+    {"repository":"n8n-workflows","type":"workflow_secret_reference_risk","status":"content_scan_required","detail":"Workflow exports can contain credential names, webhook URLs, endpoints or embedded secrets. Scan without publishing sensitive values."}
   ],
-  "retry_policy": {
-    "max_attempts_per_repository": 3,
-    "retry_on": ["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],
-    "do_not_retry_on": ["repository_not_found","permission_denied"],
-    "after_max_attempts": "record_for_manual_review_and_continue"
-  }
+  "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
