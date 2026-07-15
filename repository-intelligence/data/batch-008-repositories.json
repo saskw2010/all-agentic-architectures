@@ -1,0 +1,31 @@
+{
+  "batch": 8,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-15T22:00:00Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "repositories": [
+    {"name":"xamarin-shopping-cart","visibility":"private","default_branch":"master","size_kb":16188,"classification":"Xamarin mobile commerce application","risk":"private mobile configuration and service endpoint review required"},
+    {"name":"CPDEventPlanner20221129","visibility":"private","default_branch":"master","size_kb":1311,"classification":"CPD Event Planner version-family candidate","risk":"canonical status unproven"},
+    {"name":"ZainAgenda.Next.blazor","visibility":"private","default_branch":"master","size_kb":161285,"classification":"Blazor agenda/scheduling application","risk":"large private repository; generated assets, binaries, credentials and business-data review required"},
+    {"name":"deer-flow","visibility":"public","default_branch":"main","size_kb":23657,"classification":"agentic workflow/reference project","risk":"fork/upstream and license divergence review required"},
+    {"name":"TASKMANAGER20210823","visibility":"private","default_branch":"master","size_kb":10553,"classification":"task-management application","risk":"possible relation to BlazorTasks/Planner families requires structural comparison"},
+    {"name":"blazor-wasm-appointment-planner","visibility":"private","default_branch":"master","size_kb":330645,"classification":"Appointment Planner Web subfamily candidate","risk":"very large private repository; generated/binary content and history review required"},
+    {"name":"lean-ctx","visibility":"public","default_branch":"main","size_kb":427605,"classification":"AI context-engineering/reference project","risk":"very large repository; fork/upstream, vendored content and license review required"},
+    {"name":"awesome-Face_Recognition","visibility":"public","default_branch":"master","size_kb":468,"classification":"face-recognition reference collection","risk":"privacy/biometric-use and upstream-license review required"},
+    {"name":"nextjs-ai-chatbot","visibility":"public","default_branch":"main","size_kb":427,"classification":"AI chatbot/reference application","risk":"fork/upstream and environment-secret review required"},
+    {"name":"Open-Source-Make-Apps","visibility":"public","default_branch":"main","size_kb":144,"classification":"application/reference collection","risk":"upstream provenance and license review required"},
+    {"name":"colibri","visibility":"public","default_branch":"main","size_kb":220,"classification":"unresolved public project","risk":"purpose and upstream relationship require manifest scan"},
+    {"name":"FileUploadBlazor","visibility":"public","default_branch":"master","size_kb":422,"classification":"Blazor file-upload sample family","risk":"compare with FileUploadSample and blazor-progressive-uploadnet5"},
+    {"name":"cpdland","visibility":"private","default_branch":"master","size_kb":410703,"classification":"CPD product/landing application candidate","risk":"very large private repository; binaries, generated assets, credentials and business data review required"},
+    {"name":"CPDEventplanner20230209v1","visibility":"private","default_branch":"20230209","size_kb":12023,"classification":"CPD Event Planner version-family candidate","risk":"nonstandard default branch; canonical status unproven"},
+    {"name":"hello-agents","visibility":"public","default_branch":"main","size_kb":201951,"classification":"agentic AI learning/reference project","risk":"large repository; upstream, datasets, models and license review required"}
+  ],
+  "material_findings": [
+    "blazor-wasm-appointment-planner is 330645 KB and materially larger than the previously audited planner repository; size alone cannot establish canonical status.",
+    "cpdland is a 410703 KB private CPD repository and requires large-file, secret and business-data review before consolidation.",
+    "lean-ctx is 427605 KB and requires vendored-content, upstream and license analysis.",
+    "ZainAgenda.Next.blazor is a 161285 KB private scheduling repository requiring generated-content and sensitive-configuration review.",
+    "CPDEventplanner20230209v1 uses default branch 20230209; branch inventory must not assume main/master.",
+    "The CPDEventPlanner, Appointment Planner Web and FileUpload families gained additional candidate members."
+  ]
+}
