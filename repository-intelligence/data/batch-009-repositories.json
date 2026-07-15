@@ -6,12 +6,12 @@
   "repositories": [
     {"name":"blazorservercrudwithrestapi","visibility":"public","default_branch":"master","size_kb":746,"classification":"Blazor CRUD/REST sample","risk":"family and upstream status unproven"},
     {"name":"BlazorShop20210830vhome","visibility":"private","default_branch":"master","size_kb":11993,"classification":"BlazorShop version-family candidate","risk":"canonical status unproven"},
-    {"name":"BackEndNet5","visibility":"private","default_branch":"master","size_kb":5972,"classification":".NET 5 backend/service candidate","risk":"credentials, endpoints and family relationship require review"},
+    {"name":"BackEndNet5","visibility":"private","default_branch":"master","size_kb":5972,"classification":"ERP backend (.NET 5) paired with Angular frontend","business_status":"retain; required for recovering ERP features","risk":"credentials, endpoints and deployment settings require review; do not archive or consolidate away"},
     {"name":"CPDEventplanner20230214","visibility":"private","default_branch":"master","size_kb":12023,"classification":"CPD Event Planner family","risk":"canonical status and sensitive CPD data unproven"},
-    {"name":"CMGSWindowsServiceSendEmailVwithapikey","visibility":"private","default_branch":"master","size_kb":55,"classification":"Windows email service","risk":"high: repository name explicitly signals API-key handling"},
-    {"name":"awesome-mcp-servers","visibility":"public","default_branch":"main","size_kb":12464,"classification":"MCP reference/upstream candidate","risk":"license, upstream and server-security review required"},
+    {"name":"CMGSWindowsServiceSendEmailVwithapikey","visibility":"private","default_branch":"master","size_kb":55,"classification":"Windows email service","operational_status":"job should be disabled because it is repeatedly failing; preserve repository for diagnosis","risk":"high: repository name explicitly signals API-key handling; audit policy forbids changing the source job from this branch"},
+    {"name":"awesome-mcp-servers","visibility":"public","default_branch":"main","size_kb":12464,"classification":"MCP server reference/upstream candidate","business_status":"hold for dedicated review before adoption","risk":"license, upstream, command-execution, permissions and credential-handling review required"},
     {"name":"free-claude-code","visibility":"public","default_branch":"main","size_kb":3512,"classification":"AI coding tool/reference candidate","risk":"upstream, licensing and credential behavior review required"},
-    {"name":"Sky365Offers","visibility":"private","default_branch":"master","size_kb":285859,"classification":"Sky365 offers/business application","risk":"very large private repository; generated assets, binaries, secrets and business data review"},
+    {"name":"Sky365Offers","visibility":"private","default_branch":"master","size_kb":285859,"classification":"Sky365 Offers core business application","business_status":"highest-priority strategic project; preserve independently and prioritize deep audit/recovery","risk":"very large private repository; generated assets, binaries, secrets, deployment configuration and business data review"},
     {"name":"Net5Wasm20210812","visibility":"private","default_branch":"master","size_kb":68029,"classification":"Net5Wasm version-family candidate","risk":"canonical status and private configuration unproven"},
     {"name":"CPDHelpDesk2021-1028v2","visibility":"private","default_branch":"master","size_kb":1925,"classification":"CPD HelpDesk version-family candidate","risk":"canonical status and support data review required"},
     {"name":"Net5Wasm20210729V1","visibility":"public","default_branch":"master","size_kb":45510,"classification":"Net5Wasm version-family candidate","risk":"public visibility may expose obsolete configuration; canonical status unproven"},
@@ -20,8 +20,10 @@
     {"name":"collab-public","visibility":"public","default_branch":"main","size_kb":15543,"classification":"collaboration application/reference candidate","risk":"public exposure, upstream and dependency review required"}
   ],
   "material_findings": [
-    "CMGSWindowsServiceSendEmailVwithapikey explicitly indicates API-key use and requires immediate secret/history review without exposing any discovered value.",
-    "Sky365Offers is a 285859 KB private business repository and requires large-file, generated-content, secret and business-data review before migration.",
+    "BackEndNet5 is confirmed by the owner as the ERP backend paired with an Angular frontend. It is required for feature recovery and must be retained.",
+    "Sky365Offers is confirmed as the highest-priority strategic project and should receive an early deep audit while remaining an independent canonical repository.",
+    "CMGSWindowsServiceSendEmailVwithapikey has a repeatedly failing job that should be disabled operationally, but no source or workflow mutation is permitted under this audit branch policy.",
+    "awesome-mcp-servers requires a dedicated provenance, license, permissions, command-execution and credential-handling review before reuse.",
     "The CPDEventPlanner family expanded by three dated repositories in this batch, increasing the risk of choosing a false canonical version by filename alone.",
     "The Net5Wasm family expanded by two additional dated repositories; commit, tree, manifest and branch comparison remains mandatory.",
     "BlazorShop20210830vhome expands the BlazorShop family; the vhome suffix is not proof of canonical or product scope."
