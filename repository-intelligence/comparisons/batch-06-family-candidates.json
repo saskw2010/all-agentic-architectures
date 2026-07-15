@@ -1,0 +1,12 @@
+{
+  "batch": 6,
+  "generated_at_utc": "2026-07-15T20:04:16Z",
+  "candidates": [
+    {"family":"blazorshop","members":["BlazorShop-master","BlazorShop20210928"],"confidence":"high","next_evidence":"compare commit ancestry, solution/project files, and trees"},
+    {"family":"sky365-automation","members":["n8n-workflows","Sky8n"],"confidence":"medium","next_evidence":"inspect workflow JSONs and commit history; Sky8n reports size 0"},
+    {"family":"agent-builder-orchestration","members":["open-agent-builder","hyperframes","agents","AutoAgent","agentic-context-engine"],"confidence":"low","next_evidence":"classify upstream forks versus original product work before consolidation"},
+    {"family":"ai-model-tooling-forks","members":["unsloth","stable-diffusion-webui","sd-webui-forge-classic"],"confidence":"taxonomy_only","next_evidence":"do not consolidate merely because all are AI tooling; verify fork lineage and local modifications"},
+    {"family":"sky365-product","members":["sky365API"],"confidence":"seed","next_evidence":"search remaining inventory for UI, backend, deployment, and historical Sky365 repositories"}
+  ],
+  "policy_note":"Family membership is analytical only. No repository is approved for archive or deletion until unique content, history, secrets, dependencies, and validation are documented."
+}
