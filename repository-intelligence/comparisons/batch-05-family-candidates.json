@@ -1,0 +1,11 @@
+{
+  "batch": 5,
+  "status": "candidate_only",
+  "rule": "Names, dates, and equal sizes are discovery signals only; no duplicate or canonical conclusion without branch, commit, manifest, and content evidence.",
+  "families": [
+    {"family":"portfolio-sites","members":["portfolio","ReactappProtofolio","Angularportfolio"],"confidence":"medium","next":"compare frameworks, content, deployment branches, and commit ancestry"},
+    {"family":"mosso-blazor-samples","members":["mossotest","mossotestgo","Mosblazorboiler","CRUDwasmEFmosso"],"confidence":"medium","next":"inspect solutions, project files, namespaces, database migrations, and commit ancestry"},
+    {"family":"custom-authentication","members":["CustomSecurityWAW","dotnet-maui-blazor-customauthentication-mostafa","BlazorUsersRolesamazing"],"confidence":"low","next":"compare authentication architecture while excluding secrets from generated reports"},
+    {"family":"blazor-shop","members":["BlazorShop-master","BlazorShop20210928"],"confidence":"high-name-signal","next":"compare commit ancestry and application completeness"}
+  ]
+}
