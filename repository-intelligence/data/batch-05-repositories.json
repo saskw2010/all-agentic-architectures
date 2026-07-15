@@ -1,0 +1,24 @@
+{
+  "batch": 5,
+  "phase": "repository_inventory",
+  "audited_utc": "2026-07-15T19:07:46Z",
+  "policy": "read-only metadata audit; no source repository mutations",
+  "repositories": [
+    {"name":"mossotest","visibility":"public","default_branch":"master","size_kb":2694,"classification":"legacy .NET/Blazor candidate","review":"compare with mossotestgo and related Mos* repositories"},
+    {"name":"fullstack-solution-template-for-agentcore","visibility":"public","default_branch":"main","size_kb":6520,"classification":"agentic application template","review":"retain as reference/template pending manifest scan"},
+    {"name":"saskw2010.github.io","visibility":"public","default_branch":"main","size_kb":25,"classification":"GitHub Pages site","review":"retain; verify deployment role during branch inventory"},
+    {"name":"CustomSecurityWAW","visibility":"private","default_branch":"master","size_kb":26788,"classification":"security/authentication application","review":"manual secret and sensitive configuration review required before migration"},
+    {"name":"LLM-Zero-to-Hundred","visibility":"public","default_branch":"master","size_kb":79157,"classification":"LLM learning/reference repository","review":"likely upstream/fork reference; verify provenance"},
+    {"name":"Mosblazorboiler","visibility":"public","default_branch":"master","size_kb":1950,"classification":"Blazor boilerplate","review":"compare with mossotest, CRUDwasmEFmosso and authentication samples"},
+    {"name":"peachpie-wordpress","visibility":"public","default_branch":"master","size_kb":22500,"classification":"PeachPie/WordPress integration","review":"reference candidate; verify fork/upstream status"},
+    {"name":"CRUDwasmEFmosso","visibility":"public","default_branch":"master","size_kb":231,"classification":"Blazor WASM CRUD sample","review":"candidate member of Mosso/Blazor sample family"},
+    {"name":"dotnet-maui-blazor-customauthentication-mostafa","visibility":"public","default_branch":"main","size_kb":276,"classification":"MAUI Blazor authentication sample","review":"compare with CustomSecurityWAW and other auth samples"},
+    {"name":"portfolio","visibility":"public","default_branch":"main","size_kb":75050,"classification":"portfolio site","review":"compare with ReactappProtofolio and Angularportfolio"},
+    {"name":"chatbox","visibility":"public","default_branch":"main","size_kb":31577,"classification":"AI/chat application","review":"manifest and provenance scan required"},
+    {"name":"API-mega-list","visibility":"public","default_branch":"main","size_kb":16047,"classification":"API reference collection","review":"likely external reference/fork; verify provenance"},
+    {"name":"BlazorShop-master","visibility":"public","default_branch":"master","size_kb":7230,"classification":"Blazor commerce sample","review":"compare with BlazorShop20210928 discovered in next page"},
+    {"name":"ReactappProtofolio","visibility":"public","default_branch":"master","size_kb":315,"classification":"React portfolio variant","review":"portfolio family candidate"},
+    {"name":"Angularportfolio","visibility":"public","default_branch":"master","size_kb":315,"classification":"Angular portfolio variant","review":"portfolio family candidate; equal size is not identity evidence"}
+  ],
+  "summary": {"processed":15,"private":1,"public":14,"material_risks":1,"duplicate_family_candidates":4}
+}
