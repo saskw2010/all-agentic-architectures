@@ -16,17 +16,17 @@
     <div class="eyebrow">LOCAL AI · LM STUDIO · ENTERPRISE INFERENCE</div>
     <h1>شغّل الذكاء محليًا.<br><span>لكن قِس قبل أن تعتمد.</span></h1>
     <p class="lead">قسم عملي يشرح Mixture of Experts وColibrì، ويحوّل مواصفات جهاز 48GB RAM إلى خطة LM Studio قابلة للاختبار، ثم يربط النموذج المحلي بـSKY365 عبر Model Router وPolicy وApproval وShared Action Core.</p>
-    <div class="hero-actions"><a class="btn primary" href="lm-studio-implementation-plan.md">ابدأ خطة LM Studio</a><a class="btn" href="benchmarking-template.md">افتح نموذج القياس</a></div>
+    <div class="hero-actions"><a class="btn primary" href="lm-studio-implementation-plan/">ابدأ خطة LM Studio</a><a class="btn" href="benchmarking-template/">افتح نموذج القياس</a></div>
     <div class="rule"><strong>القاعدة:</strong> النموذج المحلي DraftOnly افتراضيًا. لا توجد كتابة مباشرة في ERP؛ كل Action يمر عبر السياسة والتحقق والموافقة والتتبع.</div>
   </section>
 
   <section class="grid">
-    <a class="card" href="colibri-and-disk-streaming.md"><small>RESEARCH</small><h2>Colibrì & Disk Streaming</h2><p>كيف تعمل النماذج الضخمة بذاكرة محدودة، ولماذا قابلية التشغيل لا تعني صلاحية الإنتاج.</p></a>
-    <a class="card" href="mixture-of-experts-explained.md"><small>FOUNDATION</small><h2>Mixture of Experts</h2><p>Router، Top-K Experts، الحوسبة الشرطية، وتطبيق الفكرة على Skills داخل SKY365.</p></a>
-    <a class="card" href="lm-studio-implementation-plan.md"><small>IMPLEMENTATION</small><h2>LM Studio Plan</h2><p>خطة مراحل فعلية: التجهيز، نماذج الاختبار، API المحلي، التكامل، ومعايير القبول.</p></a>
-    <a class="card" href="model-selection-for-48gb-ram.md"><small>HARDWARE FIT</small><h2>48GB Model Selection</h2><p>متى تستخدم 8B أو 14B أو 32B، ولماذا 70B ليس اختيارًا يوميًا مناسبًا.</p></a>
-    <a class="card" href="benchmarking-template.md"><small>EVALUATION</small><h2>Benchmark Template</h2><p>قياس Arabic، ERP، SQL، C#، Planning، Tokens/sec، RAM، VRAM، والاستقرار.</p></a>
-    <a class="card" href="troubleshooting.md"><small>OPERATIONS</small><h2>Troubleshooting</h2><p>حل مشاكل التحميل، Paging، البطء، ضعف العربية، والانحراف من Demo إلى Production.</p></a>
+    <a class="card" href="colibri-and-disk-streaming/"><small>RESEARCH</small><h2>Colibrì & Disk Streaming</h2><p>كيف تعمل النماذج الضخمة بذاكرة محدودة، ولماذا قابلية التشغيل لا تعني صلاحية الإنتاج.</p></a>
+    <a class="card" href="mixture-of-experts-explained/"><small>FOUNDATION</small><h2>Mixture of Experts</h2><p>Router، Top-K Experts، الحوسبة الشرطية، وتطبيق الفكرة على Skills داخل SKY365.</p></a>
+    <a class="card" href="lm-studio-implementation-plan/"><small>IMPLEMENTATION</small><h2>LM Studio Plan</h2><p>خطة مراحل فعلية: التجهيز، نماذج الاختبار، API المحلي، التكامل، ومعايير القبول.</p></a>
+    <a class="card" href="model-selection-for-48gb-ram/"><small>HARDWARE FIT</small><h2>48GB Model Selection</h2><p>متى تستخدم 8B أو 14B أو 32B، ولماذا 70B ليس اختيارًا يوميًا مناسبًا.</p></a>
+    <a class="card" href="benchmarking-template/"><small>EVALUATION</small><h2>Benchmark Template</h2><p>قياس Arabic، ERP، SQL، C#، Planning، Tokens/sec، RAM، VRAM، والاستقرار.</p></a>
+    <a class="card" href="troubleshooting/"><small>OPERATIONS</small><h2>Troubleshooting</h2><p>حل مشاكل التحميل، Paging، البطء، ضعف العربية، والانحراف من Demo إلى Production.</p></a>
   </section>
 
   <section class="stack"><div class="eyebrow">SKY365 SAFE ROUTE</div><h2>المسار التشغيلي</h2><div class="flow"><span>Agent Request</span><span>→</span><span>OmniRoute</span><span>→</span><span>Policy</span><span>→</span><span>LM Studio / Cloud</span><span>→</span><span>Validation</span><span>→</span><span>Approval</span><span>→</span><span>Shared Action Core</span><span>→</span><span>Flight Recorder</span></div></section>
