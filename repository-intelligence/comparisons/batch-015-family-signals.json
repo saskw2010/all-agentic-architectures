@@ -1,0 +1,17 @@
+{
+  "batch": 15,
+  "generated_utc": "2026-07-16T05:07:00Z",
+  "policy": "signals only; no duplicate, canonical, merge, archive or deletion decision without branch-aware proof",
+  "families": [
+    {"family":"authentication-20210922","members":["authentication20210922","authentication20210922last","authentication20210922vlast"],"signal":"strong filename/date relationship with extreme size divergence","required_next":"inventory all branches; compare commit ancestry, root trees, manifests, identity configuration and deployment files"},
+    {"family":"WytSky Delivery","members":["WytSkyDelivery20220120","WytSkyDelivery20220122"],"signal":"adjacent dated names and near-equal metadata size","required_next":"compare commits, trees, manifests and configuration; do not select latest filename automatically"},
+    {"family":"WytSky Store","members":["WytSkyStore20211006","WytSkyStore2023-11-07"],"signal":"same product name with dated snapshots","required_next":"map branch history, schema, features and deployment configuration before canonical decision"},
+    {"family":"SKY SaaS/ERP","members":["SKYsaasV89320220525","SASERP811V37","BackEndNet5","ERPV1137-2025-08-06","105-1001SASERP811V37Dev"],"signal":"strategic platform and ERP naming overlap; scope may differ","required_next":"preserve independently; compare architecture, API contracts, database schema, manifests, branches and features"},
+    {"family":"Windows Services","members":["WindowsService20220612","WindowsService_SendSms","CMGSWindowsServiceSendEmailVwithapikey","CMGSWindowsServiceSendEmailV20230301","CMGSmeetingservice"],"signal":"operational service family with credential and deployment risk","required_next":"inventory branches and service roles; scan history for secret references without exposing values"},
+    {"family":"MAUI App","members":["MauiApp1-20220706","MauiApp1withidentity","MauiApp120220628"],"signal":"dated and identity variants","required_next":"compare project manifests, platforms, authentication modules, endpoints and commit ancestry"},
+    {"family":"Task Manager","members":["TASKMANAGER20210823","TASKMANAGER20220823"],"signal":"same product name with one-year dated variants","required_next":"compare branches, trees, schema and feature differences"},
+    {"family":"CRM","members":["radzen-examples-Crm","BlazorCrmWasm20221012"],"signal":"Radzen/Blazor CRM overlap","required_next":"establish upstream provenance and compare local modifications, schema and business logic"},
+    {"family":"CPD Event Planner","members":["CPDEventPlanner20221025","CPDEventplanner2022-10-27","CPDEventplanner20221101","CPDEventPlanner20221101","CPDEventPlanner20221101final","CPDEventPlanner20221108","CPDEventPlanner20221120","CPDEventplanner20221120v2","CPDEventPlanner20221121","CPDEventPlanner20221123","CPDEventPlanner20221129","CPDEventplanner20230209v1","CPDEventPlanner20230212","CPDEventplanner20230214"],"signal":"dense dated/versioned family; three new members have identical reported size","required_next":"branch-aware commit/tree comparison and feature/schema mapping; filename chronology and equal size are insufficient"},
+    {"family":"HMS","members":["HMS2021","HMSCodeOntime"],"signal":"hospital-management naming and nonstandard branches","required_next":"inventory every ref and compare generated code, schema, domain data and deployment configuration under privacy controls"}
+  ]
+}
