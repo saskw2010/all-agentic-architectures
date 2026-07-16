@@ -1,0 +1,60 @@
+{
+  "generated_utc": "2026-07-16T00:00:00Z",
+  "policy": "Intelligence and recommendation only; no source repository or production environment mutation from this branch.",
+  "actions": [
+    {
+      "action_id": "ops-windows-service-sms-job-001",
+      "repository": "WindowsService_SendSms",
+      "family": "cmgs-messaging-and-windows-services",
+      "type": "operational_job_failure",
+      "priority": "urgent",
+      "status": "requires_runtime_identification",
+      "owner_statement": "The deployed job produces repeated errors and should be stopped.",
+      "required_before_change": [
+        "Identify the exact Windows Service name, scheduled task, worker process or deployment unit.",
+        "Capture the latest error and execution schedule.",
+        "Confirm whether the failing unit is SMS-only or shared with another service.",
+        "Record current configuration and rollback/start procedure.",
+        "Disable the job or trigger without deleting source code or repository history.",
+        "Verify that error generation stops and that no required service is affected."
+      ],
+      "source_repository_action": "retain",
+      "archive_recommendation": "never_archive_without_owner_approval"
+    },
+    {
+      "action_id": "health-vulnerability-observability-001",
+      "scope": "all inventoried repositories",
+      "type": "repository_health_baseline",
+      "priority": "high",
+      "status": "term_interpreted_as_vulnerability_and_metrics_pending_confirmation",
+      "note": "The spoken term 'volumetry' appears more likely to mean vulnerability scanning and/or telemetry/metrics. Exact repository evidence has not yet confirmed a volumetry component.",
+      "required_checks": [
+        "dependency vulnerability scanning",
+        "secret scanning without publishing secret values",
+        "static code security scanning",
+        "build and test status",
+        "workflow and scheduled-job health",
+        "runtime logging and error-rate visibility",
+        "OpenTelemetry or equivalent traces, metrics and logs where appropriate",
+        "repository size, generated assets and binary-content metrics"
+      ],
+      "recommended_setup": {
+        "security": [
+          "Dependabot or equivalent dependency update policy",
+          "CodeQL or technology-appropriate static analysis",
+          "secret scanning and push protection where available",
+          "manual review gate before automatic dependency fixes on production repositories"
+        ],
+        "observability": [
+          "structured logs",
+          "health checks",
+          "job success/failure counters",
+          "last successful execution timestamp",
+          "error-rate and retry metrics",
+          "OpenTelemetry only where the runtime and deployment model justify it"
+        ]
+      },
+      "automation_safety": "Do not auto-merge vulnerability fixes across all repositories. Open reviewable changes per repository or family, run builds/tests, and require approval for production systems."
+    }
+  ]
+}
