@@ -1,0 +1,26 @@
+{
+  "id": "sky365-platform-core",
+  "name": "SKY365 Platform Core",
+  "status": "initialized_in_intelligence_hub",
+  "target_repository": "saskw2010/wytsky-sky365-core-family",
+  "relationship_type": "platform_umbrella",
+  "priority": "critical",
+  "scope": [
+    "Core ERP and SaaS platform",
+    "Integration and orchestration",
+    "Knowledge and context",
+    "AI agents runtime",
+    "Experience and interaction"
+  ],
+  "safety": {
+    "delete_allowed": false,
+    "archive_allowed_now": false,
+    "merge_without_approval": false
+  },
+  "next_actions": [
+    "Assign SKY365 repositories and platform roles",
+    "Separate product families from platform core",
+    "Identify canonical architecture artifacts",
+    "Create platform dependency map"
+  ]
+}
