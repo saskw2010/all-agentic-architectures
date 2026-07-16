@@ -1,0 +1,35 @@
+{
+  "batch": 12,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-16T02:01:52Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "repositories": [
+    {"name":"onyx","visibility":"public","default_branch":"main","size_kb":942153,"classification":"large AI/search platform upstream candidate","risk":"extreme size; upstream, license, vendored assets, models, datasets and deployment review required"},
+    {"name":"spec-kit","visibility":"public","default_branch":"main","size_kb":12913,"classification":"spec-driven development toolkit/reference","risk":"upstream provenance, license and local modification review required"},
+    {"name":"BlazorShop20210830","visibility":"private","default_branch":"master","size_kb":12131,"classification":"BlazorShop version-family candidate","risk":"canonical status unproven"},
+    {"name":"SASERP811V37-withcodeontime","visibility":"private","default_branch":"main","size_kb":0,"classification":"ERP version-family candidate","risk":"zero-size metadata; all branches/history must be inspected before lineage decisions"},
+    {"name":"Testauth20211014","visibility":"private","default_branch":"master","size_kb":189875,"classification":"authentication/security test application","risk":"large private identity repository; secrets, signing keys, user data, binaries and deployment review required"},
+    {"name":"trial20220706","visibility":"private","default_branch":"master","size_kb":9157,"classification":"dated trial/prototype candidate","risk":"purpose and family relationship unproven"},
+    {"name":"sky-snap-archive","visibility":"private","default_branch":"main","size_kb":321,"classification":"Sky snapshot/archive-labeled repository","risk":"archive naming is not authorization to delete or ignore; provenance and retained value require review"},
+    {"name":"opencut","visibility":"private","default_branch":"main","size_kb":10545,"classification":"video editing application/upstream candidate","risk":"upstream, license, media processing and credential behavior review required"},
+    {"name":"WytSkyStore2023-11-07","visibility":"private","default_branch":"master","size_kb":6637,"classification":"WytSky Store dated product candidate","risk":"commerce data, credentials, deployment configuration and relationship to Sky365 commerce assets require review"},
+    {"name":"Dr-Ahmed-Radiology-X-Ray","visibility":"public","default_branch":"main","size_kb":16,"classification":"radiology documentation/education asset","risk":"public exposure, medical-content provenance and patient-data exclusion review required"},
+    {"name":"ViMax","visibility":"public","default_branch":"main","size_kb":185727,"classification":"large video/AI application candidate","risk":"upstream, license, model/media assets, privacy and execution permissions require review"},
+    {"name":"CPDEventPlannernet6-2022-11-14","visibility":"private","default_branch":"master","size_kb":3412,"classification":"CPD Event Planner .NET 6 family","risk":"canonical and migration status unproven"},
+    {"name":"BlazorEventManagerwasm20230123morning","visibility":"private","default_branch":"master","size_kb":74265,"classification":"Blazor Event Manager WASM version-family candidate","risk":"dated suffix does not establish canonical status; private event data/configuration review required"},
+    {"name":"CMGSmeetingservice","visibility":"private","default_branch":"master","size_kb":55,"classification":"CMGS meeting Windows/service component","risk":"service endpoints, credentials, scheduling behavior and deployment state require review"},
+    {"name":"YouthApps20230430","visibility":"private","default_branch":"main","size_kb":0,"classification":"YouthApps version-family candidate","risk":"zero-size metadata; branch and history review required"},
+    {"name":"SkoolaNETibra","visibility":"private","default_branch":"master","size_kb":254091,"classification":"Skoola education product-family candidate","risk":"very large private repository; student data, binaries, secrets, deployment and lineage review required"},
+    {"name":"SkyInfer-Lab","visibility":"private","default_branch":"main","size_kb":2,"classification":"Sky inference research/lab asset","risk":"minimal default-branch size may hide branch-only work; inspect all refs before classification"},
+    {"name":"eZee20211206","visibility":"private","default_branch":"master","size_kb":17017,"classification":"eZee dated product-family candidate","risk":"canonical status, data model and deployment configuration unproven"},
+    {"name":"CPDEventManagerCOT202211-07","visibility":"private","default_branch":"main","size_kb":0,"classification":"CPD Event Manager Code-On-Time family candidate","risk":"zero-size metadata; branch/history and relationship to CPD planner family require review"},
+    {"name":"CPDEventPlanner20221121","visibility":"private","default_branch":"master","size_kb":1300,"classification":"CPD Event Planner version-family candidate","risk":"canonical status unproven"}
+  ],
+  "material_findings": [
+    "onyx is a 942153 KB public repository and is the largest repository seen in this batch; upstream provenance, licenses, vendored assets, models, datasets and deployment content must be established before reuse.",
+    "Testauth20211014 is a 189875 KB private authentication repository and requires deep secret, identity-data, signing-key, binary and deployment review.",
+    "SkoolaNETibra is a 254091 KB private education repository and materially expands the Skoola family; it must be preserved and compared with Skoola_NET20241122 and Appskoola-net.",
+    "SASERP811V37-withcodeontime, YouthApps20230430 and CPDEventManagerCOT202211-07 report size 0; no empty/disposable inference is permitted before branch and history inventory.",
+    "The CPD/Event and BlazorShop families expanded again, increasing false-canonical risk from filename chronology alone."
+  ]
+}
