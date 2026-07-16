@@ -1,0 +1,23 @@
+{
+  "id": "sky365-offers",
+  "name": "SKY365 Offers",
+  "status": "initialized_in_intelligence_hub",
+  "target_repository": "saskw2010/wytsky-sky365-offers-family",
+  "relationship_type": "product_family",
+  "priority": "critical",
+  "owner_decisions": [
+    "Sky365Offers is a highest-priority strategic project",
+    "Do not bury it inside a generic platform family"
+  ],
+  "safety": {
+    "delete_allowed": false,
+    "archive_allowed_now": false,
+    "merge_without_approval": false
+  },
+  "next_actions": [
+    "Assign all Offers-related repositories and assets",
+    "Build strategic product roadmap",
+    "Identify canonical implementation candidate",
+    "Create migration and validation checklist"
+  ]
+}
