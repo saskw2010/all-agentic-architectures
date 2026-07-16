@@ -1,0 +1,24 @@
+{
+  "id": "erp-sas-erp",
+  "name": "ERP / SAS ERP",
+  "status": "initialized_in_intelligence_hub",
+  "target_repository": "saskw2010/wytsky-erp-family",
+  "relationship_type": "product_family",
+  "priority": "critical",
+  "owner_decisions": [
+    "BackEndNet5 is the retained ERP backend",
+    "Angular frontend remains a separate role",
+    "Recover unique features before any archive recommendation"
+  ],
+  "safety": {
+    "delete_allowed": false,
+    "archive_allowed_now": false,
+    "merge_without_approval": false
+  },
+  "next_actions": [
+    "Assign known ERP repositories",
+    "Build role map for backend, frontend, database and reporting",
+    "Create feature-gap matrix",
+    "Select canonical candidates only after evidence review"
+  ]
+}
