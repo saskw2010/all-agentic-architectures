@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-16T00:05:00Z",
+  "last_updated_utc": "2026-07-16T01:05:00Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -31,7 +31,12 @@
     {"repository":"Skoola_NET20241122","type":"large_private_repository_and_nonstandard_default_branch","status":"manual_large_repo_security_data_and_branch_review_required","detail":"Metadata reports 227800 KB and default branch mostafa. Inspect every branch, generated assets, binaries, credentials, deployment configuration and student/business data before migration."},
     {"repository":"UI-TARS-desktop","type":"large_public_desktop_control_agent_risk","status":"upstream_license_model_and_permission_review_required","detail":"Metadata reports 191768 KB. Determine upstream provenance and licenses; review model assets, desktop-control permissions, command execution and credential access before reuse."},
     {"repository":"SASERP811V2020withidentity","type":"private_erp_identity_security_risk","status":"deep_identity_schema_and_lineage_review_required","detail":"Inspect identity secrets, signing material, user data, database schema, deployment configuration and relationship to the ERP family before migration."},
-    {"repository":"ERPV1137-2025-08-06","type":"strategic_erp_family_candidate","status":"compare_with_owner_confirmed_backend_before_canonical_decision","detail":"Preserve independently and compare API contracts, database schema, manifests, branches and commit history with BackEndNet5, 105-1001SASERP811V37Dev and related ERP repositories."}
+    {"repository":"ERPV1137-2025-08-06","type":"strategic_erp_family_candidate","status":"compare_with_owner_confirmed_backend_before_canonical_decision","detail":"Preserve independently and compare API contracts, database schema, manifests, branches and commit history with BackEndNet5, 105-1001SASERP811V37Dev and related ERP repositories."},
+    {"repository":"Appskoola-net","type":"large_private_education_repository","status":"manual_data_security_large_repo_and_lineage_review_required","detail":"Metadata reports 144584 KB. Inspect student/business data, generated assets, binaries, credentials, deployment configuration and relationship to Skoola_NET20241122 and WytSky.Mobile.Maui.Skoola before migration."},
+    {"repository":"EventBackEnd20220102","type":"private_backend_domain_and_security_risk","status":"deep_api_schema_secret_and_family_review_required","detail":"Metadata reports 68131 KB. Preserve independently; inspect API contracts, database schema, credentials, deployment configuration and relationship to Event/CPD repositories."},
+    {"repository":"FileUploadBlazor-master","type":"zero_size_repository","status":"branch_history_review_required","detail":"Metadata reports size 0. Do not infer emptiness or disposability; inspect all branches, commits and refs before classification."},
+    {"repository":"WytSky.Mobile.Maui.Skoola","type":"zero_size_private_product_repository","status":"branch_history_and_product_lineage_review_required","detail":"Metadata reports size 0. Do not infer emptiness; inspect all branches/history and determine relationship to Appskoola-net and Skoola_NET20241122."},
+    {"repository":"Sky365-knowledge-hub","type":"public_knowledge_source_freshness_risk","status":"source_of_truth_and_public_exposure_review_required","detail":"Public visibility does not establish that documentation is current, complete or safe as canonical. Verify provenance, freshness and sensitive-content exposure before migration use."}
   ],
   "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
