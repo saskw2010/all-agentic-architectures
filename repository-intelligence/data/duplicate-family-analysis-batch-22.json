@@ -1,0 +1,16 @@
+{
+  "batch": 22,
+  "generated_utc": "2026-07-16T16:09:02Z",
+  "classification_level": "name-and-metadata-candidate",
+  "warning": "No duplicate family is canonicalized from names alone. Content, manifests, commit lineage, and branch history remain required before migration or archival decisions.",
+  "families": [
+    {"family":"cpd-event-planner","confidence":"high-name-match","members":["CPDEventplanner20221101","CPDEventPlanner20221120","CPDEventPlanner20221129"],"related_existing_members":["CPDEventPlanner20221101final","CPDEventPlanner20221108","CPDEventPlanner20221123","CPDEventplanner20221120v2","CPDEventplanner20230209v1","CPDEventPlanner20230212","CPDEventplanner20230214"],"risk":"Version dates and casing imply snapshots, but content lineage is not yet proven."},
+    {"family":"landing-page-without-login","confidence":"high-name-match","members":["Landpag2withoutlogin","Landpag2withoutlogin1"],"related_existing_members":["Landpag2withoutlogin20230501"],"risk":"Landpag2withoutlogin1 is empty; do not infer it is disposable without provenance."},
+    {"family":"authentication","confidence":"high-name-match","members":["authentication20210916"],"related_existing_members":["authentication20210922","authentication20210922last","authentication20210922vlast","Testauth20211014","chechaspnetusers","wytsky-authentication-family"],"risk":"Existing family registry should remain the coordination authority; no operational action taken."},
+    {"family":"appointment-planner","confidence":"medium-high","members":["blazor-showcase-appointment-planner"],"related_existing_members":["blazor-wasm-appointment-planner"],"risk":"Large repository size suggests content comparison is required before treating either as canonical."},
+    {"family":"sas-erp","confidence":"medium-high","members":["105-1001SASERP811V37Dev","sashtmlfinancecsharp"],"related_existing_members":["SASERP811V37","SASERP811V37-withcodeontime","SASERP811V2020withidentity","ERPV1137-2025-08-06"],"risk":"Naming suggests product lineage but roles may differ between application, generated code, and finance module."},
+    {"family":"commerce","confidence":"medium","members":["BlazorEcommerce","ecommerce_mcp","SimplCommerce","xamarin-shopping-cart"],"related_existing_members":["wytsky-blazorshop-family","BlazorShop-master"],"risk":"Shared domain does not imply duplication; likely contains reference implementations and distinct platforms."},
+    {"family":"mobile-maui","confidence":"medium","members":["MauiApp120220628","xamarin-shopping-cart"],"related_existing_members":["MauiApp1-20220706","MauiApp1withidentity","maui-blazor-hybrid","WytSky.Mobile.Maui.Noor","WytSky.Mobile.Maui.Skoola"],"risk":"Framework migration lineage is plausible but unverified."}
+  ],
+  "actions_taken": []
+}
