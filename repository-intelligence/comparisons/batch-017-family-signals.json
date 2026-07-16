@@ -1,0 +1,37 @@
+{
+  "batch": 17,
+  "generated_utc": "2026-07-16T07:08:05Z",
+  "family_signals": [
+    {
+      "family": "WytSky authentication / identity",
+      "new_member": "wytsky-authentication-family",
+      "related_repositories": [
+        "authentication20210916",
+        "authentication20210922",
+        "authentication20210922last",
+        "authentication20210922vlast",
+        "Testauth20211014",
+        "CustomSecurityWAW",
+        "chechaspnetusers",
+        "RegProcessCsharp",
+        "regBackend"
+      ],
+      "evidence": [
+        "family-level repository name",
+        "private visibility",
+        "zero-size repository metadata"
+      ],
+      "decision": "dedicated lineage and sensitive-identity review required",
+      "canonical_status": "undetermined",
+      "required_comparison": [
+        "all branches and refs",
+        "commit ancestry and tree hashes",
+        "solution and project manifests",
+        "identity schema and authentication flows",
+        "feature coverage",
+        "secret and signing-material handling"
+      ],
+      "safety_note": "Do not publish credentials, keys, tokens, user records or connection strings in generated reports."
+    }
+  ]
+}
