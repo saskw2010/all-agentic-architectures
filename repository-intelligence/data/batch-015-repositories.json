@@ -1,0 +1,34 @@
+{
+  "batch": 15,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-16T05:07:00Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "repositories": [
+    {"name":"authentication20210922last","visibility":"private","default_branch":"main","size_kb":0,"classification":"authentication version-family candidate","risk":"zero-size identity repository; inspect all branches/history, signing material, user data and lineage before any disposition"},
+    {"name":"authentication20210922vlast","visibility":"private","default_branch":"master","size_kb":58834,"classification":"authentication version-family candidate","risk":"large private identity repository; inspect secrets, signing keys, user data, binaries, deployment configuration and lineage"},
+    {"name":"WytSkyStore20211006","visibility":"private","default_branch":"master","size_kb":3491,"classification":"WytSky Store version-family member","risk":"customer/order data, credentials, payment or integration configuration and family lineage require review"},
+    {"name":"WytSkyDelivery20220120","visibility":"private","default_branch":"master","size_kb":805,"classification":"WytSky Delivery version-family member","risk":"delivery/customer/location data, credentials, endpoints and canonical lineage require review"},
+    {"name":"WytSkyDelivery20220122","visibility":"private","default_branch":"master","size_kb":803,"classification":"WytSky Delivery version-family member","risk":"near-equal size to 20220120 is not identity; exact commit/tree/manifests comparison required"},
+    {"name":"SKYsaasV89320220525","visibility":"private","default_branch":"main","size_kb":0,"classification":"SKY SaaS version-family candidate","risk":"zero-size strategic product repository; inspect all branches/history and do not infer emptiness"},
+    {"name":"WindowsService20220612","visibility":"private","default_branch":"master","size_kb":30364,"classification":"Windows Service operational-family candidate","risk":"service credentials, endpoints, scheduled-job configuration, binaries and relation to CMGS services require review"},
+    {"name":"RESTfulAPIConsume20220626","visibility":"private","default_branch":"master","size_kb":11,"classification":"REST API integration experiment","risk":"API endpoints, tokens and uniqueness require content/history review"},
+    {"name":"MauiApp1-20220706","visibility":"private","default_branch":"master","size_kb":2073,"classification":".NET MAUI dated application candidate","risk":"mobile credentials, endpoints, signing/deployment configuration and relationship to MauiApp1withidentity require review"},
+    {"name":"Webphp1","visibility":"private","default_branch":"master","size_kb":4400,"classification":"PHP web application candidate","risk":"credentials, database configuration, uploaded content and business purpose require review"},
+    {"name":"TASKMANAGER20220823","visibility":"private","default_branch":"master","size_kb":22856,"classification":"Task Manager dated version-family member","risk":"business/user data, credentials, generated assets and lineage against TASKMANAGER20210823 require comparison"},
+    {"name":"Blazor_Portfolio","visibility":"private","default_branch":"master","size_kb":35162,"classification":"Blazor portfolio application","risk":"large portfolio repository may include generated assets, personal data, credentials or duplicated site content"},
+    {"name":"radzen-examples-Crm","visibility":"private","default_branch":"master","size_kb":31722,"classification":"Radzen CRM example/fork candidate","risk":"upstream provenance, license, local modifications, CRM data and credentials require review"},
+    {"name":"BlazorCrmWasm20221012","visibility":"private","default_branch":"master","size_kb":36399,"classification":"Blazor CRM WASM version-family candidate","risk":"customer/business data, credentials, schema, generated assets and relationship to Radzen CRM require review"},
+    {"name":"CPDEventPlanner20221025","visibility":"private","default_branch":"master","size_kb":380,"classification":"CPD Event Planner dated version-family member","risk":"canonical status cannot be inferred from date; exact tree/history/manifests comparison required"},
+    {"name":"CPDEventplanner2022-10-27","visibility":"private","default_branch":"master","size_kb":380,"classification":"CPD Event Planner dated version-family member","risk":"equal size to adjacent versions is not identity; exact commit/tree comparison required"},
+    {"name":"CPDEventplanner20221101","visibility":"private","default_branch":"master","size_kb":380,"classification":"CPD Event Planner dated version-family member","risk":"equal size and filename chronology do not prove canonical status"},
+    {"name":"HMSCodeOntime","visibility":"private","default_branch":"HMScodeontimeproject","size_kb":3960,"classification":"HMS Code On Time application family","risk":"nonstandard default branch plus possible hospital/health data, credentials, schema and generated code require all-branch review"}
+  ],
+  "material_findings": [
+    "The pending list contained two duplicate names already processed in earlier batches; they were de-duplicated rather than counted again.",
+    "authentication20210922last reports size 0 while authentication20210922vlast is 58834 KB; both remain separate until branch-aware history and tree comparison proves lineage.",
+    "SKYsaasV89320220525 reports size 0 despite strategic naming; no emptiness or archive inference is permitted.",
+    "HMSCodeOntime uses the nonstandard default branch HMScodeontimeproject and may contain health-domain data; branch inventory must follow repository metadata.",
+    "Three CPD Event Planner repositories report the same size of 380 KB; equal size and date-based names are not duplicate or canonical proof.",
+    "WytSkyDelivery20220120 and WytSkyDelivery20220122 differ by only 2 KB, but exact commit/tree/manifests comparison is still required."
+  ]
+}
