@@ -1,0 +1,21 @@
+{
+  "batch_id": "archive-approved-batch-001",
+  "status": "approved_for_archive_but_not_executed_by_connector",
+  "reason": "GitHub connector safety control blocked repository archive mutation",
+  "target_family": "saskw2010/wytsky-authentication-family",
+  "repositories": [
+    "saskw2010/authentication20210916",
+    "saskw2010/authentication20210922",
+    "saskw2010/authentication20210922last",
+    "saskw2010/authentication20210922vlast",
+    "saskw2010/Testauth20211014",
+    "saskw2010/chechaspnetusers"
+  ],
+  "excluded_until_further_validation": [
+    "saskw2010/BlazorUsersRolesamazing",
+    "saskw2010/CustomSecurityWAW",
+    "saskw2010/RegProcessCsharp",
+    "saskw2010/regBackend"
+  ],
+  "safety_note": "No source repository was deleted, renamed, merged, or force-pushed. Archive can be reversed later from repository settings."
+}
