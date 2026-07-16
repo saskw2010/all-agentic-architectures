@@ -1,0 +1,15 @@
+{
+  "generated_utc":"2026-07-16T01:05:00Z",
+  "status":"candidate_classification_only",
+  "families":[
+    {"family":"Skoola Product Family","new_members":["Appskoola-net","WytSky.Mobile.Maui.Skoola"],"known_related":["Skoola_NET20241122","WytSky.Mobile.Maui.Noor"],"decision":"treat web/backend and mobile repositories as product siblings unless commit history and manifests prove version lineage; preserve each independently and map API/domain dependencies"},
+    {"family":"BlazingShop","new_members":["Blazingshopradzen","BlazingShop"],"decision":"compare commits, trees, manifests, UI frameworks and business modules; Radzen naming suggests a variant but does not establish canonical status"},
+    {"family":"Net5Wasm","new_members":["Net5Wasm20210818"],"known_related":["Net5Wasm21-08-10v1","Net5Wasm20210805v1","Net5Wasm20210812","Net5Wasm20210729V1"],"decision":"perform branch-aware commit/tree and manifest comparison; date suffixes remain lineage hints only"},
+    {"family":"FileUploadBlazor","new_members":["FileUploadBlazor-master"],"known_related":["FileUploadBlazor","FileUploadSample","blazor-progressive-uploadnet5"],"decision":"inspect all refs because metadata size is zero; compare implementation and history before duplicate classification"},
+    {"family":"ZainAgenda","new_members":["ZainAgenda"],"known_related":["ZainAgenda.Next.blazor"],"decision":"compare API contracts, domain models, manifests, branches and commit history; Next naming does not prove replacement"},
+    {"family":"ForumNet","new_members":["ForumNet120210908"],"known_related":["ForumNeturgentveryurgent"],"decision":"compare trees, manifests and history; urgency/date naming does not establish canonical status"},
+    {"family":"Event and CPD Backends","new_members":["EventBackEnd20220102"],"known_related":["CPDEventPlanner20230212","CPDEventplanner20230214","CPDEventPlanner20221123","CPDEventPlanner20221108"],"decision":"treat as a possible backend sibling or shared service; preserve independently until API, schema and domain dependencies are mapped"},
+    {"family":"Sky365 Knowledge Assets","new_members":["Sky365-knowledge-hub"],"known_related":["Sky365Offers","sky365API","Sky8n"],"decision":"documentation/product-knowledge relation only; verify freshness and source-of-truth status before using it for migration or architecture decisions"},
+    {"family":"MAUI Identity Applications","new_members":["MauiApp1withidentity"],"known_related":["dotnet-maui-blazor-customauthentication-mostafa","maui-blazor-hybrid"],"decision":"candidate implementation family; inspect identity architecture, endpoints, signing material and history before grouping"}
+  ]
+}
