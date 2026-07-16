@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-07-16T16:12:00Z",
+  "status": "validation_required_before_archive",
+  "families_ready_for_consolidation_work": [
+    "authentication-identity",
+    "cpd-event",
+    "appointment-planning",
+    "blazorshop-commerce",
+    "mobile-maui-xamarin",
+    "skoola-education"
+  ],
+  "archive_candidates": [],
+  "blocked_reason": "No source repository is marked archive-ready until canonical selection, unique-feature migration, build/test validation, deployment or rollback evidence where applicable, and explicit owner approval are recorded.",
+  "next_actions": [
+    "Compare candidate members within each populated family",
+    "Select canonical repository or retained component set",
+    "Record migrated or intentionally rejected features",
+    "Validate builds and tests",
+    "Populate archive_candidates only after evidence is complete"
+  ]
+}
