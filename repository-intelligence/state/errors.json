@@ -1,8 +1,9 @@
 {
-  "last_updated_utc": "2026-07-16T09:05:49Z",
+  "last_updated_utc": "2026-07-16T14:05:31Z",
   "errors": [],
   "warnings": [
-    {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
+    {"repository":"mermaid","type":"truncated_connector_payload","status":"resolved_by_direct_metadata_fetch","detail":"Direct repository metadata verified size 218033 KB and nonstandard default branch develop. Exhaustive refs remain pending."},
+    {"repository":"sd-webui-forge-classic","type":"nonstandard_default_branch","status":"recorded","detail":"Default branch is classic; branch inventory must not assume main/master."},
     {"repository":"pythonMachineLearning","type":"zero_size_repository","status":"branch_history_review_required","detail":"Repository metadata reports size 0. No deletion/archive inference is permitted."},
     {"repository":"BillionMail","type":"nonstandard_default_branch","status":"recorded","detail":"Default branch is dev; branch inventory must use repository metadata rather than main/master assumptions."},
     {"repository":"WindowsService_SendSms","type":"private_repository_migration_risk","status":"manual_security_review_required","detail":"Inspect credentials, endpoints, deployment artifacts and sensitive configuration before migration."},
