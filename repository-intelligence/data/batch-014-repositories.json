@@ -1,0 +1,41 @@
+{
+  "batch": 14,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-16T04:08:00Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "discovery": {
+    "method": "owner-filtered accessible-repository listing, page size 100, offset 0",
+    "purpose": "completeness recovery after prior search payload truncation",
+    "result": "twenty previously unprocessed owned repositories recovered; inventory remains open"
+  },
+  "repositories": [
+    {"name":"sashtmlHelpfile","visibility":"private","default_branch":"master","size_kb":5806,"classification":"SAS HTML help/documentation asset","risk":"private documentation may contain business configuration or generated content; provenance and family relationship require review"},
+    {"name":"chechaspnetusers","visibility":"private","default_branch":"main","size_kb":0,"classification":"ASP.NET identity/user inspection experiment","risk":"zero-size metadata and identity scope require all-branch/history and sensitive-data review"},
+    {"name":"RegProcessCsharp","visibility":"private","default_branch":"master","size_kb":2860,"classification":"registration/process C# application","risk":"credentials, user data, process rules and relationship to regBackend require review"},
+    {"name":"SASERP811V37","visibility":"private","default_branch":"master","size_kb":53224,"classification":"SAS ERP version-family candidate","risk":"strategic ERP lineage, identity, database schema, credentials and canonical status require deep comparison"},
+    {"name":"Blazor-Wasm-net5","visibility":"private","default_branch":"master","size_kb":226,"classification":"Blazor WebAssembly .NET 5 sample/candidate","risk":"upstream/sample provenance and relationship to Net5Wasm family require review"},
+    {"name":"Twilio","visibility":"private","default_branch":"master","size_kb":1075,"classification":"communications integration candidate","risk":"high likelihood of API credentials, phone identifiers, webhook URLs and messaging data; secret/history scan required"},
+    {"name":"HMS2021","visibility":"private","default_branch":"HMS-20200406","size_kb":9142,"classification":"HMS business application family","risk":"nonstandard default branch plus possible health/hospital data, credentials and legacy deployment configuration"},
+    {"name":"CMSEcommerce","visibility":"private","default_branch":"master","size_kb":22231,"classification":"CMS/e-commerce application","risk":"customer/order data, payment configuration, credentials, dependencies and upstream provenance require review"},
+    {"name":"PythonApplication1","visibility":"private","default_branch":"master","size_kb":6,"classification":"small Python experiment","risk":"purpose and uniqueness unproven; inspect content and history before any disposition"},
+    {"name":"CarChecker","visibility":"private","default_branch":"master","size_kb":307,"classification":"vehicle-checking application candidate","risk":"API endpoints, location/vehicle data and family relationship require review"},
+    {"name":"radzen-blazor","visibility":"private","default_branch":"master","size_kb":4610,"classification":"Radzen/Blazor framework or fork candidate","risk":"upstream provenance, license, local modifications and reuse obligations require review"},
+    {"name":"blazor-progressive-uploadnet6","visibility":"public","default_branch":"main","size_kb":220,"classification":"Blazor progressive-upload .NET 6 sample","risk":"likely sibling/version of net5 repository; commit/tree and dependency comparison required"},
+    {"name":"Net5Wasm20210802","visibility":"public","default_branch":"master","size_kb":45499,"classification":"Net5Wasm dated version-family member","risk":"public legacy configuration and canonical lineage require branch-aware commit/tree comparison"},
+    {"name":"Net5Wasm20210805v2","visibility":"public","default_branch":"master","size_kb":51980,"classification":"Net5Wasm dated version-family member","risk":"near-equal size to v1 is not identity; exact commit/tree/manifests comparison required"},
+    {"name":"Net5Wasm20210816v1","visibility":"private","default_branch":"master","size_kb":5712,"classification":"Net5Wasm dated version-family member","risk":"large size divergence may indicate trimmed build, different scope or missing assets; lineage requires proof"},
+    {"name":"Net5Wasm20210819","visibility":"private","default_branch":"master","size_kb":12071,"classification":"Net5Wasm dated version-family member","risk":"same reported size as 20210818 does not prove duplicate content; exact tree/history comparison required"},
+    {"name":"SASREPORT-final20210825","visibility":"private","default_branch":"master","size_kb":439,"classification":"SAS reporting application/version candidate","risk":"final suffix is not canonical proof; report definitions, data connections and ERP relationship require review"},
+    {"name":"BlazorShopmosso20210831","visibility":"private","default_branch":"master","size_kb":12266,"classification":"BlazorShop dated version-family member","risk":"canonical status, private configuration and relationship to adjacent dated variants require comparison"},
+    {"name":"BlazorShopmosso20210902","visibility":"private","default_branch":"master","size_kb":12147,"classification":"BlazorShop dated version-family member","risk":"canonical status, private configuration and relationship to adjacent dated variants require comparison"},
+    {"name":"authentication20210922","visibility":"private","default_branch":"master","size_kb":57656,"classification":"authentication version-family member","risk":"high-risk identity repository; inspect secrets, signing keys, user data, binaries, deployment configuration and lineage"}
+  ],
+  "material_findings": [
+    "The completeness recovery listing proved that the prior 198-repository inventory was incomplete and recovered twenty previously unprocessed owned repositories in this batch.",
+    "SASERP811V37 is a substantial private ERP-family repository and must be preserved for deep lineage, schema, feature and security comparison against BackEndNet5 and the wider SAS ERP family.",
+    "Twilio is a private communications integration candidate with elevated secret, webhook, phone-identifier and messaging-data exposure risk.",
+    "HMS2021 uses the nonstandard default branch HMS-20200406 and may contain sensitive hospital/health-domain data; branch discovery must never assume main or master.",
+    "authentication20210922 is a large private identity repository requiring dedicated secret, signing-key, user-data and deployment review.",
+    "Net5Wasm and BlazorShop families expanded further; filename dates and equal or similar repository sizes remain insufficient for canonical or duplicate decisions."
+  ]
+}
