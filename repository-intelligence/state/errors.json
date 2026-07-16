@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-16T04:08:00Z",
+  "last_updated_utc": "2026-07-16T05:07:00Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -34,7 +34,11 @@
     {"repository":"SASERP811V37","type":"strategic_private_erp_family_repository","status":"preserve_and_prioritize_deep_lineage_feature_schema_and_security_review","detail":"Metadata reports 53224 KB. Compare branches, commits, trees, API contracts, database schema and features against BackEndNet5 and related SAS ERP repositories; inspect secrets and deployment configuration."},
     {"repository":"Twilio","type":"communications_api_secret_and_message_data_risk","status":"immediate_secret_webhook_history_and_data_review_required","detail":"Inspect current files and full history for API credentials, webhook URLs, phone identifiers and messaging data without publishing sensitive values."},
     {"repository":"HMS2021","type":"nonstandard_branch_and_health_domain_data_risk","status":"all_branch_security_privacy_and_deployment_review_required","detail":"Default branch is HMS-20200406. Inventory all refs and inspect possible hospital/health data, credentials, database connections and legacy deployment configuration."},
-    {"repository":"authentication20210922","type":"large_private_authentication_repository","status":"deep_identity_secret_signing_key_and_deployment_review_required","detail":"Metadata reports 57656 KB. Inspect secrets, signing material, user data, generated binaries, all branches and deployment configuration; compare lineage with adjacent authentication repositories."}
+    {"repository":"authentication20210922","type":"large_private_authentication_repository","status":"deep_identity_secret_signing_key_and_deployment_review_required","detail":"Metadata reports 57656 KB. Inspect secrets, signing material, user data, generated binaries, all branches and deployment configuration; compare lineage with adjacent authentication repositories."},
+    {"repository":"authentication20210922last","type":"zero_size_private_authentication_repository","status":"all_branch_history_and_sensitive_identity_review_required","detail":"Metadata reports size 0. Do not infer emptiness; inspect every branch/ref, commit history, identity data and signing configuration."},
+    {"repository":"authentication20210922vlast","type":"large_private_authentication_repository","status":"deep_identity_secret_signing_key_binary_and_lineage_review_required","detail":"Metadata reports 58834 KB. Compare against authentication20210922 and authentication20210922last while protecting secrets and user data."},
+    {"repository":"SKYsaasV89320220525","type":"zero_size_strategic_sky_saas_repository","status":"preserve_and_all_branch_history_review_required","detail":"Metadata reports size 0 despite strategic product naming. Do not infer emptiness or archive suitability; inspect every branch/ref and lineage with SKY/ERP repositories."},
+    {"repository":"HMSCodeOntime","type":"nonstandard_branch_and_health_domain_data_risk","status":"all_branch_security_privacy_generated_code_and_schema_review_required","detail":"Default branch is HMScodeontimeproject. Inspect all refs, possible health-domain data, credentials, generated code, database schema and deployment configuration."}
   ],
   "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
