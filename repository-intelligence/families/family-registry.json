@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-07-16T14:30:00Z",
+  "status": "incremental_family_registry",
+  "source_branch": "repository-intelligence-hub-v2",
+  "total_audited_repositories": 238,
+  "policy": {
+    "create_family_as_evidence_appears": true,
+    "reuse_existing_family_repository": true,
+    "delete_allowed": false,
+    "archive_allowed_now": false,
+    "archive_after_validation_and_owner_approval_only": true
+  },
+  "families": [
+    {"id":"blazorshop-commerce","name":"BlazorShop / WytSky Commerce","status":"created","family_repository":"saskw2010/wytsky-blazorshop-family","relationship_type":"product_family","priority":"high"},
+    {"id":"authentication-identity","name":"Authentication / Identity","status":"created","family_repository":"saskw2010/wytsky-authentication-family","relationship_type":"component_family","priority":"critical","security_review_required":true},
+    {"id":"net5wasm-base","name":"Net5Wasm / Blazor Application Base","status":"created","family_repository":"saskw2010/wytsky-net5wasm-family","relationship_type":"component_family","priority":"medium"},
+    {"id":"erp-sas-erp","name":"ERP / SAS ERP","status":"proposed","suggested_repository":"saskw2010/wytsky-erp-family","relationship_type":"product_family","priority":"critical","owner_decisions":["BackEndNet5 is the retained ERP backend","Angular frontend remains a separate role","Recover unique features before any archive recommendation"]},
+    {"id":"cpd-event","name":"CPD Event Planner / Event Management","status":"proposed","suggested_repository":"saskw2010/wytsky-cpd-event-family","relationship_type":"version_family","priority":"high"},
+    {"id":"cpd-helpdesk","name":"CPD HelpDesk","status":"proposed","suggested_repository":"saskw2010/wytsky-cpd-helpdesk-family","relationship_type":"product_family","priority":"medium"},
+    {"id":"sky365-platform-core","name":"SKY365 Platform Core","status":"proposed","suggested_repository":"saskw2010/wytsky-sky365-core-family","relationship_type":"platform_umbrella","priority":"critical"},
+    {"id":"sky365-offers","name":"SKY365 Offers","status":"proposed","suggested_repository":"saskw2010/wytsky-sky365-offers-family","relationship_type":"product_family","priority":"critical","owner_decisions":["Sky365Offers is a highest-priority strategic project","Do not bury it inside a generic platform family"]},
+    {"id":"appointment-planning","name":"Appointment Planning Product","status":"proposed","suggested_repository":"saskw2010/wytsky-appointment-planner-family","relationship_type":"product_family","priority":"high","subfamilies":["web_planner","mobile_application"]},
+    {"id":"skoola-education","name":"Skoola / Education Platform","status":"proposed","suggested_repository":"saskw2010/wytsky-skoola-family","relationship_type":"product_family","priority":"high"},
+    {"id":"ezee-education","name":"eZee Education / Quiz","status":"proposed","suggested_repository":"saskw2010/wytsky-ezee-family","relationship_type":"product_family","priority":"medium"},
+    {"id":"zain-task-planning","name":"Zain Agenda / Task Management","status":"proposed","suggested_repository":"saskw2010/wytsky-zain-task-family","relationship_type":"product_family","priority":"medium"},
+    {"id":"file-upload-components","name":"File Upload Components","status":"proposed","suggested_repository":"saskw2010/wytsky-file-upload-family","relationship_type":"component_family","priority":"low"},
+    {"id":"helpdesk-forum-collaboration","name":"HelpDesk / Forum / Collaboration","status":"proposed","suggested_repository":"saskw2010/wytsky-collaboration-family","relationship_type":"product_family","priority":"medium"},
+    {"id":"wytsky-delivery","name":"WytSky Delivery","status":"proposed","suggested_repository":"saskw2010/wytsky-delivery-family","relationship_type":"version_family","priority":"medium"},
+    {"id":"healthcare-hms","name":"Healthcare / HMS","status":"proposed","suggested_repository":"saskw2010/wytsky-hms-family","relationship_type":"product_family","priority":"high","security_review_required":true},
+    {"id":"youth-applications","name":"Youth Applications","status":"proposed","suggested_repository":"saskw2010/wytsky-youth-apps-family","relationship_type":"product_family","priority":"medium"},
+    {"id":"cmgs-windows-services","name":"CMGS Messaging and Windows Services","status":"proposed","suggested_repository":"saskw2010/wytsky-windows-services-family","relationship_type":"component_family","priority":"high","operational_actions":["Investigate and stop only the failing deployed WindowsService_SendSms job or trigger after approval"]},
+    {"id":"mobile-maui-xamarin","name":"Mobile MAUI / Xamarin","status":"proposed","suggested_repository":"saskw2010/wytsky-mobile-family","relationship_type":"platform_umbrella","priority":"medium"},
+    {"id":"websites-landing-portfolio","name":"Websites / Landing / Portfolio","status":"proposed","suggested_repository":"saskw2010/wytsky-websites-family","relationship_type":"component_family","priority":"low"},
+    {"id":"ai-agentic-rag-mcp","name":"AI / Agentic / RAG / MCP","status":"proposed","suggested_repository":"saskw2010/wytsky-agentic-ai-family","relationship_type":"platform_umbrella","priority":"high"},
+    {"id":"knowledge-governance","name":"Knowledge / Documentation / Governance","status":"proposed","suggested_repository":"saskw2010/wytsky-governance-family","relationship_type":"platform_umbrella","priority":"medium"}
+  ]
+}
