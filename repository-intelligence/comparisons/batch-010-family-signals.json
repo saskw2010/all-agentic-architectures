@@ -1,0 +1,12 @@
+{
+  "generated_utc":"2026-07-16T00:05:00Z",
+  "status":"candidate_classification_only",
+  "families":[
+    {"family":"CPDEventPlanner","new_members":["CPDEventplanner20221120v2","CPDEventPlanner20221101final"],"known_related":["CPDEventPlanner20230212","CPDEventplanner20221101","CPDEventPlanner20221120","CPDEventPlanner20221129","CPDEventplanner20230209v1","CPDEventplanner20230214","CPDEventPlanner20221123","CPDEventPlanner20221108"],"decision":"compare commit ancestry, trees, manifests, branches and data schema; final/v2/date suffixes do not establish canonical status"},
+    {"family":"ERP Product Family","new_members":["ERPV1137-2025-08-06","SASERP811V2020withidentity"],"known_related":["BackEndNet5","105-1001SASERP811V37Dev","sky365API"],"decision":"preserve all independently; BackEndNet5 is owner-confirmed ERP backend paired with Angular and required for feature recovery. Map API contracts, database schemas, identity model and lineage before canonical recommendations"},
+    {"family":"Restaurant POS","new_members":["RestPOS"],"known_related":["RestaurantPOSweb20211004"],"decision":"compare commits, project manifests, database schema and UI/backend responsibilities; names indicate product relationship but not duplicate/version identity"},
+    {"family":"Sky Mobile","new_members":["Skyxamarin"],"known_related":["maui-blazor-hybrid","MauiApp120220628","dotnet-maui-blazor-customauthentication-mostafa"],"decision":"treat Xamarin and MAUI repositories as possible product-generation relatives, not duplicates, until API/domain/commit evidence is mapped"},
+    {"family":"Skoola","new_members":["Skoola_NET20241122"],"decision":"high-priority independent product candidate; later compare with Skoola mobile and app repositories discovered in subsequent pages"},
+    {"family":"Agent Tooling References","new_members":["codeflow","Agent-Reach","UI-TARS-desktop"],"decision":"reference/tooling umbrella only; provenance, license and execution permissions must be reviewed before reuse"}
+  ]
+}
