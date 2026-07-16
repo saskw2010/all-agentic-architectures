@@ -1,0 +1,44 @@
+{
+  "phase": "branch_inventory",
+  "batch": 20,
+  "status": "metadata_batch_complete_refs_blocked",
+  "started_utc": "2026-07-16T14:05:31Z",
+  "last_updated_utc": "2026-07-16T14:05:31Z",
+  "repositories_attempted": [
+    {"repository":"saskw2010/Memento","default_branch":"main","visibility":"public","archived":false,"size_kb":3529,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/Scrapling","default_branch":"main","visibility":"public","archived":false,"size_kb":6890,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/saskw2010","default_branch":"main","visibility":"public","archived":false,"size_kb":31398,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/BlazorApp1001","default_branch":"master","visibility":"public","archived":false,"size_kb":2176,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/CPDEventPlanner20230212","default_branch":"master","visibility":"private","archived":false,"size_kb":12111,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/n8n-mcp","default_branch":"main","visibility":"public","archived":false,"size_kb":48077,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/sd-webui-forge-classic","default_branch":"classic","visibility":"public","archived":false,"size_kb":53470,"branch_enumeration":"nonstandard_default_branch_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/postiz-app","default_branch":"main","visibility":"public","archived":false,"size_kb":38316,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/browser","default_branch":"main","visibility":"public","archived":false,"size_kb":11163,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/CleanArchitecturenet6","default_branch":"main","visibility":"public","archived":false,"size_kb":238,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/claude-code-prompts","default_branch":"master","visibility":"public","archived":false,"size_kb":382,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/open-design","default_branch":"main","visibility":"public","archived":false,"size_kb":103093,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/mermaid","default_branch":"develop","visibility":"public","archived":false,"size_kb":218033,"branch_enumeration":"nonstandard_default_branch_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/claude-code-local","default_branch":"main","visibility":"public","archived":false,"size_kb":256,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/loop-engineering","default_branch":"main","visibility":"public","archived":false,"size_kb":1728,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/WindowsService_SendSms","default_branch":"master","visibility":"private","archived":false,"size_kb":30345,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/defenix-website","default_branch":"main","visibility":"public","archived":false,"size_kb":98840,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/mossotestgo","default_branch":"master","visibility":"public","archived":false,"size_kb":2623,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/agency-agents","default_branch":"main","visibility":"public","archived":false,"size_kb":526,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/vllm","default_branch":"main","visibility":"public","archived":false,"size_kb":218192,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"}
+  ],
+  "progress":{"batch_size":20,"cursor":40,"repositories_metadata_verified":40,"repositories_exhaustively_enumerated":0,"remaining_in_batch":0,"batch_metadata_complete":true},
+  "duplicate_family_observations":[
+    {"candidate":"cpd-event-planner-version-family","members":["CPDEventPlanner20230212"],"related_inventory_members":["CPDEventplanner20230209v1","CPDEventplanner20230214","CPDEventPlanner20221101","CPDEventPlanner20221101final","CPDEventPlanner20221108","CPDEventPlanner20221120","CPDEventplanner20221120v2","CPDEventPlanner20221121","CPDEventPlanner20221123","CPDEventPlanner20221129","CPDEventPlannernet6-2022-11-14","CPDEventManagerCOT202211-07","BlazorEventManagerwasm20230123morning","BlazorEventManagerwasm20230220fromhomev1","EventBackEnd20220102"],"status":"strong naming/version signal; unconfirmed","decision":"Require exhaustive refs, ancestry, manifests, schema and feature comparison before canonical selection."},
+    {"candidate":"agentic-ai-upstream-reference-family","members":["Memento","Scrapling","n8n-mcp","sd-webui-forge-classic","postiz-app","browser","claude-code-prompts","open-design","mermaid","claude-code-local","loop-engineering","agency-agents","vllm"],"status":"domain/upstream signal only","decision":"Determine upstream provenance and licenses; do not classify as duplicates based on topic or fork-like naming."},
+    {"candidate":"windows-services-operational-family","members":["WindowsService_SendSms"],"related_inventory_members":["WindowsService20220612","CMGSWindowsServiceSendEmailVwithapikey","CMGSWindowsServiceSendEmailV20230301","CMGSmeetingservice"],"status":"operational family candidate","decision":"Preserve source; inspect deployment identity, secrets and runtime trigger independently from repository consolidation."},
+    {"candidate":"blazor-sample-template-family","members":["BlazorApp1001","CleanArchitecturenet6","mossotestgo"],"status":"weak technology/sample signal","decision":"Do not infer duplicate identity without tree, history, manifests and provenance evidence."}
+  ],
+  "warnings":[
+    {"repository":"sd-webui-forge-classic","type":"nonstandard_default_branch","default_branch":"classic","action":"Do not assume main/master during branch audit."},
+    {"repository":"mermaid","type":"nonstandard_default_branch","default_branch":"develop","action":"Direct metadata verification resolved the prior truncated-payload warning; exhaustive refs still required."},
+    {"repository":"WindowsService_SendSms","type":"private_operational_service_risk","action":"Inspect secrets, endpoints, deployment artifacts and deployed service identity before migration; source mutation cannot stop a running job."},
+    {"repository":"CPDEventPlanner20230212","type":"private_product_repository","action":"Protect business data, credentials and deployment configuration during family comparison."}
+  ],
+  "safety":{"source_mutations":0,"delete":false,"archive":false,"rename":false,"merge":false,"force_push":false},
+  "finding":"Batch 20 repository metadata is complete for 20 repositories. Exhaustive branch/ref enumeration remains blocked by the known connector false-empty limitation; metadata-only evidence is not treated as completed branch inventory."
+}
