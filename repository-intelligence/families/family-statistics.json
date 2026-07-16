@@ -1,0 +1,53 @@
+{
+  "generated_utc": "2026-07-16T14:30:00Z",
+  "audit_scope": "saskw2010 accessible repositories",
+  "source_branch": "repository-intelligence-hub-v2",
+  "repository_inventory": {
+    "audited": 238,
+    "pending": 0,
+    "failed": 0,
+    "complete": true
+  },
+  "family_program": {
+    "proposed_families": 22,
+    "created_family_repositories": 3,
+    "missing_family_repositories": 19,
+    "creation_coverage_percent": 13.64,
+    "created": [
+      "wytsky-blazorshop-family",
+      "wytsky-authentication-family",
+      "wytsky-net5wasm-family"
+    ],
+    "not_counted_as_software_family": [
+      "Elnagar-Family-Strategy-Hub"
+    ],
+    "next_priority_families": [
+      "ERP / SAS ERP",
+      "SKY365 Platform Core",
+      "SKY365 Offers",
+      "CPD Event Planner / Event Management",
+      "Appointment Planning Product",
+      "Skoola / Education Platform",
+      "CMGS Messaging and Windows Services"
+    ]
+  },
+  "branch_inventory": {
+    "metadata_verified": 40,
+    "exhaustively_enumerated": 0,
+    "general_batch_mode_recommended": false,
+    "recommended_mode": "family-priority branch inventory only",
+    "connector_limitation": "False-empty branch search results prevent treating generic branch enumeration as authoritative"
+  },
+  "strategic_assets": [
+    {"repository":"BackEndNet5","role":["backend","core_product"],"family":"ERP / SAS ERP","priority":"critical","decision":"retain and recover unique ERP features"},
+    {"repository":"Sky365Offers","role":["strategic_product","core_product"],"family":"SKY365 Offers","priority":"critical","decision":"retain as independently visible strategic project"},
+    {"repository":"WindowsService_SendSms","role":["windows_service","infrastructure"],"family":"CMGS Messaging and Windows Services","priority":"high","decision":"investigate and stop only the failing deployed job/trigger after operational approval"}
+  ],
+  "safety": {
+    "deleted": 0,
+    "archived": 0,
+    "renamed": 0,
+    "merged": 0,
+    "force_pushed": 0
+  }
+}
