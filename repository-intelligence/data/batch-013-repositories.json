@@ -1,0 +1,31 @@
+{
+  "batch": 13,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-16T03:03:12Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "repositories": [
+    {"name":"BlazorShop20210825","visibility":"private","default_branch":"master","size_kb":11992,"classification":"BlazorShop version-family candidate","risk":"canonical status unproven"},
+    {"name":"viseron","visibility":"public","default_branch":"dev","size_kb":82049,"classification":"computer-vision/home-automation upstream candidate","risk":"nonstandard branch; upstream, model, camera/privacy and license review"},
+    {"name":"20241204eZeequizzprojectwithchat","visibility":"private","default_branch":"master","size_kb":567704,"classification":"eZee quiz/chat education application","risk":"very large private repository; student/chat data, binaries, secrets and lineage review"},
+    {"name":"taybatmosso","visibility":"public","default_branch":"main","size_kb":59,"classification":"small site/application candidate","risk":"scope and upstream status unproven"},
+    {"name":"skysite101","visibility":"private","default_branch":"master","size_kb":0,"classification":"Sky site candidate","risk":"zero size requires all-branch/history review"},
+    {"name":"30-powerful-llms","visibility":"public","default_branch":"master","size_kb":24,"classification":"LLM reference/list candidate","risk":"provenance, freshness and license review"},
+    {"name":"freellmapi","visibility":"public","default_branch":"main","size_kb":1573,"classification":"free LLM API reference/tooling candidate","risk":"provider terms, credentials, rate limits and freshness review"},
+    {"name":"wytsky-net5wasm-family","visibility":"private","default_branch":"main","size_kb":7,"classification":"Net5Wasm family intelligence asset","risk":"may be documentation/index rather than canonical source"},
+    {"name":"regBackend","visibility":"private","default_branch":"master","size_kb":288,"classification":"registration backend candidate","risk":"credentials, identity data and relationship to ERP/auth families require review"},
+    {"name":"BlazorEventManagerwasm20230220fromhomev1","visibility":"private","default_branch":"master","size_kb":84848,"classification":"Blazor Event Manager family","risk":"large private dated version; canonical and data status unproven"},
+    {"name":"exchange_redirect_technic","visibility":"private","default_branch":"master","size_kb":620,"classification":"Exchange redirect/integration technique","risk":"mail endpoints, credentials and operational configuration review"},
+    {"name":"CMGSWindowsServiceSendEmailV20230301","visibility":"private","default_branch":"master","size_kb":55,"classification":"CMGS Windows email service family","risk":"operational job, credentials and lineage review"},
+    {"name":"everything-claude-code","visibility":"public","default_branch":"main","size_kb":17449,"classification":"AI coding reference/upstream candidate","risk":"upstream, licensing, command execution and credential behavior review"},
+    {"name":"kubevela","visibility":"public","default_branch":"master","size_kb":66754,"classification":"cloud-native platform upstream candidate","risk":"upstream provenance, licenses, cluster permissions and deployment security review"},
+    {"name":"meetily","visibility":"public","default_branch":"main","size_kb":48206,"classification":"meeting capture/AI application candidate","risk":"audio/transcript privacy, upstream, models and license review"},
+    {"name":"seltak-diamond-food","visibility":"private","default_branch":"main","size_kb":342,"classification":"private food/business site candidate","risk":"business data, deployment configuration and scope review"},
+    {"name":"future-agi","visibility":"public","default_branch":"main","size_kb":74036,"classification":"AI evaluation/agent tooling upstream candidate","risk":"upstream, licenses, telemetry, model and credential handling review"}
+  ],
+  "material_findings": [
+    "20241204eZeequizzprojectwithchat is a 567704 KB private education/chat repository and requires immediate large-file, student/chat-data, secret and lineage review.",
+    "viseron uses dev as its default branch and may process camera streams; branch inventory plus privacy/model/license review is mandatory.",
+    "CMGSWindowsServiceSendEmailV20230301 expands the same Windows email-service family as the owner-reported failing job; operational disablement remains separate from this read-only audit.",
+    "skysite101 reports size 0; no empty/disposable inference is permitted."
+  ]
+}
