@@ -1,0 +1,41 @@
+{
+  "phase": "branch_inventory",
+  "batch": 22,
+  "scope": "repositories 61-80 of 238",
+  "generated_utc": "2026-07-16T16:09:02Z",
+  "policy": "read_only_metadata_audit",
+  "connector_limitation": "Branch search cannot be treated as exhaustive because prior false-empty results were observed. This batch records authoritative repository metadata and default branches only.",
+  "summary": {
+    "repositories_checked": 20,
+    "metadata_verified": 20,
+    "failures": 0,
+    "archived": 0,
+    "public": 8,
+    "private": 12,
+    "default_branch_main": 6,
+    "default_branch_master": 14,
+    "empty_repositories": 1
+  },
+  "repositories": [
+    {"name":"sashtmlfinancecsharp","id":364153154,"visibility":"private","archived":false,"size_kb":18192,"default_branch":"master"},
+    {"name":"GoogleMapsApp","id":567217371,"visibility":"private","archived":false,"size_kb":219,"default_branch":"master"},
+    {"name":"roadmapsh","id":911473231,"visibility":"public","archived":false,"size_kb":4,"default_branch":"main"},
+    {"name":"authentication20210916","id":407062227,"visibility":"private","archived":false,"size_kb":57661,"default_branch":"master"},
+    {"name":"BlazorEcommerce","id":546505701,"visibility":"private","archived":false,"size_kb":254,"default_branch":"master"},
+    {"name":"CPDEventplanner20221101","id":560372795,"visibility":"private","archived":false,"size_kb":380,"default_branch":"master"},
+    {"name":"trial20220630","id":509022680,"visibility":"private","archived":false,"size_kb":9115,"default_branch":"master"},
+    {"name":"blazor-showcase-appointment-planner","id":528809744,"visibility":"private","archived":false,"size_kb":128636,"default_branch":"master"},
+    {"name":"MauiApp120220628","id":508265435,"visibility":"private","archived":false,"size_kb":287,"default_branch":"master"},
+    {"name":"Landpag2withoutlogin","id":621729287,"visibility":"public","archived":false,"size_kb":55831,"default_branch":"master"},
+    {"name":"Landpag2withoutlogin1","id":634787896,"visibility":"private","archived":false,"size_kb":0,"default_branch":"main","risk":"empty_repository"},
+    {"name":"intellagent","id":926916066,"visibility":"public","archived":false,"size_kb":14984,"default_branch":"main"},
+    {"name":"105-1001SASERP811V37Dev","id":1136643896,"visibility":"public","archived":false,"size_kb":29497,"default_branch":"main"},
+    {"name":"rag-from-scratch","id":1108074945,"visibility":"public","archived":false,"size_kb":996,"default_branch":"main"},
+    {"name":"ecommerce_mcp","id":1298035088,"visibility":"public","archived":false,"size_kb":333,"default_branch":"master"},
+    {"name":"ForumNeturgentveryurgent","id":402363668,"visibility":"private","archived":false,"size_kb":294,"default_branch":"master"},
+    {"name":"SimplCommerce","id":366327101,"visibility":"private","archived":false,"size_kb":16280,"default_branch":"master"},
+    {"name":"CPDEventPlanner20221120","id":568349840,"visibility":"private","archived":false,"size_kb":1301,"default_branch":"master"},
+    {"name":"xamarin-shopping-cart","id":381963517,"visibility":"private","archived":false,"size_kb":16188,"default_branch":"master"},
+    {"name":"CPDEventPlanner20221129","id":572014226,"visibility":"private","archived":false,"size_kb":1311,"default_branch":"master"}
+  ]
+}
