@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-16T01:05:00Z",
+  "last_updated_utc": "2026-07-16T02:01:52Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -36,7 +36,15 @@
     {"repository":"EventBackEnd20220102","type":"private_backend_domain_and_security_risk","status":"deep_api_schema_secret_and_family_review_required","detail":"Metadata reports 68131 KB. Preserve independently; inspect API contracts, database schema, credentials, deployment configuration and relationship to Event/CPD repositories."},
     {"repository":"FileUploadBlazor-master","type":"zero_size_repository","status":"branch_history_review_required","detail":"Metadata reports size 0. Do not infer emptiness or disposability; inspect all branches, commits and refs before classification."},
     {"repository":"WytSky.Mobile.Maui.Skoola","type":"zero_size_private_product_repository","status":"branch_history_and_product_lineage_review_required","detail":"Metadata reports size 0. Do not infer emptiness; inspect all branches/history and determine relationship to Appskoola-net and Skoola_NET20241122."},
-    {"repository":"Sky365-knowledge-hub","type":"public_knowledge_source_freshness_risk","status":"source_of_truth_and_public_exposure_review_required","detail":"Public visibility does not establish that documentation is current, complete or safe as canonical. Verify provenance, freshness and sensitive-content exposure before migration use."}
+    {"repository":"Sky365-knowledge-hub","type":"public_knowledge_source_freshness_risk","status":"source_of_truth_and_public_exposure_review_required","detail":"Public visibility does not establish that documentation is current, complete or safe as canonical. Verify provenance, freshness and sensitive-content exposure before migration use."},
+    {"repository":"onyx","type":"extremely_large_public_upstream_candidate","status":"upstream_license_vendored_asset_and_security_review_required","detail":"Metadata reports 942153 KB. Determine fork/upstream lineage, licenses, vendored assets, models, datasets, secrets and deployment implications before adoption or migration."},
+    {"repository":"Testauth20211014","type":"large_private_authentication_repository","status":"deep_identity_secret_binary_and_deployment_review_required","detail":"Metadata reports 189875 KB. Inspect credentials, signing keys, identity/user data, generated binaries, history and deployment configuration; do not expose sensitive values."},
+    {"repository":"SkoolaNETibra","type":"very_large_private_education_repository","status":"preserve_and_compare_skoola_family","detail":"Metadata reports 254091 KB. Inspect student/business data, binaries, secrets, deployment configuration, branches and lineage against Skoola_NET20241122 and Appskoola-net."},
+    {"repository":"SASERP811V37-withcodeontime","type":"zero_size_strategic_erp_family_candidate","status":"branch_history_and_schema_review_required","detail":"Metadata reports size 0. Preserve and inspect all refs; compare with BackEndNet5 and related ERP repositories before any canonical decision."},
+    {"repository":"YouthApps20230430","type":"zero_size_repository","status":"branch_history_review_required","detail":"Metadata reports size 0. Do not infer emptiness or disposability; inspect all branches and history and compare with YouthAppsmain."},
+    {"repository":"CPDEventManagerCOT202211-07","type":"zero_size_cpd_family_candidate","status":"branch_history_and_generated_app_lineage_review_required","detail":"Metadata reports size 0. Inspect all refs and determine whether this is generated Code-On-Time source, branch-only content or a direct CPD family version."},
+    {"repository":"ViMax","type":"large_public_video_ai_candidate","status":"upstream_license_model_media_privacy_review_required","detail":"Metadata reports 185727 KB. Determine upstream provenance and licenses; inspect model/media assets, privacy behavior, permissions and execution surface."},
+    {"repository":"Dr-Ahmed-Radiology-X-Ray","type":"public_medical_content_repository","status":"patient_data_exclusion_and_content_provenance_review_required","detail":"Verify that no patient-identifiable data is present and establish medical-content provenance, disclaimers and public exposure suitability."}
   ],
   "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
