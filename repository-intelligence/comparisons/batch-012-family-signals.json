@@ -1,0 +1,15 @@
+{
+  "generated_utc":"2026-07-16T02:01:52Z",
+  "status":"candidate_classification_only",
+  "families":[
+    {"family":"BlazorShop","new_members":["BlazorShop20210830"],"known_related":["BlazorShop-master","BlazorShop20210928","BlazorShopmosso20210831h","BlazorShop20210830vhome"],"decision":"compare commits, trees, manifests and branches; date and vhome suffixes do not prove canonical status"},
+    {"family":"ERP","new_members":["SASERP811V37-withcodeontime"],"known_related":["BackEndNet5","105-1001SASERP811V37Dev","SASERP811V2020withidentity","ERPV1137-2025-08-06"],"decision":"preserve all; BackEndNet5 remains owner-confirmed ERP backend and feature-recovery priority; zero-size metadata requires branch/history inspection"},
+    {"family":"CPDEventPlanner","new_members":["CPDEventPlannernet6-2022-11-14","CPDEventManagerCOT202211-07","CPDEventPlanner20221121"],"known_related":["CPDEventPlanner20230212","CPDEventplanner20230214","CPDEventPlanner20221123","CPDEventPlanner20221120","CPDEventplanner20221120v2","CPDEventPlanner20221101final","EventBackEnd20220102"],"decision":"separate planner, manager, generated-Code-On-Time and backend roles until histories, schemas and manifests prove direct lineage"},
+    {"family":"BlazorEventManager","new_members":["BlazorEventManagerwasm20230123morning"],"decision":"dated/daypart suffix is only a lineage clue; inspect branches, manifests and relationship to CPD/Event backend assets"},
+    {"family":"Skoola","new_members":["SkoolaNETibra"],"known_related":["Skoola_NET20241122","Appskoola-net","WytSky.Mobile.Maui.Skoola","WytSky.Mobile.Maui.Noor"],"decision":"very large education product candidate; compare architecture, data schema, branches and commits before canonical recommendation"},
+    {"family":"YouthApps","new_members":["YouthApps20230430"],"known_related":["YouthAppsmain"],"decision":"zero-size default metadata is not evidence of emptiness; inspect all refs and compare history"},
+    {"family":"eZee","new_members":["eZee20211206"],"decision":"treat as dated product-family candidate pending later eZee/quiz repository comparison"},
+    {"family":"CMGSServices","new_members":["CMGSmeetingservice"],"known_related":["CMGSWindowsServiceSendEmailVwithapikey","WindowsService_SendSms"],"decision":"operational sibling service candidate; do not group as duplicate without code/history proof"},
+    {"family":"SkyCommerce","new_members":["WytSkyStore2023-11-07"],"known_related":["Sky365Offers","sky365API"],"decision":"commerce/product umbrella relation only; preserve independently while contracts and domain dependencies are mapped"}
+  ]
+}
