@@ -1,0 +1,15 @@
+{
+  "batch": 16,
+  "generated_utc": "2026-07-16T06:04:28Z",
+  "signals": [
+    {
+      "family": "BlazorShop / BlazingShop / WytSky commerce",
+      "new_members": ["wytsky-blazorshop-family"],
+      "related_known_members": ["BlazorShop-master","BlazorShop20210928","BlazorShopmosso20210831h","BlazorShop20210830vhome","BlazorShop20210830","BlazorShop20210825","BlazorShopmosso20210831","BlazorShopmosso20210902","BlazingShop","Blazingshopradzen","BlazorEcommerce","wytsky-net5wasm-family"],
+      "confidence": "name-based family signal only",
+      "canonical_decision": "deferred",
+      "required_evidence": ["all branches and refs","commit ancestry","tree hashes","solution/project manifests","database schema and migrations","deployment configuration","business feature matrix"],
+      "warning": "A repository explicitly named as a family may be an audit/consolidation artifact rather than the original product source. Do not promote it to canonical without content and history evidence."
+    }
+  ]
+}
