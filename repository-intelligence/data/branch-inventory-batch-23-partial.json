@@ -1,0 +1,43 @@
+{
+  "phase": "branch_inventory",
+  "batch": 23,
+  "scope": "repositories 81-100 of 238",
+  "generated_utc": "2026-07-16T17:00:22Z",
+  "policy": "read_only_metadata_audit",
+  "connector_limitation": "Branch search cannot be treated as exhaustive because prior false-empty results were observed. This batch records authoritative repository metadata and default branches only.",
+  "summary": {
+    "repositories_checked": 20,
+    "metadata_verified": 20,
+    "failures": 0,
+    "archived": 0,
+    "public": 11,
+    "private": 9,
+    "default_branch_main": 8,
+    "default_branch_master": 11,
+    "default_branch_other": 1,
+    "empty_repositories": 0,
+    "large_repositories_over_100mb": 5
+  },
+  "repositories": [
+    {"name":"ZainAgenda.Next.blazor","id":1079104087,"visibility":"private","archived":false,"size_kb":161285,"default_branch":"master","risk":"large_repository"},
+    {"name":"deer-flow","id":1187654070,"visibility":"public","archived":false,"size_kb":23657,"default_branch":"main"},
+    {"name":"TASKMANAGER20210823","id":399028978,"visibility":"private","archived":false,"size_kb":10553,"default_branch":"master"},
+    {"name":"blazor-wasm-appointment-planner","id":546495151,"visibility":"private","archived":false,"size_kb":330646,"default_branch":"master","risk":"large_repository"},
+    {"name":"lean-ctx","id":1234703057,"visibility":"public","archived":false,"size_kb":427605,"default_branch":"main","risk":"large_repository"},
+    {"name":"awesome-Face_Recognition","id":1239556341,"visibility":"public","archived":false,"size_kb":468,"default_branch":"master"},
+    {"name":"nextjs-ai-chatbot","id":944495162,"visibility":"public","archived":false,"size_kb":427,"default_branch":"main"},
+    {"name":"Open-Source-Make-Apps","id":1276281569,"visibility":"public","archived":false,"size_kb":144,"default_branch":"main"},
+    {"name":"colibri","id":1297854352,"visibility":"public","archived":false,"size_kb":220,"default_branch":"main"},
+    {"name":"FileUploadBlazor","id":390683934,"visibility":"public","archived":false,"size_kb":422,"default_branch":"master"},
+    {"name":"cpdland","id":536500000,"visibility":"private","archived":false,"size_kb":410703,"default_branch":"master","risk":"large_repository"},
+    {"name":"CPDEventplanner20230209v1","id":599514952,"visibility":"private","archived":false,"size_kb":12023,"default_branch":"20230209","risk":"nonstandard_default_branch"},
+    {"name":"hello-agents","id":1238183934,"visibility":"public","archived":false,"size_kb":201951,"default_branch":"main","risk":"large_repository"},
+    {"name":"blazorservercrudwithrestapi","id":390034043,"visibility":"public","archived":false,"size_kb":746,"default_branch":"master"},
+    {"name":"BlazorShop20210830vhome","id":401415634,"visibility":"private","archived":false,"size_kb":11993,"default_branch":"master"},
+    {"name":"BackEndNet5","id":393631379,"visibility":"private","archived":false,"size_kb":5972,"default_branch":"master"},
+    {"name":"CPDEventplanner20230214","id":601562535,"visibility":"private","archived":false,"size_kb":12023,"default_branch":"master"},
+    {"name":"CMGSWindowsServiceSendEmailVwithapikey","id":609824610,"visibility":"private","archived":false,"size_kb":55,"default_branch":"master"},
+    {"name":"awesome-mcp-servers","id":1183033299,"visibility":"public","archived":false,"size_kb":12464,"default_branch":"main"},
+    {"name":"free-claude-code","id":1248006862,"visibility":"public","archived":false,"size_kb":3512,"default_branch":"main"}
+  ]
+}
