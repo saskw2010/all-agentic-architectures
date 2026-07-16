@@ -1,0 +1,49 @@
+{
+  "family_id": "replace-me",
+  "family_name": "Replace Me",
+  "relationship_type": "unclassified_candidate",
+  "business_domain": "unknown",
+  "status": "candidate",
+  "priority": "unrated",
+  "members": [
+    {
+      "repository": "owner/repository",
+      "roles": [],
+      "tags": [],
+      "lifecycle": "unknown",
+      "business_value": "unrated",
+      "production_status": "unknown",
+      "canonical_status": "undetermined",
+      "relationship_confidence": "low",
+      "evidence": [],
+      "missing_evidence": [],
+      "security": {
+        "sensitive": false,
+        "secret_scan_status": "not_evaluated",
+        "dependency_scan_status": "not_evaluated",
+        "code_scan_status": "not_evaluated"
+      },
+      "health": {
+        "build_status": "unknown",
+        "test_status": "unknown",
+        "operational_status": "unknown",
+        "observability_status": "not_evaluated",
+        "known_incidents": []
+      },
+      "migration": {
+        "recommendation": "retain",
+        "archive_recommendation": "not_evaluated",
+        "owner_approval_required": true
+      }
+    }
+  ],
+  "subfamilies": [],
+  "candidate_canonical": null,
+  "canonical_confidence": "none",
+  "family_evidence": [],
+  "family_missing_evidence": [],
+  "merge_readiness": "not_evaluated",
+  "security_review_required": false,
+  "manual_owner_decision_required": true,
+  "last_updated_utc": null
+}
