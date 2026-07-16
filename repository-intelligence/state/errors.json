@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-16T08:07:33Z",
+  "last_updated_utc": "2026-07-16T09:05:49Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -41,7 +41,8 @@
     {"repository":"HMSCodeOntime","type":"nonstandard_branch_and_health_domain_data_risk","status":"all_branch_security_privacy_generated_code_and_schema_review_required","detail":"Default branch is HMScodeontimeproject. Inspect all refs, possible health-domain data, credentials, generated code, database schema and deployment configuration."},
     {"repository":"wytsky-blazorshop-family","type":"family_repository_canonicality_ambiguity","status":"content_history_and_lineage_review_required","detail":"Private 10 KB repository discovered after the prior pending queue reached zero. Its family-level name may indicate an audit/consolidation artifact rather than canonical product source; inspect branches, history, trees, manifests and feature coverage before migration use."},
     {"repository":"wytsky-authentication-family","type":"zero_size_private_identity_family_repository","status":"all_ref_history_sensitive_identity_and_canonicality_review_required","detail":"Private family-level repository reports size 0. Inspect every branch/ref, history, manifests, authentication flows, identity schema and relationship to the existing authentication repositories; do not expose secrets or user data."},
-    {"repository":"account_inventory","type":"unstable_truncated_repository_pagination","status":"resolved_for_connector_scope","detail":"Completeness verified by two consecutive owner-filtered repository listings at offset 300 returning an empty set. Repository inventory phase is complete with 238 audited repositories; branch inventory is now active."}
+    {"repository":"account_inventory","type":"unstable_truncated_repository_pagination","status":"resolved_for_connector_scope","detail":"Completeness verified by two consecutive owner-filtered repository listings at offset 300 returning an empty set. Repository inventory phase is complete with 238 audited repositories; branch inventory is now active."},
+    {"repository":"all-agentic-architectures","type":"branch_search_connector_false_empty","status":"material_block_requires_alternate_refs_listing","detail":"Branch search returned an empty result even though repository metadata confirms default branch main and repository-intelligence-hub-v2 is readable. Do not interpret empty search output as no branches; use a reliable refs API or clone-based read-only inventory before completing branch classification."}
   ],
-  "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
+  "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload","branch_search_connector_false_empty"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
