@@ -1,0 +1,23 @@
+{
+  "batch": 22,
+  "generated_utc": "2026-07-16T16:09:02Z",
+  "repository_metadata_errors": [],
+  "branch_enumeration_errors": [
+    {
+      "scope": "batch",
+      "code": "CONNECTOR_FALSE_EMPTY_BRANCH_SEARCH",
+      "severity": "material-limitation",
+      "status": "open",
+      "message": "The available branch-search connector previously returned an empty result for a repository with known readable branches. Exhaustive branch inventory is therefore not asserted for this batch.",
+      "mitigation": "Record verified default-branch metadata, retain branches_scanned=false, and do not advance to duplicate/version-family classification until a trustworthy refs enumeration method is available or the limitation is explicitly resolved."
+    }
+  ],
+  "data_quality_observations": [
+    {
+      "repository": "Landpag2withoutlogin1",
+      "severity": "review",
+      "code": "EMPTY_REPOSITORY",
+      "message": "Repository metadata reports size 0 KB. Preserve and inspect provenance; emptiness alone is not authority to delete or archive."
+    }
+  ]
+}
