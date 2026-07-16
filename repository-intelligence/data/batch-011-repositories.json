@@ -1,0 +1,35 @@
+{
+  "batch": 11,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-16T01:05:00Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "repositories": [
+    {"name":"Horizon","visibility":"public","default_branch":"main","size_kb":9329,"classification":"AI/application framework candidate","risk":"scope, upstream provenance and production readiness unproven"},
+    {"name":"Blazingshopradzen","visibility":"private","default_branch":"master","size_kb":36785,"classification":"BlazingShop/Radzen commerce family candidate","risk":"canonical status, private configuration and business data require review"},
+    {"name":"Net5Wasm20210818","visibility":"private","default_branch":"master","size_kb":12071,"classification":"Net5Wasm version-family candidate","risk":"canonical status and lineage unproven"},
+    {"name":"FileUploadBlazor-master","visibility":"private","default_branch":"main","size_kb":0,"classification":"FileUploadBlazor version-family candidate","risk":"zero metadata size is not proof of empty content; all branches and history must be inspected"},
+    {"name":"MauiApp1withidentity","visibility":"private","default_branch":"master","size_kb":275,"classification":"MAUI identity application candidate","risk":"identity secrets, endpoints and lineage require review"},
+    {"name":"EventBackEnd20220102","visibility":"private","default_branch":"master","size_kb":68131,"classification":"event-management backend candidate","risk":"API contracts, credentials, database schema and CPD/Event-family relationship require review"},
+    {"name":"azure-search-openai-demo","visibility":"public","default_branch":"main","size_kb":12413,"classification":"Azure OpenAI search/RAG reference candidate","risk":"upstream provenance, Azure resource configuration, secrets and license obligations require review"},
+    {"name":"WytSky.Mobile.Maui.Noor","visibility":"private","default_branch":"master","size_kb":13404,"classification":"WytSky mobile MAUI product candidate","risk":"product scope, API dependencies, credentials and mobile signing configuration require review"},
+    {"name":"build-your-own-x","visibility":"public","default_branch":"master","size_kb":1201,"classification":"learning/reference collection candidate","risk":"upstream provenance and license obligations require review"},
+    {"name":"Appskoola-net","visibility":"private","default_branch":"master","size_kb":144584,"classification":"Skoola education application candidate","risk":"large private repository; student/business data, generated assets, binaries, credentials and relationship to Skoola_NET20241122 require review"},
+    {"name":"ZainAgenda","visibility":"private","default_branch":"master","size_kb":3028,"classification":"ZainAgenda scheduling family candidate","risk":"canonical status, API relationship and scheduling data require review"},
+    {"name":"gemini-fullstack-langgraph-quickstart","visibility":"public","default_branch":"main","size_kb":344,"classification":"Gemini/LangGraph reference candidate","risk":"upstream provenance, licenses and credential-handling patterns require review"},
+    {"name":"WytSky.Mobile.Maui.Skoola","visibility":"private","default_branch":"main","size_kb":0,"classification":"Skoola mobile MAUI product candidate","risk":"zero metadata size is not proof of empty content; inspect branches/history and product relationship"},
+    {"name":"Sky365-knowledge-hub","visibility":"public","default_branch":"main","size_kb":106,"classification":"Sky365 knowledge/documentation hub","risk":"public exposure, source-of-truth status and relationship to private Sky365 repositories require review"},
+    {"name":"ForumNet120210908","visibility":"private","default_branch":"master","size_kb":296,"classification":"ForumNet version-family candidate","risk":"relationship to ForumNeturgentveryurgent and canonical status unproven"},
+    {"name":"BlazingShop","visibility":"private","default_branch":"master","size_kb":255,"classification":"BlazingShop commerce family candidate","risk":"relationship to Blazingshopradzen and canonical status unproven"},
+    {"name":"SimAI","visibility":"public","default_branch":"master","size_kb":27361,"classification":"AI simulation/application candidate","risk":"upstream provenance, model dependencies and execution permissions require review"},
+    {"name":"timo-dash","visibility":"public","default_branch":"main","size_kb":379,"classification":"dashboard/reference candidate","risk":"scope, upstream provenance and deployment configuration unproven"},
+    {"name":"testropo","visibility":"public","default_branch":"main","size_kb":35,"classification":"test repository candidate","risk":"name and small size do not justify deletion or archival; inspect branches and history"},
+    {"name":"gemini-ai-chatbot","visibility":"private","default_branch":"main","size_kb":323,"classification":"Gemini chatbot application candidate","risk":"API keys, prompt/data handling, upstream provenance and deployment configuration require review"}
+  ],
+  "material_findings": [
+    "Appskoola-net is a 144584 KB private education repository and materially expands the Skoola product family; student/business data and lineage must be reviewed before any migration or consolidation decision.",
+    "FileUploadBlazor-master and WytSky.Mobile.Maui.Skoola report size 0. This is not evidence that either repository is empty or disposable; branch and history inventory is mandatory.",
+    "EventBackEnd20220102 is a 68131 KB private backend and may contain API contracts or domain features needed by the Event/CPD product family.",
+    "Sky365-knowledge-hub is public and may become a documentation/source-of-truth asset, but public visibility does not prove that its content is current or safe to treat as canonical.",
+    "The Skoola, BlazingShop, FileUploadBlazor, Net5Wasm, ZainAgenda and ForumNet families all gained additional candidate members; filename similarity remains only a family signal, not proof of duplication or canonical status."
+  ]
+}
