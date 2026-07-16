@@ -1,0 +1,33 @@
+{
+  "batch": 23,
+  "generated_utc": "2026-07-16T17:00:22Z",
+  "policy": "read_only_classification",
+  "families": [
+    {
+      "family": "cpd-event-planner",
+      "members": ["CPDEventplanner20230209v1", "CPDEventplanner20230214"],
+      "classification": "probable_version_family",
+      "confidence": "high",
+      "basis": "Strong normalized-name match and date/version suffixes; both report identical repository size (12023 KB). Content equivalence is not yet proven."
+    },
+    {
+      "family": "blazor-shop",
+      "members": ["BlazorShop20210830vhome"],
+      "classification": "existing_cross_batch_family_candidate",
+      "confidence": "medium",
+      "basis": "Name matches the previously observed BlazorShop dated/versioned repository family; cross-batch content comparison remains pending."
+    },
+    {
+      "family": "file-upload-blazor",
+      "members": ["FileUploadBlazor"],
+      "classification": "existing_cross_batch_family_candidate",
+      "confidence": "medium",
+      "basis": "Name matches previously inventoried FileUploadBlazor-master and related upload samples; repository history/content comparison remains pending."
+    }
+  ],
+  "risks": [
+    {"type":"large_repository","repositories":["lean-ctx","cpdland","blazor-wasm-appointment-planner","hello-agents","ZainAgenda.Next.blazor"],"note":"Large repositories may materially increase migration and content-comparison cost."},
+    {"type":"nonstandard_default_branch","repositories":["CPDEventplanner20230209v1"],"default_branch":"20230209","note":"Migration tooling must not assume main or master."}
+  ],
+  "conclusion": "No destructive action is justified by name similarity alone. Family labels remain classification metadata until branch/history/content evidence is available."
+}
