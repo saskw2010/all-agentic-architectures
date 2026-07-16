@@ -1,5 +1,5 @@
 {
-  "last_updated_utc": "2026-07-16T00:00:00Z",
+  "last_updated_utc": "2026-07-16T00:05:00Z",
   "errors": [],
   "warnings": [
     {"repository":"mermaid","type":"truncated_connector_payload","status":"retry_pending","detail":"Exact metadata still requires a direct verification fetch."},
@@ -27,7 +27,11 @@
     {"repository":"CMGSWindowsServiceSendEmailVwithapikey","type":"repeatedly_failing_operational_job_and_explicit_api_key_handling_risk","status":"disable_job_outside_audit_then_secret_and_history_review","detail":"Owner reports that the job repeatedly fails and wants it stopped. Disable the deployed/scheduled job through the operational environment, not by mutating source during this read-only audit. Preserve the repository and inspect current files plus full history without exposing secrets."},
     {"repository":"Sky365Offers","type":"strategic_priority_and_very_large_private_business_repository","status":"highest_priority_deep_audit_and_preserve","detail":"Owner confirms this is the most important project. Preserve independently, prioritize architecture/dependency/recovery analysis, and inspect generated assets, binaries, credentials, deployment configuration and private offer/business data."},
     {"repository":"BackEndNet5","type":"owner_confirmed_erp_backend","status":"retain_and_prioritize_feature_recovery","detail":"Confirmed as the .NET 5 ERP backend paired with an Angular frontend. It contains features needed for restoration. Do not archive or reduce it to a generic sample; map API contracts, database schema, dependencies and security configuration."},
-    {"repository":"awesome-mcp-servers","type":"mcp_tooling_security_and_license_risk","status":"dedicated_review_required_before_adoption","detail":"Determine upstream provenance and licenses; review server permissions, command execution and credential handling before reuse."}
+    {"repository":"awesome-mcp-servers","type":"mcp_tooling_security_and_license_risk","status":"dedicated_review_required_before_adoption","detail":"Determine upstream provenance and licenses; review server permissions, command execution and credential handling before reuse."},
+    {"repository":"Skoola_NET20241122","type":"large_private_repository_and_nonstandard_default_branch","status":"manual_large_repo_security_data_and_branch_review_required","detail":"Metadata reports 227800 KB and default branch mostafa. Inspect every branch, generated assets, binaries, credentials, deployment configuration and student/business data before migration."},
+    {"repository":"UI-TARS-desktop","type":"large_public_desktop_control_agent_risk","status":"upstream_license_model_and_permission_review_required","detail":"Metadata reports 191768 KB. Determine upstream provenance and licenses; review model assets, desktop-control permissions, command execution and credential access before reuse."},
+    {"repository":"SASERP811V2020withidentity","type":"private_erp_identity_security_risk","status":"deep_identity_schema_and_lineage_review_required","detail":"Inspect identity secrets, signing material, user data, database schema, deployment configuration and relationship to the ERP family before migration."},
+    {"repository":"ERPV1137-2025-08-06","type":"strategic_erp_family_candidate","status":"compare_with_owner_confirmed_backend_before_canonical_decision","detail":"Preserve independently and compare API contracts, database schema, manifests, branches and commit history with BackEndNet5, 105-1001SASERP811V37Dev and related ERP repositories."}
   ],
   "retry_policy": {"max_attempts_per_repository":3,"retry_on":["rate_limit","temporary_api_error","missing_manifest","truncated_connector_payload"],"do_not_retry_on":["repository_not_found","permission_denied"],"after_max_attempts":"record_for_manual_review_and_continue"}
 }
