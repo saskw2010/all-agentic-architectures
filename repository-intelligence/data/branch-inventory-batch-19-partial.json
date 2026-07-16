@@ -3,39 +3,18 @@
   "batch": 19,
   "status": "partial_connector_block",
   "started_utc": "2026-07-16T09:05:49Z",
+  "last_updated_utc": "2026-07-16T12:09:39Z",
   "repositories_attempted": [
-    {
-      "repository": "saskw2010/all-agentic-architectures",
-      "default_branch": "main",
-      "visibility": "public",
-      "archived": false,
-      "size_kb": 3686,
-      "branch_enumeration": "blocked_connector_returned_empty_result"
-    },
-    {
-      "repository": "saskw2010/agentic-context-engine",
-      "default_branch": "main",
-      "visibility": "public",
-      "archived": false,
-      "size_kb": 40439,
-      "branch_enumeration": "not_yet_exhaustive"
-    },
-    {
-      "repository": "saskw2010/agentscope",
-      "default_branch": "main",
-      "visibility": "public",
-      "archived": false,
-      "size_kb": 47800,
-      "branch_enumeration": "not_yet_exhaustive"
-    }
+    {"repository":"saskw2010/all-agentic-architectures","default_branch":"main","visibility":"public","archived":false,"size_kb":3686,"branch_enumeration":"blocked_connector_returned_empty_result"},
+    {"repository":"saskw2010/agentic-context-engine","default_branch":"main","visibility":"public","archived":false,"size_kb":40439,"branch_enumeration":"not_yet_exhaustive"},
+    {"repository":"saskw2010/agentscope","default_branch":"main","visibility":"public","archived":false,"size_kb":47800,"branch_enumeration":"not_yet_exhaustive"},
+    {"repository":"saskw2010/agents","default_branch":"main","visibility":"public","archived":false,"size_kb":35877,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"},
+    {"repository":"saskw2010/AutoAgent","default_branch":"main","visibility":"public","archived":false,"size_kb":162136,"branch_enumeration":"default_branch_metadata_verified_exhaustive_refs_pending"}
   ],
-  "safety": {
-    "source_mutations": 0,
-    "delete": false,
-    "archive": false,
-    "rename": false,
-    "merge": false,
-    "force_push": false
-  },
-  "finding": "The branch-search connector returned an empty result for all-agentic-architectures even though repository metadata confirms default branch main and the audit branch is readable. Exhaustive branch inventory cannot treat that empty result as authoritative. Default-branch metadata was preserved and the batch remains incomplete pending a reliable refs listing method."
+  "progress":{"batch_size":20,"cursor":5,"repositories_metadata_verified":5,"repositories_exhaustively_enumerated":0,"remaining_in_batch":15},
+  "duplicate_family_observations":[
+    {"candidate":"agentic-framework-upstream-reference-family","members":["agentic-context-engine","agentscope","agents","AutoAgent"],"status":"name/domain signal only","decision":"Do not classify as duplicates without refs, ancestry, tree, manifest, upstream and license evidence."}
+  ],
+  "safety":{"source_mutations":0,"delete":false,"archive":false,"rename":false,"merge":false,"force_push":false},
+  "finding":"Branch search continues to return false-empty results for a repository with known readable branches. Default-branch metadata can advance safely, but exhaustive branch classification remains blocked until a reliable refs-listing method is available."
 }
