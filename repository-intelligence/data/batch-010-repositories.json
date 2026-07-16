@@ -1,0 +1,28 @@
+{
+  "batch": 10,
+  "phase": "repository_inventory",
+  "generated_utc": "2026-07-16T00:05:00Z",
+  "policy": "read-only metadata audit; no source repository mutation",
+  "repositories": [
+    {"name":"CPDEventplanner20221120v2","visibility":"private","default_branch":"master","size_kb":1301,"classification":"CPD Event Planner version-family candidate","risk":"canonical status and private CPD data unproven"},
+    {"name":"CPDEventPlanner20221101final","visibility":"private","default_branch":"master","size_kb":3228,"classification":"CPD Event Planner version-family candidate","risk":"final suffix is not proof of canonical status"},
+    {"name":"khaldiya","visibility":"public","default_branch":"master","size_kb":1067,"classification":"business/application candidate","risk":"scope, upstream and sensitive historical configuration require review"},
+    {"name":"Skoola_NET20241122","visibility":"private","default_branch":"mostafa","size_kb":227800,"classification":"Skoola .NET application","risk":"large private repository with nonstandard default branch; secrets, binaries, student/business data and deployment configuration require review"},
+    {"name":"ERPV1137-2025-08-06","visibility":"private","default_branch":"master","size_kb":37514,"classification":"ERP version-family candidate","risk":"strategic ERP lineage, credentials, database schema and canonical relationship require review"},
+    {"name":"codeflow","visibility":"public","default_branch":"main","size_kb":1989,"classification":"AI/developer workflow reference candidate","risk":"upstream provenance and license review required"},
+    {"name":"Skyxamarin","visibility":"private","default_branch":"master","size_kb":2538,"classification":"Sky mobile/Xamarin application","risk":"API endpoints, credentials and relationship to newer MAUI apps require review"},
+    {"name":"RestPOS","visibility":"private","default_branch":"master","size_kb":2355,"classification":"Restaurant POS application","risk":"business data, payment/configuration secrets and relationship to RestaurantPOSweb20211004 require comparison"},
+    {"name":"omniparse","visibility":"public","default_branch":"main","size_kb":803,"classification":"document parsing/reference candidate","risk":"upstream, model/data handling and license review required"},
+    {"name":"Agent-Reach","visibility":"public","default_branch":"main","size_kb":1820,"classification":"agent tooling/reference candidate","risk":"upstream provenance, external actions, permissions and credential behavior require review"},
+    {"name":"apkstudio","visibility":"public","default_branch":"master","size_kb":15469,"classification":"Android reverse-engineering/tooling reference","risk":"binary provenance, licensing and security-sensitive usage require review"},
+    {"name":"UI-TARS-desktop","visibility":"public","default_branch":"main","size_kb":191768,"classification":"desktop agent/UI automation reference candidate","risk":"large public repository; upstream, model assets, desktop control permissions and license review required"},
+    {"name":"SASERP811V2020withidentity","visibility":"private","default_branch":"master","size_kb":44313,"classification":"SAS ERP identity-enabled version-family candidate","risk":"identity secrets, user data, database schema and ERP lineage require deep review"},
+    {"name":"BlazorMasterDetailExample2021","visibility":"private","default_branch":"master","size_kb":228,"classification":"Blazor master-detail sample candidate","risk":"sample/upstream status and reuse relationship unproven"}
+  ],
+  "material_findings": [
+    "Skoola_NET20241122 is a 227800 KB private application on nonstandard default branch mostafa; branch inventory must not assume main/master and migration requires security/data review.",
+    "UI-TARS-desktop is a 191768 KB public desktop-control agent repository; upstream provenance, model assets, desktop permissions and license obligations require dedicated review.",
+    "ERPV1137-2025-08-06 and SASERP811V2020withidentity expand the ERP product/version landscape and must be compared with the owner-confirmed BackEndNet5 ERP backend before any canonical or migration decision.",
+    "CPDEventPlanner gained two more filename-signaled versions; final and v2 labels remain weak evidence and cannot select a canonical repository."
+  ]
+}
