@@ -1,0 +1,50 @@
+name: Create Private Family Repositories
+
+on:
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: GitHub owner that will receive the repositories
+        required: true
+        default: saskw2010
+      confirm:
+        description: Type CREATE_PRIVATE_FAMILIES to continue
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  create-family-repositories:
+    if: ${{ inputs.confirm == 'CREATE_PRIVATE_FAMILIES' }}
+    runs-on: windows-latest
+    env:
+      GH_TOKEN: ${{ secrets.FAMILY_REPO_PAT }}
+    steps:
+      - name: Checkout intelligence branch
+        uses: actions/checkout@v4
+        with:
+          ref: repository-intelligence-hub-v2
+
+      - name: Validate token
+        shell: pwsh
+        run: |
+          if ([string]::IsNullOrWhiteSpace($env:GH_TOKEN)) {
+            throw 'Missing repository secret FAMILY_REPO_PAT.'
+          }
+          gh auth status
+
+      - name: Create missing private family repositories
+        shell: pwsh
+        run: |
+          ./repository-intelligence/scripts/create-family-repositories.ps1 -Owner '${{ inputs.owner }}'
+
+      - name: Write run summary
+        if: always()
+        shell: pwsh
+        run: |
+          Add-Content $env:GITHUB_STEP_SUMMARY '## Family repository provisioning'
+          Add-Content $env:GITHUB_STEP_SUMMARY ''
+          Add-Content $env:GITHUB_STEP_SUMMARY '- Visibility requested: **private**'
+          Add-Content $env:GITHUB_STEP_SUMMARY '- Existing repositories are skipped.'
+          Add-Content $env:GITHUB_STEP_SUMMARY '- No source repository is deleted, archived, renamed, merged, or force-pushed.'
