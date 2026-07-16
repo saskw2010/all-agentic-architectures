@@ -1,0 +1,13 @@
+{
+  "generated_utc":"2026-07-16T03:03:12Z",
+  "status":"candidate_classification_only",
+  "families":[
+    {"family":"BlazorShop","new_members":["BlazorShop20210825"],"known_related":["BlazorShop-master","BlazorShop20210928","BlazorShopmosso20210831h","BlazorShop20210830vhome","BlazorShop20210830"],"decision":"compare commits, trees, manifests and branches; date suffixes do not establish canonical status"},
+    {"family":"eZee","new_members":["20241204eZeequizzprojectwithchat"],"known_related":["eZee20211206"],"decision":"treat as related education/business family only until schema, manifests and history prove lineage"},
+    {"family":"Net5Wasm","new_members":["wytsky-net5wasm-family"],"known_related":["Net5Wasm21-08-10v1","Net5Wasm20210805v1","Net5Wasm20210812","Net5Wasm20210729V1","Net5Wasm20210818"],"decision":"the new repository appears to be a family intelligence/index asset; do not treat it as canonical source without content review"},
+    {"family":"BlazorEventManager","new_members":["BlazorEventManagerwasm20230220fromhomev1"],"known_related":["BlazorEventManagerwasm20230123morning"],"decision":"perform branch-aware commit/tree and manifest comparison; fromhome/v1/date labels are not canonical proof"},
+    {"family":"WindowsServiceMessaging","new_members":["CMGSWindowsServiceSendEmailV20230301"],"known_related":["CMGSWindowsServiceSendEmailVwithapikey","WindowsService_SendSms","CMGSmeetingservice"],"decision":"preserve as sibling/version candidate; compare code and deployment lineage. Operational job shutdown must occur outside the read-only audit"},
+    {"family":"SkySites","new_members":["skysite101"],"known_related":["saskw2010.github.io","Sky365-knowledge-hub"],"decision":"scope relation only; zero-size metadata requires all refs and history before classification"},
+    {"family":"AIReferenceAndTooling","new_members":["30-powerful-llms","freellmapi","everything-claude-code","future-agi"],"decision":"do not consolidate by topic alone; verify upstream, licensing, freshness, execution surface and credentials"}
+  ]
+}
