@@ -1,0 +1,12 @@
+{
+  "generated_utc":"2026-07-16T15:05:30Z",
+  "phase":"branch_inventory",
+  "batch":21,
+  "errors":[],
+  "limitations":[
+    {"type":"connector_false_empty_branch_search","severity":"material","scope":"all repositories in branch inventory","effect":"Exhaustive branch/ref enumeration cannot be treated as complete from empty search output.","mitigation":"Advance metadata-only batches while preserving branches_scanned=false; require a trustworthy refs API, git ls-remote, or equivalent authoritative enumeration before phase completion."},
+    {"type":"zero_size_repository_requires_ref_verification","severity":"low","repository":"saskw2010/pythonMachineLearning","effect":"Metadata alone cannot distinguish intentionally empty repository from content on non-default refs.","mitigation":"Recheck with authoritative ref enumeration."}
+  ],
+  "source_mutation_errors":0,
+  "policy_violations":0
+}
