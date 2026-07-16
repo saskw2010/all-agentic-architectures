@@ -1,0 +1,24 @@
+{
+  "batch": 23,
+  "generated_utc": "2026-07-16T17:00:22Z",
+  "errors": [],
+  "warnings": [
+    {
+      "code": "BRANCH_ENUMERATION_NOT_AUTHORITATIVE",
+      "severity": "material",
+      "message": "The connector previously returned false-empty branch-search results. This batch verifies repository metadata and default branches only; exhaustive branch inventory remains incomplete."
+    },
+    {
+      "code": "LARGE_REPOSITORIES_DETECTED",
+      "severity": "planning",
+      "repositories": ["lean-ctx", "cpdland", "blazor-wasm-appointment-planner", "hello-agents", "ZainAgenda.Next.blazor"],
+      "message": "Five repositories exceed 100 MB and may require staged migration/content analysis."
+    },
+    {
+      "code": "NONSTANDARD_DEFAULT_BRANCH",
+      "severity": "planning",
+      "repositories": ["CPDEventplanner20230209v1"],
+      "message": "Default branch is 20230209; downstream tooling must not assume main or master."
+    }
+  ]
+}
