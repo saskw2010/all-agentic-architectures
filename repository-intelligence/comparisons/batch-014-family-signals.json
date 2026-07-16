@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-07-16T04:08:00Z",
+  "status": "candidate_classification_only",
+  "families": [
+    {"family":"SASERP","new_members":["SASERP811V37","SASREPORT-final20210825"],"known_related":["BackEndNet5","105-1001SASERP811V37Dev","SASERP811V2020withidentity","SASERP811V37-withcodeontime","ERPV1137-2025-08-06","sashtmlfinancecsharp","SAShtml"],"decision":"preserve independently; compare branches, commits, trees, project manifests, database schema, API contracts and report definitions before canonical or feature-recovery decisions"},
+    {"family":"Net5Wasm","new_members":["Blazor-Wasm-net5","Net5Wasm20210802","Net5Wasm20210805v2","Net5Wasm20210816v1","Net5Wasm20210819"],"known_related":["Net5Wasm20210729V1","Net5Wasm20210805v1","Net5Wasm21-08-10v1","Net5Wasm20210812","Net5Wasm20210818","wytsky-net5wasm-family"],"decision":"perform branch-aware commit/tree and manifest comparison; similar names, dates and sizes are lineage signals only"},
+    {"family":"BlazorShop","new_members":["BlazorShopmosso20210831","BlazorShopmosso20210902"],"known_related":["BlazorShop-master","BlazorShop20210825","BlazorShop20210830","BlazorShop20210830vhome","BlazorShopmosso20210831h","BlazorShop20210928"],"decision":"compare histories, trees, manifests, configuration and business features; dated and suffix naming cannot establish canonical status"},
+    {"family":"Authentication","new_members":["chechaspnetusers","authentication20210922"],"known_related":["authentication20210916","Testauth20211014","CustomSecurityWAW","BlazorUsersRolesamazing"],"decision":"treat as security-sensitive candidates; inspect all refs and history without exposing secrets, then compare identity schema, packages and deployment configuration"},
+    {"family":"RegistrationServices","new_members":["RegProcessCsharp"],"known_related":["regBackend"],"decision":"candidate frontend/process and backend pairing; map API contracts, data schema and shared history before grouping"},
+    {"family":"ProgressiveUpload","new_members":["blazor-progressive-uploadnet6"],"known_related":["blazor-progressive-uploadnet5","FileUploadBlazor","FileUploadBlazor-master","FileUploadSample"],"decision":"compare project manifests, commits and implementation details; framework-version naming suggests lineage but does not prove duplication"},
+    {"family":"HMS","new_members":["HMS2021"],"known_related":[],"decision":"preserve as a domain application; inventory nonstandard branch and inspect health-domain data/security before any migration classification"},
+    {"family":"CommunicationsIntegrations","new_members":["Twilio"],"known_related":["WindowsService_SendSms","CMGSWindowsServiceSendEmailVwithapikey","CMGSWindowsServiceSendEmailV20230301"],"decision":"operational umbrella only; classify as sibling integration unless code/history proves lineage; prioritize credential and webhook review"},
+    {"family":"RadzenAssets","new_members":["radzen-blazor"],"known_related":["Blazingshopradzen"],"decision":"determine upstream/fork provenance, license and local modifications before reuse or family consolidation"}
+  ]
+}
