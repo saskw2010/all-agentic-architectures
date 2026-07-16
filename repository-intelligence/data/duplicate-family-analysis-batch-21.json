@@ -1,0 +1,13 @@
+{
+  "generated_utc":"2026-07-16T15:05:30Z",
+  "source_batch":21,
+  "classification_policy":"Naming, technology and topic are candidate signals only. Canonical or duplicate status requires branch ancestry, tree, manifest, schema, feature and provenance evidence.",
+  "candidates":[
+    {"family":"net5wasm-version-family","confidence":"high_candidate_not_confirmed","members_in_batch":["Net5Wasm20210805v1"],"related_members":["Net5Wasm21-08-10v1","Net5Wasm20210812","Net5Wasm20210729V1","Net5Wasm20210818","Net5Wasm20210802","Net5Wasm20210805v2","Net5Wasm20210816v1","Net5Wasm20210819","Blazor-Wasm-net5","wytsky-net5wasm-family"],"next_evidence":["branch ancestry","solution/project manifests","schema delta","unique feature inventory"]},
+    {"family":"planner-task-family","confidence":"medium_candidate","members_in_batch":["BlazorTasks","PlannerAppimportant"],"related_members":["TASKMANAGER20210823","TASKMANAGER20220823","ZainAgenda","ZainAgenda.Next.blazor","blazor-wasm-appointment-planner","blazor-showcase-appointment-planner"],"risk":"Task management and appointment planning may be separate products despite overlapping planner terminology."},
+    {"family":"blazor-template-sample-family","confidence":"low_candidate","members_in_batch":["mossotest","Mosblazorboiler","CRUDwasmEFmosso"],"risk":"Framework similarity is insufficient evidence of duplication."},
+    {"family":"authentication-mobile-family","confidence":"medium_security_sensitive_candidate","members_in_batch":["CustomSecurityWAW","dotnet-maui-blazor-customauthentication-mostafa"],"related_members":["authentication20210916","authentication20210922","authentication20210922last","authentication20210922vlast","MauiApp1withidentity","wytsky-authentication-family"],"risk":"Credentials, identity providers and authorization semantics may differ materially."},
+    {"family":"agentic-reference-upstreams","confidence":"domain_group_only","members_in_batch":["500-AI-Agents-Projects","fullstack-solution-template-for-agentcore","LLM-Zero-to-Hundred","chatbox","API-mega-list"],"risk":"Upstream/reference repositories must not be misclassified as internal duplicate versions."}
+  ],
+  "decisions":{"canonical_selected":false,"repositories_mutated":false,"archive_recommended":false,"delete_recommended":false}
+}
